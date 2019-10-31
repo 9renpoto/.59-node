@@ -3,3 +3,13 @@ update_configs:
   - package_manager: "javascript"
     directory: "/"
     update_schedule: "weekly"
+    default_reviewers:
+      - "9renpoto"
+    default_assignees:
+      - "9renpoto"
+    default_labels:
+      - "Type: Dependencies"
+    automerged_updates:
+      - match:
+          dependency_type: "all"
+          update_type: "all"
