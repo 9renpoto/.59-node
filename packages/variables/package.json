@@ -1,0 +1,15 @@
+{
+  "name": "@pj/variables",
+  "version": "0.0.0",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "tsc -p . --noEmit",
+    "clean": "rimraf lib"
+  },
+  "typings": "lib/index.d.ts"
+}

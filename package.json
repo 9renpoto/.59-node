@@ -1,0 +1,48 @@
+{
+  "name": "@pj/template",
+  "author": "github.com/9renpoto",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "@9renpoto/eslint-config-typescript": "^5.3.0",
+    "@9renpoto/textlint-config-ja": "^5.3.0",
+    "husky": "^3.0.9",
+    "lerna": "^3.18.3",
+    "lerna-changelog": "^0.8.2",
+    "lint-staged": "^9.4.2",
+    "prettier-eslint-cli": "^5.0.0",
+    "textlint": "^11.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier-eslint --write",
+      "git add"
+    ],
+    "*.{js,jsx,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "private": true,
+  "scripts": {
+    "build": "lerna run build --parallel",
+    "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
+    "clean": "lerna run clean --parallel && lerna clean",
+    "lint": "run-s -l lint:*",
+    "lint:eslint": "npx eslint . --ext=ts,tsx",
+    "lint:md": "textlint README.md packages/*.md packages/**/*.md",
+    "lint:pkg": "lerna run lint --parallel",
+    "lint:prettier": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
+    "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
+    "test": "npm run lint"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
