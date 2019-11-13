@@ -23,5 +23,12 @@ jobs:
         yarn build
         yarn
         yarn lint
+        npx lerna run test -- -w 1
       env:
         CI: true
+    - uses: codecov/codecov-action@v1.0.3
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./packages/coverage/*
+        flags: variables
+        name: variables
