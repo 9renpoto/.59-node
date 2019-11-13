@@ -6,5 +6,8 @@
     "noEmit": false,
     "sourceMap": true,
     "declaration": true
-  }
+  },
+  "exclude": [
+    "**/*.test.ts"
+  ]
 }

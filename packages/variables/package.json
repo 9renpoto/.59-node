@@ -1,15 +1,28 @@
 {
   "name": "@pj/variables",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "files": [
     "lib"
   ],
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverage": true,
+    "testEnvironment": "node"
+  },
   "main": "lib/index.js",
   "private": true,
   "scripts": {
     "build": "tsc -p .",
+    "clean": "rimraf lib",
     "lint": "tsc -p . --noEmit",
-    "clean": "rimraf lib"
+    "test": "jest"
   },
   "typings": "lib/index.d.ts"
 }

@@ -3,16 +3,20 @@
   "author": "github.com/9renpoto",
   "dependencies": {
     "lerna": "^3.18.3",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "typescript": "3.5.3"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config-typescript": "5.3.0",
-    "@9renpoto/textlint-config-ja": "5.3.0",
-    "husky": "3.0.9",
-    "lerna-changelog": "0.8.3",
-    "lint-staged": "9.4.2",
-    "prettier-eslint-cli": "5.0.0",
-    "textlint": "11.5.0"
+    "@9renpoto/eslint-config-typescript": "^5.3.0",
+    "@9renpoto/textlint-config-ja": "^5.3.0",
+    "@types/jest": "^24.0.23",
+    "husky": "^3.0.9",
+    "jest": "^24.9.0",
+    "lerna-changelog": "^0.8.2",
+    "lint-staged": "^9.4.2",
+    "prettier-eslint-cli": "^5.0.0",
+    "textlint": "^11.4.0",
+    "ts-jest": "^24.1.0"
   },
   "husky": {
     "hooks": {
@@ -40,7 +44,7 @@
     "lint:pkg": "lerna run lint --parallel",
     "lint:prettier": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
-    "test": "npm run lint"
+    "test": "lerna run test --stream"
   },
   "workspaces": [
     "packages/*"
