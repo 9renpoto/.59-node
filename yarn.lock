@@ -19,10 +19,10 @@
     eslint-plugin-import "2.18.2"
     eslint-plugin-prettier "3.1.1"
 
-"@9renpoto/textlint-config-ja@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/textlint-config-ja/-/textlint-config-ja-5.3.0.tgz#f9c1eaf6f69d3c43d2da8aa252667f8c9b560985"
-  integrity sha512-FWciH7z7h3KiO6qUZaUReoj0/SfFNPL5Lpj81N5aQG+Uho9j+io8BEOMfYUQT9NeBbyfypQcK76mzacD2dqMFw==
+"@9renpoto/textlint-config-ja@5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/textlint-config-ja/-/textlint-config-ja-5.4.0.tgz#1ab07280ee8632ca6569fb3df1c353e69f7188c8"
+  integrity sha512-F/nAQcqoeAbNrMjBsHNyWntI6UkLgQMYNKpVFYqMSVlwe8+Xev8pNNdEj1/S5x+EO93n+8fzy7SHSZVaJOUwRw==
   dependencies:
     textlint-filter-rule-comments "1.2.2"
     textlint-rule-incremental-headers "0.2.0"
@@ -30,7 +30,7 @@
     textlint-rule-ja-no-successive-word "1.1.0"
     textlint-rule-ja-no-weak-phrase "1.0.4"
     textlint-rule-max-ten "2.0.3"
-    textlint-rule-no-dead-link "4.6.1"
+    textlint-rule-no-dead-link "4.6.2"
     textlint-rule-no-double-negative-ja "1.0.5"
     textlint-rule-no-doubled-conjunction "1.0.2"
     textlint-rule-no-doubled-conjunctive-particle-ga "1.1.0"
@@ -6380,10 +6380,10 @@ p-queue@^4.0.0:
   dependencies:
     eventemitter3 "^3.1.0"
 
-p-queue@^6.1.1:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-6.2.0.tgz#c8122b9514d2bbe5f16d8a47f17dc2f9a8ac7235"
-  integrity sha512-B2LXNONcyn/G6uz2UBFsGjmSa0e/br3jznlzhEyCXg56c7VhEpiT2pZxGOfv32Q3FSyugAdys9KGpsv3kV+Sbg==
+p-queue@^6.2.0:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-6.2.1.tgz#809a832046451b2240a0a8e48b4fa18192b22b64"
+  integrity sha512-wV8yC/rkuWpgu9LGKJIb48OynYSrE6lVl2Bx6r8WjbyVKrFAzzQ/QevAvwnDjlD+mLt8xy0LTDOU1freOvMTCg==
   dependencies:
     eventemitter3 "^4.0.0"
     p-timeout "^3.1.0"
@@ -8160,17 +8160,17 @@ textlint-rule-max-ten@2.0.3:
     structured-source "^3.0.2"
     textlint-rule-helper "^2.0.0"
 
-textlint-rule-no-dead-link@4.6.1:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/textlint-rule-no-dead-link/-/textlint-rule-no-dead-link-4.6.1.tgz#f05d3571b48bccaceffa6a425558a7a027309cdf"
-  integrity sha512-KW0ACJIcDo5pmq0vA4fyAzxQNxWm+rzOOlOhT0yRXAGw9bki9pblVzW801Vgl3onAlJoDbBJgey6AFIM3OZkRQ==
+textlint-rule-no-dead-link@4.6.2:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/textlint-rule-no-dead-link/-/textlint-rule-no-dead-link-4.6.2.tgz#1f3ef17aa56b8a6918cce919eeb05032f38922d1"
+  integrity sha512-f11iwmihzQhWwO8KCa4sYMhiZhnfRYwXQbuFILZVoNhBRfcxYF3A19N/poYgAcCJRre9GkCv7/B2RiraxKUUjA==
   dependencies:
     fs-extra "^8.1.0"
     get-url-origin "^1.0.1"
     minimatch "^3.0.4"
     node-fetch "^2.6.0"
     p-memoize "^3.1.0"
-    p-queue "^6.1.1"
+    p-queue "^6.2.0"
     textlint-rule-helper "^2.1.1"
 
 textlint-rule-no-double-negative-ja@1.0.5:
