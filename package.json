@@ -7,7 +7,7 @@
     "typescript": "3.7.2"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config-typescript": "5.3.0",
+    "@9renpoto/eslint-config-typescript": "5.4.0",
     "@9renpoto/textlint-config-ja": "5.3.0",
     "@types/jest": "24.0.23",
     "husky": "3.1.0",
