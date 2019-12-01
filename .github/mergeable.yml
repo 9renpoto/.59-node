@@ -2,11 +2,6 @@ version: 2
 mergeable:
   - when: pull_request.*, pull_request_review.*
     validate:
-      - do: assignee
-        max:
-          count: 1
-        min:
-          count: 1
       - do: title
         must_exclude:
           regex: ^\[WIP\]
