@@ -12,7 +12,7 @@
     "@types/jest": "24.0.23",
     "husky": "3.1.0",
     "jest": "24.9.0",
-    "lerna-changelog": "0.8.3",
+    "lerna-changelog": "1.0.0",
     "lint-staged": "9.5.0",
     "prettier-eslint-cli": "5.0.0",
     "textlint": "11.5.0",
