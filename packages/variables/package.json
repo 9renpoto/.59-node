@@ -1,9 +1,14 @@
 {
-  "name": "@pj/variables",
+  "name": "@app/variables",
   "version": "0.0.1",
-  "files": [
-    "lib"
-  ],
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "clean": "rimraf lib",
+    "lint": "tsc -p . --noEmit",
+    "test": "jest"
+  },
   "jest": {
     "globals": {
       "ts-jest": {
@@ -15,14 +20,6 @@
     },
     "collectCoverage": true,
     "testEnvironment": "node"
-  },
-  "main": "lib/index.js",
-  "private": true,
-  "scripts": {
-    "build": "tsc -p .",
-    "clean": "rimraf lib",
-    "lint": "tsc -p . --noEmit",
-    "test": "jest"
   },
   "typings": "lib/index.d.ts"
 }

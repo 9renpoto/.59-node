@@ -1,10 +1,23 @@
 {
-  "name": "@pj/template",
+  "name": "@app/app",
+  "private": true,
   "author": "github.com/9renpoto",
+  "scripts": {
+    "build": "lerna run build --parallel",
+    "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
+    "clean": "lerna run clean --parallel && lerna clean",
+    "lint": "run-s -l lint:*",
+    "lint:eslint": "npx eslint . --ext=ts,tsx",
+    "lint:md": "textlint README.md packages/*.md packages/**/*.md",
+    "lint:pkg": "lerna run lint --parallel",
+    "lint:prettier": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
+    "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
+    "test": "lerna run test --stream"
+  },
   "dependencies": {
     "lerna": "^3.18.3",
     "npm-run-all": "^4.1.5",
-    "typescript": "3.7.4"
+    "typescript": "^3.7.4"
   },
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "5.4.0",
@@ -15,6 +28,7 @@
     "lerna-changelog": "1.0.0",
     "lint-staged": "9.5.0",
     "prettier-eslint-cli": "5.0.0",
+    "prettier-plugin-package": "^0.3.1",
     "textlint": "11.5.0",
     "ts-jest": "24.2.0"
   },
@@ -28,23 +42,10 @@
       "prettier-eslint --write",
       "git add"
     ],
-    "*.{js,jsx,md}": [
+    "*.{js,jsx,md,json}": [
       "prettier --write",
       "git add"
     ]
-  },
-  "private": true,
-  "scripts": {
-    "build": "lerna run build --parallel",
-    "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
-    "clean": "lerna run clean --parallel && lerna clean",
-    "lint": "run-s -l lint:*",
-    "lint:eslint": "npx eslint . --ext=ts,tsx",
-    "lint:md": "textlint README.md packages/*.md packages/**/*.md",
-    "lint:pkg": "lerna run lint --parallel",
-    "lint:prettier": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
-    "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
-    "test": "lerna run test --stream"
   },
   "workspaces": [
     "packages/*"
