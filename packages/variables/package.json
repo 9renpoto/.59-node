@@ -4,7 +4,7 @@
   "private": true,
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc -p .",
+    "build": "yarn clean && tsc -p .",
     "clean": "rimraf lib",
     "lint": "tsc -p . --noEmit",
     "test": "jest"
