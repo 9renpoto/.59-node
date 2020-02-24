@@ -1428,7 +1428,7 @@
     "@secretlint/types" "^0.2.0"
     "@textlint/regexp-string-matcher" "^1.1.0"
 
-"@secretlint/secretlint-rule-preset-recommend@^0.2.0":
+"@secretlint/secretlint-rule-preset-recommend@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-0.2.0.tgz#a920c5a273de5c2479583446a37ac4879e22e0ca"
   integrity sha512-kpXXLWxd9JM90gXhbZ+K2PEJg8OMl6iY+tzCd4sefyTOt7gvv/ZU+bQyGX8upRoFHxLhL90P10aTFGJkhuDSug==
@@ -7853,7 +7853,7 @@ saxes@^3.1.9:
   dependencies:
     xmlchars "^2.1.1"
 
-secretlint@^0.2.0:
+secretlint@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/secretlint/-/secretlint-0.2.0.tgz#4a57cd1ca2c8dbfbb6edf4a5e3c3bef0f261c392"
   integrity sha512-neHouMFEE/puYPpfOxdjhhYMgG8uaqEfnnzGteEJP+pL+HrSBfBT93EhKsy6Gj3hrZ4NReLOQJYFJTeFiX2cjg==
