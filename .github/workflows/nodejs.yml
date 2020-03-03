@@ -22,7 +22,7 @@ jobs:
           yarn build
           yarn
           yarn lint
-          npx lerna run test -- -w 1
+          yarn test
         env:
           CI: true
       - uses: coverallsapp/github-action@master
