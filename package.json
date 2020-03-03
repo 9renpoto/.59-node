@@ -12,7 +12,7 @@
     "lint:pkg": "lerna run lint --parallel",
     "lint:ptr": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://npm.pkg.github.com/\"'",
-    "test": "lerna run test --stream"
+    "test": "jest"
   },
   "dependencies": {
     "lerna": "3.20.2",
@@ -39,6 +39,18 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverage": true,
+    "testEnvironment": "node"
   },
   "lint-staged": {
     "*": [
