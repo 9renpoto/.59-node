@@ -1,6 +1,6 @@
 name: Node CI
 
-on: [pull_request]
+on: [push]
 
 jobs:
   build:
@@ -26,5 +26,3 @@ jobs:
         env:
           CI: true
       - uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
