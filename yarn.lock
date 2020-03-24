@@ -1507,11 +1507,6 @@
     "@secretlint/types" "^1.0.0"
     istextorbinary "^3.3.0"
 
-"@secretlint/types@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-0.10.1.tgz#0e21da917d658e4966097d6920cc25ed5e0e49ef"
-  integrity sha512-RbW/zGxCCnGHel9e2Bv21ZJb7v0T3gWVuDXZyBACjjHAh4lVRhPuBCuYo7aGDUVSrNIYdEad5dBrFPh8VxnuEQ==
-
 "@secretlint/types@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-1.0.0.tgz#c253bddca26c9d325476b52791c8ecdb5ce41fb3"
@@ -5762,10 +5757,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@10.0.8:
-  version "10.0.8"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.0.8.tgz#0f7849cdc336061f25f5d4fcbcfa385701ff4739"
-  integrity sha512-Oa9eS4DJqvQMVdywXfEor6F4vP+21fPHF8LUXgBbVWUSWBddjqsvO6Bv1LwMChmgQZZqwUvgJSHlu8HFHAPZmA==
+lint-staged@10.0.9:
+  version "10.0.9"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.0.9.tgz#185aabb2432e9467c84add306c990f1c20da3cdb"
+  integrity sha512-NKJHYgRa8oI9c4Ic42ZtF2XA6Ps7lFbXwg3q0ZEP0r55Tw3YWykCW1RzW6vu+QIGqbsy7DxndvKu93Wtr5vPQw==
   dependencies:
     chalk "^3.0.0"
     commander "^4.0.1"
