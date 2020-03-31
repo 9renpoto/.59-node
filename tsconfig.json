@@ -2,9 +2,7 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
-    "composite": true,
     "importHelpers": true,
-    "incremental": true,
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
