@@ -1515,11 +1515,6 @@
     "@secretlint/types" "^1.0.3"
     istextorbinary "^3.3.0"
 
-"@secretlint/types@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-1.0.1.tgz#571361f5dd1556095958c304eafa4147fac8e9b6"
-  integrity sha512-kJYH20+NZrrfPULYO68oIH46p0Kd8kh9xZCIOd/eYUgWsYYH/VMJ0Vszcx1iJ+DKjX8ri2QWkP3NkSjzqE4tpA==
-
 "@secretlint/types@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-1.0.3.tgz#e20b086f5d4c5ef2a1e5d57327555ccf25b8208d"
