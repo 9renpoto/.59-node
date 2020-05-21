@@ -8,11 +8,11 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            - v1-deendencies-
+            - yarn-packages-{{ checksum "yarn.lock" }}
       - run: yarn install
       - save_cache:
           paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+            - ~/workspace/node_modules
+            - ~/.cache/yarn/
+          key: yarn-packages-{{ checksum "yarn.lock" }}
       - run: yarn test
