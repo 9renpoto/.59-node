@@ -38,7 +38,7 @@
     "rosie": "2.0.1",
     "secretlint": "2.0.0",
     "textlint": "11.6.3",
-    "ts-jest": "26.0.0"
+    "ts-jest": "26.1.0"
   },
   "husky": {
     "hooks": {
