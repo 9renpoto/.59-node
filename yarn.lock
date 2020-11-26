@@ -41,7 +41,7 @@
     textlint-rule-preset-ja-spacing "^2.0.1"
     textlint-rule-preset-jtf-style "^2.3.4"
 
-"@9renpoto/tsconfig@^7.3.0":
+"@9renpoto/tsconfig@7.3.0":
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/@9renpoto/tsconfig/-/tsconfig-7.3.0.tgz#bf0c67ce0e12dc02826d4a9a6ce318ed10016394"
   integrity sha512-fbq6ree2d0AP4VzOnBKEWSB3sJ+Htpboq/Fk8FTKbtKab86vi44JmTN3yqEz7rh/pJoaXEx+thXaGYdhwToN3g==
@@ -1306,7 +1306,7 @@
     load-json-file "^6.2.0"
     upath "^2.0.0"
 
-"@monorepo-utils/workspaces-to-typescript-project-references@^2.4.3":
+"@monorepo-utils/workspaces-to-typescript-project-references@2.4.3":
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/@monorepo-utils/workspaces-to-typescript-project-references/-/workspaces-to-typescript-project-references-2.4.3.tgz#5e42360720ebcb5676965c6e73277f64e23c8c3e"
   integrity sha512-JRjF/nMLM/nVdQ5yBCu9/Xgv/xJSdYhrKv1fs62DRXqPj/DF09IYls8EH2ODKYvqqL98AOmPDi1IlwqetCAErQ==
@@ -5865,7 +5865,7 @@ lazystream@^1.0.0:
   dependencies:
     readable-stream "^2.0.5"
 
-lcov-result-merger@^3.1.0:
+lcov-result-merger@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/lcov-result-merger/-/lcov-result-merger-3.1.0.tgz#ae6d1be663dbf7d586d8004642359d39de72039e"
   integrity sha512-vGXaMNGZRr4cYvW+xMVg+rg7qd5DX9SbGXl+0S3k85+gRZVK4K7UvxPWzKb/qiMwe+4bx3EOrW2o4mbdb1WnsA==
