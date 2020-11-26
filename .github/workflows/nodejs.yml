@@ -8,23 +8,36 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [14.x, 15.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2.1.2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install, build, and test
+      - name: yarn build, and list
         run: |
-          yarn install --production
+          yarn install --frozen-lockfile
+          yarn workspaces-to-typescript-project-references --check
           yarn build
-          yarn
           yarn lint
-          yarn test
         env:
           CI: true
-      - uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.github_token }}
+      - name: test
+        run: |
+          yarn test
+          mkdir -p coverage
+          yarn lcov-result-merger '{packages,apps}/*/coverage/lcov.info' 'coverage/lcov.info'
+        env:
+          CI: true
+      # - name: Codacy Coverage Reporter
+      #   uses: codacy/codacy-coverage-reporter-action@0.2.0
+      #   with:
+      #     project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+      - name: Codecov
+        uses: codecov/codecov-action@v1.0.15
+      # - name: Coveralls
+      #   uses: coverallsapp/github-action@v1.1.2
+      #   with:
+      #     github-token: ${{ secrets.github_token }}

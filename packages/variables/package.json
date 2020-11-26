@@ -4,9 +4,14 @@
   "private": true,
   "main": "lib/index.js",
   "scripts": {
-    "build": "yarn clean && tsc -p .",
+    "build": "tsc --build .",
     "clean": "rimraf lib",
-    "lint": "tsc -p . --noEmit"
+    "test": "jest"
   },
-  "typings": "lib/index.d.ts"
+  "typings": "lib/index.d.ts",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "collectCoverage": true
+  }
 }

@@ -6,22 +6,19 @@
     "build": "lerna run build --include-dependents",
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
     "clean": "lerna run clean --parallel && lerna clean",
+    "coverage": "",
     "lint": "run-p -l lint:*",
     "lint:es": "npx eslint . --ext=ts,tsx",
     "lint:md": "textlint README.md packages/**/*.md",
-    "lint:pkg": "lerna run lint --parallel",
     "lint:ptr": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://npm.pkg.github.com/\"'",
-    "test": "jest"
-  },
-  "dependencies": {
-    "lerna": "3.22.1",
-    "npm-run-all": "4.1.5",
-    "typescript": "4.0.5"
+    "test": "lerna run --parallel test"
   },
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "7.2.0",
     "@9renpoto/textlint-config-ja": "7.3.0",
+    "@9renpoto/tsconfig": "^7.3.0",
+    "@monorepo-utils/workspaces-to-typescript-project-references": "^2.4.3",
     "@secretlint/secretlint-rule-preset-recommend": "2.1.1",
     "@types/faker": "5.1.4",
     "@types/jest": "26.0.15",
@@ -31,8 +28,11 @@
     "faker": "5.1.0",
     "husky": "4.3.0",
     "jest": "26.6.3",
+    "lcov-result-merger": "^3.1.0",
+    "lerna": "3.22.1",
     "lerna-changelog": "1.0.1",
     "lint-staged": "10.5.1",
+    "npm-run-all": "4.1.5",
     "prettier": "2.1.2",
     "prettier-plugin-package": "1.3.0",
     "rosie": "2.0.1",
@@ -40,22 +40,13 @@
     "textlint": "11.7.6",
     "ts-jest": "26.4.4"
   },
+  "resolutions": {
+    "typescript": "3.9.7"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "jest": {
-    "globals": {
-      "ts-jest": {
-        "tsConfig": "tsconfig.json"
-      }
-    },
-    "transform": {
-      "^.+\\.(t|j)sx?$": "ts-jest"
-    },
-    "collectCoverage": true,
-    "testEnvironment": "node"
   },
   "lint-staged": {
     "*": [
