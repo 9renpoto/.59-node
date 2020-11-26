@@ -6,7 +6,6 @@
   "scripts": {
     "build": "tsc --build .",
     "clean": "rimraf lib",
-    "lint": "tsc -p . --noEmit",
     "test": "jest"
   },
   "typings": "lib/index.d.ts",
