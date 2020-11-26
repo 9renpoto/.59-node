@@ -27,7 +27,8 @@ jobs:
       - name: test
         run: |
           yarn test
-          yarn coverage
+          mkdir -p coverage
+          yarn lcov-result-merger '{packages,apps}/*/coverage/lcov.info' 'coverage/lcov.info'
         env:
           CI: true
       - name: Codacy Coverage Reporter
