@@ -37,7 +37,20 @@ jobs:
       #     project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
       - name: Codecov
         uses: codecov/codecov-action@v1.0.15
+
       - name: Coveralls
         uses: coverallsapp/github-action@v1.1.2
         with:
           github-token: ${{ secrets.github_token }}
+          flag-name: variables
+          base-path: packages/variables
+          parallel: true
+finish:
+  needs: test
+  runs-on: ubuntu-latest
+  steps:
+    - name: Coveralls Finished
+      uses: coverallsapp/github-action@v1.1.2
+      with:
+        github-token: ${{ secrets.github_token }}
+        parallel-finished: true
