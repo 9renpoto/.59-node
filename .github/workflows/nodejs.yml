@@ -36,6 +36,7 @@ jobs:
         uses: codacy/codacy-coverage-reporter-action@0.2.0
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: "packages/variables/coverage/lcov.invo"
 
       - name: Codecov
         uses: codecov/codecov-action@v1.0.15
