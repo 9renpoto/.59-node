@@ -19,9 +19,11 @@ jobs:
       - name: npm install, build, and test
         run: |
           yarn install --frozen-lockfile
+          yarn workspaces-to-typescript-project-references --check
           yarn build
           yarn lint
           yarn test
+          npx lcov-result-merger '{packages,apps}/*/coverage/lcov.info'
         env:
           CI: true
       - uses: coverallsapp/github-action@v1.1.2
