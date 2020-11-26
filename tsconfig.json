@@ -1,3 +1,8 @@
 {
-  "extends": "@9renpoto/tsconfig"
+  "extends": "@9renpoto/tsconfig",
+  "compilerOptions": {
+    "composite": true,
+    "incremental": true,
+    "moduleResolution": "node"
+  }
 }
