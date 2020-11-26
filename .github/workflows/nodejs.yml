@@ -11,20 +11,19 @@ jobs:
         node-version: [10.x, 12.x, 14.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2.1.2
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install, build, and test
         run: |
-          yarn install --production
+          yarn install --frozen-lockfile
           yarn build
-          yarn
           yarn lint
           yarn test
         env:
           CI: true
-      - uses: coverallsapp/github-action@master
+      - uses: coverallsapp/github-action@v1.1.2
         with:
           github-token: ${{ secrets.github_token }}
