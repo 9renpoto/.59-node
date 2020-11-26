@@ -46,7 +46,7 @@ jobs:
           base-path: packages/variables
           parallel: true
   finish:
-    needs: test
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Coveralls Finished
