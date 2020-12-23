@@ -16,19 +16,19 @@ jobs:
         uses: actions/setup-node@v2.1.4
         with:
           node-version: ${{ matrix.node-version }}
-      - name: yarn build, and list
+      - name: build and lint
         run: |
-          yarn install --frozen-lockfile
-          yarn workspaces-to-typescript-project-references --check
-          yarn build
-          yarn lint
+          npm ci
+          npm run workspaces-to-typescript-project-references --check
+          npm run build
+          npm run lint
         env:
           CI: true
       - name: test
         run: |
-          yarn test
+          npm test
           mkdir -p coverage
-          yarn lcov-result-merger '{packages,apps}/*/coverage/lcov.info' 'coverage/lcov.info'
+          npx lcov-result-merger '{packages,apps}/*/coverage/lcov.info' 'coverage/lcov.info'
         env:
           CI: true
 
