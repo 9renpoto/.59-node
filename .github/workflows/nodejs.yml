@@ -19,7 +19,7 @@ jobs:
       - name: build and lint
         run: |
           npm ci
-          npm run workspaces-to-typescript-project-references --check
+          npx workspaces-to-typescript-project-references --check
           npm run build
           npm run lint
         env:
