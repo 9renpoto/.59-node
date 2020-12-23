@@ -1,7 +1,5 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "changelog": {
     "labels": {
       "enhancement": ":rocket: Enhancement",
@@ -13,7 +11,7 @@
     },
     "cacheDir": ".changelog"
   },
-  "npmClient": "yarn",
+  "npmClient": "npm",
   "useWorkspaces": true,
   "version": "0.0.1"
 }
