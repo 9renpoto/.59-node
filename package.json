@@ -39,7 +39,7 @@
     "secretlint": "2.1.1",
     "textlint": "11.7.7",
     "ts-jest": "26.4.4",
-    "typescript": "^3.9.7"
+    "typescript": "3.9.7"
   },
   "husky": {
     "hooks": {
