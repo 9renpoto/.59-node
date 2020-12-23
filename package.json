@@ -40,8 +40,8 @@
     "textlint": "11.7.6",
     "ts-jest": "26.4.4"
   },
-  "resolutions": {
-    "typescript": "4.1.3"
+  "acceptDependencies": {
+    "typescript": "^4.1.3"
   },
   "husky": {
     "hooks": {
