@@ -39,7 +39,7 @@ jobs:
           coverage-reports: "packages/variables/coverage/lcov.info"
 
       - name: Codecov
-        uses: codecov/codecov-action@v1.1.1
+        uses: codecov/codecov-action@v1.2.1
 
       - name: Coveralls
         uses: coverallsapp/github-action@v1.1.2
