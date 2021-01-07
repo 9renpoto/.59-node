@@ -1,4 +1,4 @@
-export default function SSG({ framework }) {
+export default function SSG({ framework }: { framework: string }) {
   return <div>{framework} ssg example</div>;
 }
 

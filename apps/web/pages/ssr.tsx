@@ -1,4 +1,4 @@
-export default function SSR({ framework }) {
+export default function SSR({ framework }: { framework: string }) {
   return <div>{framework} ssr example</div>;
 }
 
