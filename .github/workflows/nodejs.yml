@@ -18,10 +18,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: build and lint
         run: |
-          npm ci
-          npx workspaces-to-typescript-project-references --check
-          npm run build
-          npm run lint
+          yarn install --frozen-lockfile
+          yarn workspaces-to-typescript-project-references --check
+          yarn build
+          yarn lint
         env:
           CI: true
       - name: test
