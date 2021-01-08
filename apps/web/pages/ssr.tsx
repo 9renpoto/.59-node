@@ -1,9 +1,15 @@
-export default function SSR({ framework }: { framework: string }) {
-  return <div>{framework} ssr example</div>;
+import type { GetServerSideProps, NextPage } from "next";
+
+interface Props {
+  framework: string;
 }
 
-export function getServerSideProps() {
-  return {
-    props: { framework: "preact" },
-  };
-}
+const SSR: NextPage<Props> = ({ framework }) => (
+  <div>{framework} ssr example</div>
+);
+
+export default SSR;
+
+export const getServerSideProps: GetServerSideProps<Props> = async () => ({
+  props: { framework: "preact" },
+});
