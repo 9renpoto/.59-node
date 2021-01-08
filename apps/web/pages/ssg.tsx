@@ -1,9 +1,15 @@
-export default function SSG({ framework }: { framework: string }) {
-  return <div>{framework} ssg example</div>;
+import type { GetStaticProps, NextPage } from "next";
+
+interface Props {
+  framework: string;
 }
 
-export function getStaticProps() {
-  return {
-    props: { framework: "preact" },
-  };
-}
+const SSG: NextPage<Props> = ({ framework }) => (
+  <div>{framework} ssg example</div>
+);
+
+export default SSG;
+
+export const getStaticProps: GetStaticProps<Props> = async () => ({
+  props: { framework: "preact" },
+});
