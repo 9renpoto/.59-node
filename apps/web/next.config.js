@@ -1,5 +1,13 @@
 const withPreact = require("next-plugin-preact");
 
 module.exports = withPreact({
-  /* regular next.js config options here */
+  redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/en",
+        permanent: true,
+      },
+    ];
+  },
 });
