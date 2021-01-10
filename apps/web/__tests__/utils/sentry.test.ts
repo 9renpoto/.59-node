@@ -1,5 +1,5 @@
-import { init } from '../../utils/sentry'
+import { init } from "../../utils/sentry";
 
-describe('sentry', () => {
-    it('init', () => expect(init()).toBeUndefined())
-})
+describe("sentry", () => {
+  it("init", () => expect(init()).toBeUndefined());
+});
