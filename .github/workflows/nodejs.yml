@@ -1,6 +1,6 @@
 name: Node CI
 
-on: [push]
+on: [pull_request]
 
 jobs:
   build:
@@ -20,14 +20,16 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           yarn workspaces-to-typescript-project-references --check
-          yarn build
-          yarn lint
         env:
           CI: true
-      - name: test
-        run: npm test
-        env:
-          CI: true
+      - name: compressed-size-action
+        uses: preactjs/compressed-size-action@v2.0.1
+        with:
+          repo-token: "${{ secrets.github_token }}"
+          pattern: "./apps/web/.next/**/*.{js,css,html,json}"
+          exclude: "{**/*.map,**/node_modules/**}"
+      - run: yarn lint
+      - run: npx lerna run --stream test -- --ci
 
       - name: variables
         uses: coverallsapp/github-action@v1.1.2
