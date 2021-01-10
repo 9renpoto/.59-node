@@ -17,6 +17,7 @@
     "@sentry/webpack-plugin": "^1.14.0",
     "next": "^10.0.0",
     "next-plugin-preact": "^3.0.3",
+    "next-pwa": "^5.0.2",
     "preact": "^10.5.5",
     "preact-render-to-string": "^5.1.11",
     "react": "npm:@preact/compat@^0.0.3",
