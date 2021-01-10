@@ -20,8 +20,6 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           yarn workspaces-to-typescript-project-references --check
-          yarn build
-          yarn lint
         env:
           CI: true
       - name: compressed-size-action
@@ -30,10 +28,8 @@ jobs:
           repo-token: "${{ secrets.github_token }}"
           pattern: "./apps/web/.next/**/*.{js,css,html,json}"
           exclude: "{**/*.map,**/node_modules/**}"
-      - name: test
-        run: npm test
-        env:
-          CI: true
+      - run: yarn lint
+      - run: npx lerna run --stream test -- --ci
 
       - name: variables
         uses: coverallsapp/github-action@v1.1.2
