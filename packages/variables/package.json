@@ -11,6 +11,15 @@
   "typings": "lib/index.d.ts",
   "jest": {
     "preset": "ts-jest",
+    "coverageReporters": [
+      "json",
+      [
+        "lcov",
+        {
+          "projectRoot": "../../"
+        }
+      ]
+    ],
     "testEnvironment": "node",
     "collectCoverage": true
   }
