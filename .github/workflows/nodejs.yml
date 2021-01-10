@@ -35,7 +35,7 @@ jobs:
           github-token: ${{ secrets.github_token }}
           flag-name: web
           base-path: apps/web
-          path-to-lcov: apps/web/coverage
+          path-to-lcov: apps/web/coverage/lcov.info
           parallel: true
 
       - name: Coveralls
@@ -44,7 +44,7 @@ jobs:
           github-token: ${{ secrets.github_token }}
           flag-name: variables
           base-path: packages/variables
-          path-to-lcov: packages/variables/coverage
+          path-to-lcov: packages/variables/coverage/lcov.info
           parallel: true
   finish:
     needs: build
