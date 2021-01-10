@@ -25,21 +25,9 @@ jobs:
         env:
           CI: true
       - name: test
-        run: |
-          npm test
-          mkdir -p coverage
-          npx lcov-result-merger '{packages,apps}/*/coverage/lcov.info' 'coverage/lcov.info'
+        run: npm test
         env:
           CI: true
-
-      - name: Codacy Coverage Reporter
-        uses: codacy/codacy-coverage-reporter-action@0.2.1
-        with:
-          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          coverage-reports: "coverage/lcov.info"
-
-      - name: Codecov
-        uses: codecov/codecov-action@v1.2.1
 
       - name: variables
         uses: coverallsapp/github-action@v1.1.2
@@ -47,6 +35,7 @@ jobs:
           github-token: ${{ secrets.github_token }}
           flag-name: web
           base-path: apps/web
+          path-to-lcov: apps/web/coverage/lcov.info
           parallel: true
 
       - name: Coveralls
@@ -55,6 +44,7 @@ jobs:
           github-token: ${{ secrets.github_token }}
           flag-name: variables
           base-path: packages/variables
+          path-to-lcov: packages/variables/coverage/lcov.info
           parallel: true
   finish:
     needs: build
