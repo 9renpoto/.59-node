@@ -1,6 +1,6 @@
-name: Node CI
+name: compressed-size
 
-on: [push]
+on: [pull_request]
 
 jobs:
   build:
