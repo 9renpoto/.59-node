@@ -11,6 +11,7 @@ const {
   VERCEL_GITHUB_COMMIT_SHA,
   VERCEL_GITLAB_COMMIT_SHA,
   VERCEL_BITBUCKET_COMMIT_SHA,
+  GA_TRACKING_ID,
 } = process.env;
 
 const COMMIT_SHA =
@@ -32,6 +33,7 @@ const config = {
     // marked for the release they belong to. It may be undefined if running
     // outside of Vercel
     NEXT_PUBLIC_COMMIT_SHA: COMMIT_SHA,
+    GA_TRACKING_ID,
   },
   webpack: (config, options) => {
     // In `pages/_app.js`, Sentry is imported from @sentry/browser. While
