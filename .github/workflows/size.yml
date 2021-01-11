@@ -1,0 +1,50 @@
+name: Node CI
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 15.x]
+
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn install --frozen-lockfile
+      - run: yarn workspaces-to-typescript-project-references --check
+      - run: yarn build
+      - run: yarn lint
+      - run: npx lerna run --stream test -- --ci
+
+      - name: variables
+        uses: coverallsapp/github-action@v1.1.2
+        with:
+          github-token: ${{ secrets.github_token }}
+          flag-name: web
+          base-path: apps/web
+          path-to-lcov: apps/web/coverage/lcov.info
+          parallel: true
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@v1.1.2
+        with:
+          github-token: ${{ secrets.github_token }}
+          flag-name: variables
+          base-path: packages/variables
+          path-to-lcov: packages/variables/coverage/lcov.info
+          parallel: true
+  finish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Coveralls Finished
+        uses: coverallsapp/github-action@v1.1.2
+        with:
+          github-token: ${{ secrets.github_token }}
+          parallel-finished: true
