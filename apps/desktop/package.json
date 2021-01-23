@@ -1,0 +1,8 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "tauri": "^0.14.0"
+  }
+}
