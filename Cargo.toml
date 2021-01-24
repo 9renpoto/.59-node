@@ -2,3 +2,5 @@
 members = [
   "./apps/desktop/src-tauri"
 ]
+
+exclude = []
