@@ -14,7 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: sudo apt install libdbus-1-dev
+      - name: Get required packages
+        run: sudo apt-get update && sudo apt-get install libdbus-1-dev
       - uses: actions-rs/toolchain@v1.0.6
         with:
           toolchain: nightly
