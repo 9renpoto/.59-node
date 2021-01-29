@@ -1,5 +1,5 @@
 {
-  "name": "variables",
+  "name": "@app/ui",
   "version": "0.0.1",
   "private": true,
   "main": "lib/index.js",
@@ -13,5 +13,8 @@
     "preset": "ts-jest",
     "testEnvironment": "node",
     "collectCoverage": true
+  },
+  "devDependencies": {
+    "@storybook/react": "^6.0.28"
   }
 }
