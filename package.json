@@ -10,6 +10,7 @@
     "lint:es": "npx eslint . --ext=ts,tsx",
     "lint:md": "textlint README.md packages/**/*.md",
     "lint:ptr": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
+    "build-storybook": "yarn workspace @app/ui build-storybook",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://npm.pkg.github.com/\"'",
     "test": "lerna run --parallel test"
   },
