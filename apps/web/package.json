@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@app/web",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@app/ui": "^0.0.1",
     "@prefresh/next": "^1.3.0",
     "@sentry/browser": "^6.0.0",
     "@sentry/integrations": "^6.0.0",
