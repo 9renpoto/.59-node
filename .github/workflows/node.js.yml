@@ -39,9 +39,9 @@ jobs:
         uses: coverallsapp/github-action@v1.1.2
         with:
           github-token: ${{ secrets.github_token }}
-          flag-name: variables
-          base-path: packages/variables
-          path-to-lcov: packages/variables/coverage/lcov.info
+          flag-name: ui
+          base-path: packages/ui
+          path-to-lcov: packages/ui/coverage/lcov.info
           parallel: true
   finish:
     needs: build
