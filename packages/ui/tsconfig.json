@@ -2,10 +2,8 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": "./src",
-    "outDir": "./lib",
-    "jsxFactory": "React.createElement",
-    "jsx": "react"
+    "outDir": "./lib"
   },
-  "exclude": ["**/*.test.ts"],
+  "exclude": ["**/*.test.ts", "*.stories.tsx"],
   "references": []
 }
