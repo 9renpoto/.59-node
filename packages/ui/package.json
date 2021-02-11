@@ -15,6 +15,6 @@
     "collectCoverage": true
   },
   "devDependencies": {
-    "@storybook/react": "6.1.15"
+    "@storybook/react": "6.1.17"
   }
 }
