@@ -45,7 +45,7 @@
     "secretlint": "2.1.1",
     "stylelint": "13.9.0",
     "textlint": "11.8.2",
-    "ts-jest": "26.5.0",
+    "ts-jest": "26.5.1",
     "typescript": "3.9.7"
   },
   "husky": {
