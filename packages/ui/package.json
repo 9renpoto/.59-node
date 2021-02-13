@@ -4,8 +4,7 @@
   "private": true,
   "main": "lib/index.js",
   "scripts": {
-    "prebuild":"rimraf lib",
-    "build": "tsc --build .",
+    "build": "npm run clean && tsc --build .",
     "clean": "rimraf lib",
     "test": "jest"
   },

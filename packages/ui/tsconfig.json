@@ -4,7 +4,6 @@
     "rootDir": "./src",
     "outDir": "./lib"
   },
-  "include": ["src"],
   "exclude": ["**/*.test.ts", "*.stories.tsx"],
   "references": []
 }
