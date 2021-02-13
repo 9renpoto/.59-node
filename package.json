@@ -7,7 +7,7 @@
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
     "clean": "lerna run clean --parallel && lerna clean",
     "lint": "run-p -l lint:*",
-    "lint:es": "npx eslint . --ext=ts,tsx",
+    "lint:es": "eslint . --ext=ts,tsx",
     "lint:md": "textlint README.md packages/**/*.md",
     "lint:ptr": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
     "build-storybook": "yarn workspace @app/ui build-storybook",
