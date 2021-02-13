@@ -2,8 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": "./src",
-    "outDir": "./lib",
-    "allowJs": false
+    "outDir": "./lib"
   },
   "include": ["src"],
   "exclude": ["**/*.test.ts", "*.stories.tsx"],
