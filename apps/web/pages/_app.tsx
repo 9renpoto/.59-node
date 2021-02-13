@@ -1,3 +1,4 @@
+import * as Sentry from "@sentry/react";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -18,4 +19,4 @@ const App = ({ Component, pageProps }: AppProps) => {
   return <Component {...pageProps} />;
 };
 
-export default App;
+export default Sentry.withProfiler(App);
