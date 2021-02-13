@@ -46,7 +46,7 @@
     "stylelint": "13.10.0",
     "textlint": "11.8.2",
     "ts-jest": "26.5.1",
-    "typescript": "3.9.7"
+    "typescript": "3.9.9"
   },
   "husky": {
     "hooks": {
