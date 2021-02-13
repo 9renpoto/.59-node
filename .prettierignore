@@ -1,2 +1,4 @@
-lib/
+.next/
+apps/web/public/
 coverage/
+lib/

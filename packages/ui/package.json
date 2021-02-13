@@ -8,13 +8,13 @@
     "clean": "rimraf lib",
     "test": "jest"
   },
+  "devDependencies": {
+    "@storybook/react": "6.1.17"
+  },
   "typings": "lib/index.d.ts",
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
     "collectCoverage": true
-  },
-  "devDependencies": {
-    "@storybook/react": "6.1.17"
   }
 }
