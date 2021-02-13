@@ -4,7 +4,7 @@
   "private": true,
   "main": "lib/index.js",
   "scripts": {
-    "build": "npm run clean && tsc --build .",
+    "build": "tsc --build .",
     "clean": "rimraf lib",
     "test": "jest"
   },
