@@ -18,10 +18,10 @@
     eslint-config-prettier "^8.1.0"
     eslint-plugin-prettier "^3.1.4"
 
-"@9renpoto/stylelint-config@7.3.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/stylelint-config/-/stylelint-config-7.3.0.tgz#4810f962bdd772f57b83ca3366a486103342600c"
-  integrity sha512-/3Yh015vc5//vSBzv0O7XFByIISxb2wOgWli8dwGAXgLJUd8hX6wQZbqRdHhpU1XSdCStL51/QxGUcEIwhrHJA==
+"@9renpoto/stylelint-config@7.4.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/stylelint-config/-/stylelint-config-7.4.0.tgz#6949cb389e89a7b4cbaf0e02fd9fbe8fac8f459b"
+  integrity sha512-f+Se/kSPKoH2Q49F+0Bmws6Rxebc8pCOg4Ni7R44Le1wkAxaI4P5JyND3sB0EmtVCLH7lyxEBdYe5u4NbQx7NQ==
   dependencies:
     stylelint-config-prettier "^8.0.1"
     stylelint-config-recess-order "^2.1.0"
