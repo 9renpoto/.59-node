@@ -15,7 +15,7 @@
     "test": "lerna run --parallel test"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config-typescript": "7.3.0",
+    "@9renpoto/eslint-config-typescript": "7.4.0",
     "@9renpoto/stylelint-config": "7.3.0",
     "@9renpoto/textlint-config-ja": "7.3.0",
     "@9renpoto/tsconfig": "7.3.0",
