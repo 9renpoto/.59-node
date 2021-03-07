@@ -49,10 +49,10 @@
     textlint-rule-preset-ja-spacing "^2.0.1"
     textlint-rule-preset-jtf-style "^2.3.4"
 
-"@9renpoto/tsconfig@7.3.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/tsconfig/-/tsconfig-7.3.0.tgz#bf0c67ce0e12dc02826d4a9a6ce318ed10016394"
-  integrity sha512-fbq6ree2d0AP4VzOnBKEWSB3sJ+Htpboq/Fk8FTKbtKab86vi44JmTN3yqEz7rh/pJoaXEx+thXaGYdhwToN3g==
+"@9renpoto/tsconfig@7.4.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/tsconfig/-/tsconfig-7.4.0.tgz#a63d3c213c9d49200dce471c0d58c84289d99834"
+  integrity sha512-pliCcovXzAmAA+N9QpPncbIzR+pBfxHlRSlMUfeJT2GbBRcp/2uetmvFkSszqIDQpqpJbfhMHe8hIzmtvFOCcg==
 
 "@azu/format-text@^1.0.1":
   version "1.0.1"
