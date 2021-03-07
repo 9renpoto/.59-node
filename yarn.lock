@@ -26,10 +26,10 @@
     stylelint-config-prettier "^8.0.1"
     stylelint-config-recess-order "^2.1.0"
 
-"@9renpoto/textlint-config-ja@7.3.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/textlint-config-ja/-/textlint-config-ja-7.3.0.tgz#edd619e1db7a7e87d01937823be83a6ff60785fd"
-  integrity sha512-8ZTxxowGGy/kunV9SBegsPMlHztkSuiqWoW6aCiPo04CEMUVCFyb3P7IISfiDRIfYmwAMCRs6sNgSkEYz1vLHw==
+"@9renpoto/textlint-config-ja@7.4.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/textlint-config-ja/-/textlint-config-ja-7.4.0.tgz#ffd0cce78746821d5722e2aea9aadc2579d4c624"
+  integrity sha512-A6i31MGQTsXHbFIdL3gE4Dv4ZrQx/s3CiDa70v7c07MbGOD2TcUiam+4zvV3BmckJrjnmYLg+p7BRh8SWNCwbw==
   dependencies:
     textlint-filter-rule-comments "^1.2.2"
     textlint-rule-incremental-headers "^0.2.0"
