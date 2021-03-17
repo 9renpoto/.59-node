@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@app/ui": "^0.0.1",
-    "@prefresh/next": "1.4.5",
+    "@prefresh/next": "1.4.6",
     "@sentry/browser": "6.2.2",
     "@sentry/integrations": "6.2.2",
     "@sentry/node": "6.2.2",
