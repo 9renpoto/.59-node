@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@storybook/react": "6.2.6"
+    "@storybook/react": "6.2.7"
   },
   "typings": "lib/index.d.ts",
   "jest": {
