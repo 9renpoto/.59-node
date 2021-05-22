@@ -18,15 +18,6 @@
       "^.+\\.stories\\.tsx?$": "@storybook/addon-storyshots/injectFileName",
       "^.+\\.tsx?$": "babel-jest"
     },
-    "coverageReporters": [
-      [
-        "lcov",
-        {
-          "projectRoot": "../../"
-        }
-      ],
-      "text-summary"
-    ],
     "collectCoverageFrom": [
       "src/**/*.{ts,tsx}",
       "!src/**/*.stories.tsx",
