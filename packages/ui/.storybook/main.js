@@ -1,5 +1,7 @@
+const path = require("path");
+
 module.exports = {
-  stories: ["../src/**/*.stories.tsx"],
+  stories: [path.join(process.cwd(), "./src/**/*.stories.@(ts|tsx)")],
   // https://github.com/storybookjs/storybook/issues/11146#issuecomment-645341199
   typescript: {
     reactDocgenTypescriptOptions: {

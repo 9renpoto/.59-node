@@ -9,12 +9,30 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@storybook/addon-storyshots": "^6.2.9",
     "@storybook/react": "6.2.9"
   },
   "typings": "lib/index.d.ts",
   "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.stories\\.tsx?$": "@storybook/addon-storyshots/injectFileName",
+      "^.+\\.tsx?$": "babel-jest"
+    },
+    "coverageReporters": [
+      [
+        "lcov",
+        {
+          "projectRoot": "../../"
+        }
+      ],
+      "text-summary"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/**/*.stories.tsx",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
     "collectCoverage": true
   }
 }
