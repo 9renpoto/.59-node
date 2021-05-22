@@ -23,9 +23,6 @@ process.env.SENTRY_DSN = SENTRY_DSN;
 const basePath = "";
 
 const config = {
-  future: {
-    webpack5: true,
-  },
   pwa: {
     dest: "public",
     runtimeCaching,
