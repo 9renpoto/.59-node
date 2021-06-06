@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "7.5.0",
-    "@9renpoto/stylelint-config": "7.4.0",
+    "@9renpoto/stylelint-config": "7.5.0",
     "@9renpoto/textlint-config-ja": "7.4.0",
     "@9renpoto/tsconfig": "7.4.0",
     "@commitlint/cli": "12.1.4",
