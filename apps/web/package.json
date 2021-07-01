@@ -20,7 +20,7 @@
     "next": "10.2.3",
     "next-plugin-preact": "3.0.6",
     "next-pwa": "5.2.21",
-    "preact": "10.5.13",
+    "preact": "10.5.14",
     "preact-render-to-string": "5.1.19",
     "react": "npm:@preact/compat@0.0.4",
     "react-dom": "npm:@preact/compat@0.0.4",
