@@ -26,7 +26,7 @@
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/preact": "2.0.1",
     "@types/faker": "5.5.7",
-    "@types/jest": "26.0.23",
+    "@types/jest": "26.0.24",
     "@types/rosie": "0.0.39",
     "can-npm-publish": "1.3.5",
     "eslint": "7.30.0",
