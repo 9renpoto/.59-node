@@ -21,7 +21,7 @@
     "@9renpoto/tsconfig": "7.5.0",
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
-    "@monorepo-utils/workspaces-to-typescript-project-references": "2.6.1",
+    "@monorepo-utils/workspaces-to-typescript-project-references": "2.6.2",
     "@secretlint/secretlint-rule-preset-recommend": "3.3.0",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/preact": "2.0.1",
