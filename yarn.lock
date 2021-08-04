@@ -13829,7 +13829,7 @@ react-docgen@^5.0.0:
     node-dir "^0.1.10"
     strip-indent "^3.0.0"
 
-"react-dom@npm:@preact/compat@0.0.4", "react@npm:@preact/compat@0.0.4":
+"react-dom@npm:@preact/compat@0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@preact/compat/-/compat-0.0.4.tgz#f329e41caa330199eaf779c9bc9cf9556e3984a0"
   integrity sha512-NdazvKTisqbua54srMCVGuPwae53SM3u85yxrTymT+eJnScJOIAybDEzyOcAOpJsvo6vnGOiSyxmID7rlGw3nw==
@@ -13952,6 +13952,11 @@ react-textarea-autosize@^8.3.0:
     "@babel/runtime" "^7.10.2"
     use-composed-ref "^1.0.0"
     use-latest "^1.0.0"
+
+"react@npm:@preact/compat@17.0.2":
+  version "17.0.2"
+  resolved "https://registry.yarnpkg.com/@preact/compat/-/compat-17.0.2.tgz#c1b97a4d0add60fc07898a250448fa585479a920"
+  integrity sha512-svzrLCGU++qft7dPmP2hQuSfih73jge2ohoWCT+UQs7i9757p12xMTe3yefylW5t6zMkQEtQ6urPnGT3jh2VCg==
 
 read-cmd-shim@^2.0.0:
   version "2.0.0"
