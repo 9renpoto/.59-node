@@ -19,7 +19,7 @@
     "@sentry/webpack-plugin": "1.17.1",
     "next": "11.1.0",
     "next-plugin-preact": "3.0.6",
-    "next-pwa": "5.2.24",
+    "next-pwa": "5.3.0",
     "preact": "10.5.14",
     "preact-render-to-string": "5.1.19",
     "react": "npm:@preact/compat@17.0.2",
