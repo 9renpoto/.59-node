@@ -2898,7 +2898,17 @@
   resolved "https://registry.yarnpkg.com/@prefresh/core/-/core-1.3.2.tgz#97f966759b16e5f4c52361972e3c61ccac9ce396"
   integrity sha512-Iv+uI698KDgWsrKpLvOgN3hmAMyvhVgn09mcnhZ98BUNdg/qrxE7tcUf5yFCImkgqED5/Dcn8G5hFy4IikEDvg==
 
-"@prefresh/next@1.4.6", "@prefresh/next@^1.4.6":
+"@prefresh/next@1.4.7":
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/@prefresh/next/-/next-1.4.7.tgz#00f07f9291fac1906ea1ab306457a991e0f34ec7"
+  integrity sha512-Dz0ssNDk6suG4Sag31uG6sMCFckipf6WZjQ+Wd4uTaNlcmzGQZpIOfbqyYrK6hP3kuG2lSQ0DgtGFj32Ze4dHw==
+  dependencies:
+    "@prefresh/babel-plugin" "0.4.1"
+    "@prefresh/core" "^1.3.1"
+    "@prefresh/utils" "^1.0.0"
+    "@prefresh/webpack" "^3.2.0"
+
+"@prefresh/next@^1.4.6":
   version "1.4.6"
   resolved "https://registry.yarnpkg.com/@prefresh/next/-/next-1.4.6.tgz#1ec73696ba6fd39aaac8db506c506fcd29aa5f31"
   integrity sha512-MyE+3pTrpv1yw/wkEkdCt/5GklCnRkbeKneSyt8tEn3L9YaRm9K88slgZ5b3fp9qnWaSaFk3gmfM8YoIGkkefQ==
