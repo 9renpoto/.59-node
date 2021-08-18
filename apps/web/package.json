@@ -29,6 +29,6 @@
   "devDependencies": {
     "@types/gtag.js": "0.0.7",
     "babel-jest": "27.0.6",
-    "ts-node": "10.2.0"
+    "ts-node": "10.2.1"
   }
 }
