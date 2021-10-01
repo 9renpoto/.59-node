@@ -9,8 +9,8 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@storybook/addon-storyshots": "6.3.8",
-    "@storybook/react": "6.3.8"
+    "@storybook/addon-storyshots": "6.3.9",
+    "@storybook/react": "6.3.9"
   },
   "typings": "lib/index.d.ts",
   "jest": {
