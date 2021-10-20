@@ -2774,21 +2774,21 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.22.tgz#219dfd89ae5b97a8801f015323ffa4b62f45718b"
   integrity sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==
 
-"@monorepo-utils/package-utils@^2.4.4":
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/@monorepo-utils/package-utils/-/package-utils-2.4.4.tgz#bffae7fc234d4bbef32f1622518f04b84dff2265"
-  integrity sha512-suU7Dhx6713O+K5MHliGWVFzjjNscAbHac+rgqsbHpxISrMBdFFwlTmX5Wj1e+2ttn8zdoreloE9VYA0Z6nT7w==
+"@monorepo-utils/package-utils@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@monorepo-utils/package-utils/-/package-utils-2.7.0.tgz#f4723beba177e5a278dd46791a5ab43b37e1ce20"
+  integrity sha512-MvcsDLNdBsb5/zkDJk64o6wr/GTdv5UnF8R36h/xE4v81vwe6binMa5Rs0YI6Pof+Hu9TzGsd39jXzcEvnKytw==
   dependencies:
     globby "^11.0.1"
     load-json-file "^6.2.0"
     upath "^2.0.1"
 
-"@monorepo-utils/workspaces-to-typescript-project-references@2.6.3":
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/@monorepo-utils/workspaces-to-typescript-project-references/-/workspaces-to-typescript-project-references-2.6.3.tgz#15a675ffc4b45c0441657b906a8e958dce844e09"
-  integrity sha512-85XpNPQ6vHXg96vz+dscC2jS+H0mFWTczXQJpXnsNef7vDuC/uq2ZeIvJ6JhuC90mLbACzw1ETREEnzY0pXTuA==
+"@monorepo-utils/workspaces-to-typescript-project-references@2.7.2":
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/@monorepo-utils/workspaces-to-typescript-project-references/-/workspaces-to-typescript-project-references-2.7.2.tgz#dc4fb216da9449e261b15426971af87d48aa5f83"
+  integrity sha512-qczLb8nxqoPWkkfxAUCe66Jebcmdo+LrAhY5aAGL6aXt7yJQOlMbssZqOoQ+JVR+mPPemqCkFxSFMCOoKINHfw==
   dependencies:
-    "@monorepo-utils/package-utils" "^2.4.4"
+    "@monorepo-utils/package-utils" "^2.7.0"
     comment-json "^3.0.3"
     meow "^7.1.1"
     semver-match "0.1.1"
