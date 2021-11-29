@@ -2783,10 +2783,10 @@
     load-json-file "^6.2.0"
     upath "^2.0.1"
 
-"@monorepo-utils/workspaces-to-typescript-project-references@2.7.2":
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/@monorepo-utils/workspaces-to-typescript-project-references/-/workspaces-to-typescript-project-references-2.7.2.tgz#dc4fb216da9449e261b15426971af87d48aa5f83"
-  integrity sha512-qczLb8nxqoPWkkfxAUCe66Jebcmdo+LrAhY5aAGL6aXt7yJQOlMbssZqOoQ+JVR+mPPemqCkFxSFMCOoKINHfw==
+"@monorepo-utils/workspaces-to-typescript-project-references@2.7.4":
+  version "2.7.4"
+  resolved "https://registry.yarnpkg.com/@monorepo-utils/workspaces-to-typescript-project-references/-/workspaces-to-typescript-project-references-2.7.4.tgz#ea381ba604bd7f022e4fff05407c28a7ab475e27"
+  integrity sha512-498gbT/G5xRMqj52SJXhddZo/JjT3kY8X62g06AC7BxbP/0A+gCmA8BHXLbAwTC78TkHunGZxsOFPTAMQ7C2AA==
   dependencies:
     "@monorepo-utils/package-utils" "^2.7.0"
     comment-json "^3.0.3"
