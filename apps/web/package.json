@@ -14,7 +14,7 @@
     "@prefresh/next": "1.5.0",
     "@sentry/browser": "6.15.0",
     "@sentry/integrations": "6.15.0",
-    "@sentry/node": "6.15.0",
+    "@sentry/node": "6.16.0",
     "@sentry/react": "6.15.0",
     "@sentry/webpack-plugin": "1.18.3",
     "next": "11.1.2",
