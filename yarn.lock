@@ -3262,14 +3262,14 @@
     lint-staged "^11.0.0"
     prettier "^2.3.1"
 
-"@secretlint/secretlint-rule-gcp@^4.1.3":
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-gcp/-/secretlint-rule-gcp-4.1.3.tgz#7301534f4781f47698cd20171e39d15b932f4e36"
-  integrity sha512-OD2YY+cUwJ28xrhIJ0lazbU8h7qrnztBK6DSVs4FNf+fT/+IloyX5mVrT7058jQbTOupyGYeeqi742haRCuRSw==
+"@secretlint/secretlint-rule-gcp@^4.1.4":
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-gcp/-/secretlint-rule-gcp-4.1.4.tgz#8456e7f224ac9ef23d9185fc1191be543bd5b075"
+  integrity sha512-uwXDDIAhZ5ba7gI178wiHAtAmddbasvq2LliaAUzXtxhWHZFAI06V6qucL/Ytz4SD0lW5LV4iDYJqTI7D6M62g==
   dependencies:
     "@secretlint/types" "^4.1.3"
     "@textlint/regexp-string-matcher" "^1.1.0"
-    node-forge "^0.10.0"
+    node-forge "^1.2.1"
 
 "@secretlint/secretlint-rule-github@^4.1.3":
   version "4.1.3"
@@ -3287,15 +3287,15 @@
     "@secretlint/types" "^4.1.3"
     "@textlint/regexp-string-matcher" "^1.1.0"
 
-"@secretlint/secretlint-rule-preset-recommend@4.1.3":
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-4.1.3.tgz#89973230e471cff281d2071161876a999d1c6827"
-  integrity sha512-eIqvETdPJUgQRmTO0gRv12rzRtlG11wGUXnJJx8t/fzwoTPgJ0ClLNl87Nmn72TUUoyvmLcAmBB2yrSPfpm53g==
+"@secretlint/secretlint-rule-preset-recommend@4.1.4":
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-4.1.4.tgz#4cbf52e6504ebd09f091665e13c5615a426716fe"
+  integrity sha512-Dr/bpdc04VuM3YxN84VvfdGdxxC2edgh8Mg8ew+FeZSOKI4jlRaXlobHFHsp6xPVdrqP/8sWZ2czQMr88OWtFA==
   dependencies:
     "@secretlint/secretlint-rule-aws" "^4.1.3"
     "@secretlint/secretlint-rule-basicauth" "^4.1.3"
     "@secretlint/secretlint-rule-filter-comments" "^4.1.3"
-    "@secretlint/secretlint-rule-gcp" "^4.1.3"
+    "@secretlint/secretlint-rule-gcp" "^4.1.4"
     "@secretlint/secretlint-rule-github" "^4.1.3"
     "@secretlint/secretlint-rule-npm" "^4.1.3"
     "@secretlint/secretlint-rule-privatekey" "^4.1.3"
@@ -12787,10 +12787,10 @@ node-fetch@2.6.1, node-fetch@^2.6.0, node-fetch@^2.6.1:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
-node-forge@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.10.0.tgz#32dea2afb3e9926f02ee5ce8794902691a676bf3"
-  integrity sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA==
+node-forge@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-1.2.1.tgz#82794919071ef2eb5c509293325cec8afd0fd53c"
+  integrity sha512-Fcvtbb+zBcZXbTTVwqGA5W+MKBj56UjVRevvchv5XrcyXbmNdesfZL37nlcWOfpgHhgmxApw3tQbTr4CqNmX4w==
 
 node-gyp@^5.0.2:
   version "5.1.1"
