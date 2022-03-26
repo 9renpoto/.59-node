@@ -2733,7 +2733,7 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@secretlint/config-creator@^4.1.3":
+"@secretlint/config-creator@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@secretlint/config-creator/-/config-creator-4.2.0.tgz#d3d05536f91e21565060abdf1b7e332e0a57957d"
   integrity sha512-dbWRzdLhV4TGX9qgnYwdxYZyKeUj840YZ2rl4iKayI1qQNtybC1/2Tr/XjSZ7M9OI2mwn6s3QO3tc+IITNsifA==
@@ -2770,7 +2770,7 @@
     debug "^4.1.1"
     structured-source "^3.0.2"
 
-"@secretlint/formatter@^4.1.3", "@secretlint/formatter@^4.2.0":
+"@secretlint/formatter@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@secretlint/formatter/-/formatter-4.2.0.tgz#a8770db689cbd448b21639cc0ebb1c753bf3c285"
   integrity sha512-tQrWQ8PJHwsFUBS/IFv6qiV4p1f1vQASQlRVO2q5XE0Qw1wEzJZLCLcdx2Si44buqqkbAr4x4YUFW2qbPw2wQA==
@@ -2786,7 +2786,7 @@
     terminal-link "^2.1.1"
     try-resolve "^1.0.1"
 
-"@secretlint/node@^4.1.3":
+"@secretlint/node@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@secretlint/node/-/node-4.2.0.tgz#ea25a549d17a807ef506e7e86897c025e5c6828d"
   integrity sha512-tkvmu+U/Bknqy4Psfp0jfsrepfXv30QrnWq9tw0P7Byk2gxAfuliJPcneejTeLoE14TA5whRBnqUsbc2EdlH+A==
@@ -2799,7 +2799,7 @@
     debug "^4.1.1"
     p-map "^4.0.0"
 
-"@secretlint/profiler@^4.1.3", "@secretlint/profiler@^4.2.0":
+"@secretlint/profiler@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@secretlint/profiler/-/profiler-4.2.0.tgz#b4e3c5466ac6385cb0e7c5af73548457c7e0f408"
   integrity sha512-e2jYRqatRtE+fxUteKVWN6knj4/5kedk6ObeRFzd+tAgSU1RUl4RTUlx44vdbtw0czSptkf8ToOi4fRE/JLZHQ==
@@ -13622,15 +13622,15 @@ schema-utils@^3.0.0, schema-utils@^3.1.1:
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
 
-secretlint@4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/secretlint/-/secretlint-4.1.3.tgz#527210c032a1acfdad61dae8774086ac23a81e5b"
-  integrity sha512-os3EBXIgmH4vS/Ztrp0j0FLn9L4QaPuyfFHZwhhlyXdZ1VPdHQhgMo13YIIOYvoAxUVjyaJaFWhKRsPnIfHwKg==
+secretlint@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/secretlint/-/secretlint-4.2.0.tgz#eb2ec2235b59cd33a1bc9fc9059efd6cf3ce58a1"
+  integrity sha512-UCszhE/+Hi6x1x+TgAbFng4G5GXxa7lq+cUl6vWsTAhBH7UjWVOWShRMXEkrWrF5iBgwlZvG/KP1HPowRakmAA==
   dependencies:
-    "@secretlint/config-creator" "^4.1.3"
-    "@secretlint/formatter" "^4.1.3"
-    "@secretlint/node" "^4.1.3"
-    "@secretlint/profiler" "^4.1.3"
+    "@secretlint/config-creator" "^4.2.0"
+    "@secretlint/formatter" "^4.2.0"
+    "@secretlint/node" "^4.2.0"
+    "@secretlint/profiler" "^4.2.0"
     debug "^4.1.1"
     globby "^11.0.0"
     meow "^9.0.0"
