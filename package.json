@@ -41,7 +41,7 @@
       "deno fmt",
       "eslint --fix"
     ],
-    "*.{md,json}": [
+    "*.{md,json,js}": [
       "deno fmt"
     ]
   },
