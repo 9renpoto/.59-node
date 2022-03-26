@@ -14,8 +14,7 @@ const {
   GA_TRACKING_ID,
 } = process.env;
 
-const COMMIT_SHA =
-  VERCEL_GITHUB_COMMIT_SHA ||
+const COMMIT_SHA = VERCEL_GITHUB_COMMIT_SHA ||
   VERCEL_GITLAB_COMMIT_SHA ||
   VERCEL_BITBUCKET_COMMIT_SHA;
 
@@ -59,9 +58,9 @@ const config = {
     config.plugins.push(
       new options.webpack.DefinePlugin({
         "process.env.NEXT_IS_SERVER": JSON.stringify(
-          options.isServer.toString()
+          options.isServer.toString(),
         ),
-      })
+      }),
     );
 
     // When all the Sentry configuration env variables are available/configured
@@ -84,7 +83,7 @@ const config = {
           stripPrefix: ["webpack://_N_E/"],
           urlPrefix: `~${basePath}/_next`,
           release: COMMIT_SHA,
-        })
+        }),
       );
     }
     return config;
