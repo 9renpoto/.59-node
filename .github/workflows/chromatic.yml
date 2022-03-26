@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     # Job steps
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3.0.0
         with:
           fetch-depth: 0 # 👈 Required to retrieve git history
       - name: Install dependencies
