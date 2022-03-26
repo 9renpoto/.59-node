@@ -12,9 +12,6 @@
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://npm.pkg.github.com/\"'",
     "test": "lerna run --parallel test"
   },
-  "engines": {
-    "node": "16"
-  },
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "7.5.0",
     "@9renpoto/tsconfig": "7.5.0",
