@@ -22,6 +22,7 @@ process.env.SENTRY_DSN = SENTRY_DSN;
 const basePath = "";
 
 const config = {
+  swcMinify: true,
   pwa: {
     dest: "public",
     runtimeCaching,

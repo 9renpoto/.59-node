@@ -15,7 +15,7 @@ on:
     branches: [main]
 
 jobs:
-  test:
+  fmt:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,6 +26,6 @@ jobs:
         uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
-          
+
       - name: Verify formatting
         run: deno fmt --check

@@ -6,47 +6,26 @@ describe("index", () => {
     const { container } = render(<Page />);
     expect(container).toMatchInlineSnapshot(`
       <div>
-        <div
-          __self="[object Object]"
-          __source="[object Object]"
-        >
+        <div>
           Hello World.
            
-          <ul
-            __self="[object Object]"
-            __source="[object Object]"
-          >
-            <li
-              __self="[object Object]"
-              __source="[object Object]"
-            >
+          <ul>
+            <li>
               <a
-                __self="[object Object]"
-                __source="[object Object]"
                 href="/about"
               >
                 About
               </a>
             </li>
-            <li
-              __self="[object Object]"
-              __source="[object Object]"
-            >
+            <li>
               <a
-                __self="[object Object]"
-                __source="[object Object]"
                 href="/ssr"
               >
                 SSR
               </a>
             </li>
-            <li
-              __self="[object Object]"
-              __source="[object Object]"
-            >
+            <li>
               <a
-                __self="[object Object]"
-                __source="[object Object]"
                 href="/ssg"
               >
                 SSG
