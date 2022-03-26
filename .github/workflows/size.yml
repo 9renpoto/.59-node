@@ -11,5 +11,5 @@ jobs:
         uses: preactjs/compressed-size-action@2.3.0
         with:
           repo-token: "${{ secrets.github_token }}"
-          pattern: "./apps/web/.next/**/*.{js,css,html,json}"
+          pattern: "./packages/ui/lib/**/*.{js,css,html,json}"
           exclude: "{**/*.map,**/node_modules/**}"
