@@ -31,5 +31,10 @@
     "@types/gtag.js": "0.0.8",
     "babel-jest": "27.4.5",
     "ts-node": "10.4.0"
+  },
+  "nextBundleAnalysis": {
+    "budget": 358400,
+    "budgetPercentIncreaseRed": 20,
+    "showDetails": true
   }
 }

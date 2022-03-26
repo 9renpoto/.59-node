@@ -57,11 +57,5 @@
   "workspaces": [
     "packages/*",
     "apps/*"
-  ],
-  "nextBundleAnalysis": {
-    "budget": 358400,
-    "budgetPercentIncreaseRed": 20,
-    "showDetails": true,
-    "buildOutputDirectory": "apps/web/.next"
-  }
+  ]
 }
