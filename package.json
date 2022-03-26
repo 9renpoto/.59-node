@@ -45,8 +45,10 @@
       "deno fmt"
     ]
   },
-  "workspaces": [
-    "packages/*",
-    "apps/*"
-  ]
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "apps/*"
+    ]
+  }
 }
