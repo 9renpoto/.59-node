@@ -23,8 +23,8 @@ const MyError: NextPage<Props & ErrorProps> = ({
 };
 
 MyError.getInitialProps = async (context) => {
-  const errorInitialProps: Props & ErrorProps =
-    await NextErrorComponent.getInitialProps(context);
+  const errorInitialProps: Props & ErrorProps = await NextErrorComponent
+    .getInitialProps(context);
 
   // Workaround for https://github.com/vercel/next.js/issues/8592, mark when
   // getInitialProps has run
@@ -58,8 +58,8 @@ MyError.getInitialProps = async (context) => {
   // indicate a bug introduced in Next.js, so record it in Sentry
   Sentry.captureException(
     new Error(
-      `_error.js getInitialProps missing data at path: ${context.asPath}`
-    )
+      `_error.js getInitialProps missing data at path: ${context.asPath}`,
+    ),
   );
   await Sentry.flush(2000);
 
