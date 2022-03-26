@@ -45,7 +45,7 @@
       "stylelint --fix",
       "eslint --fix"
     ],
-    "*.md": [
+    "*.{md,json}": [
       "deno fmt"
     ]
   },
