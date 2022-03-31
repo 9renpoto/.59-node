@@ -29,7 +29,7 @@
     "react-ssr-prepass": "npm:preact-ssr-prepass@1.2.0"
   },
   "devDependencies": {
-    "@testing-library/preact": "^2.0.1",
+    "@testing-library/preact": "2.0.1",
     "@types/gtag.js": "0.0.10",
     "ts-node": "10.7.0"
   },
