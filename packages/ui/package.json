@@ -9,8 +9,8 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@storybook/addon-storyshots": "6.4.19",
-    "@storybook/react": "6.4.19",
+    "@storybook/addon-storyshots": "6.4.20",
+    "@storybook/react": "6.4.20",
     "@testing-library/react": "13.0.0",
     "react": "18.0.0",
     "react-dom": "18.0.0"
