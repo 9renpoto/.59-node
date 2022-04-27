@@ -12,8 +12,8 @@
     "@storybook/addon-storyshots": "6.4.22",
     "@storybook/react": "6.4.22",
     "@testing-library/react": "13.1.1",
-    "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
   },
   "typings": "lib/index.d.ts"
 }
