@@ -19,7 +19,7 @@
     "@secretlint/secretlint-rule-preset-recommend": "5.2.0",
     "@types/rosie": "0.0.40",
     "can-npm-publish": "1.3.6",
-    "eslint": "8.16.0",
+    "eslint": "8.17.0",
     "husky": "8.0.1",
     "jest": "27.5.1",
     "lerna": "4.0.0",
