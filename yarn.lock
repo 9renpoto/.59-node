@@ -10835,10 +10835,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-next-plugin-preact@3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/next-plugin-preact/-/next-plugin-preact-3.0.6.tgz#22d566e8e5d50cb4cfc78360d367df44d6aaf94f"
-  integrity sha512-Ze8c8h0jaCPbG0X9T5jJpSDtrfvU9NLlt+DJWtxOu2fn6qPbNU3s61F1hTcldZb3IbpXkp5iGnhPCdgGZEGrCQ==
+next-plugin-preact@3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/next-plugin-preact/-/next-plugin-preact-3.0.7.tgz#43871a19bb0d7cdd3bc9a18088a4c8c45e242fef"
+  integrity sha512-8Xl+SJT3FCZHS7R/6Gana6e95o09UpiyCsK0cw8P/KW2M+lQcYIwIt4ZLZd+K9TW3JZx6KJDLqVbq0Kd6KZsIg==
   dependencies:
     "@prefresh/next" "^1.4.6"
     "@prefresh/webpack" "^3.3.0"
