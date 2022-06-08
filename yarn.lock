@@ -3530,10 +3530,10 @@
     lz-string "^1.4.4"
     pretty-format "^27.0.2"
 
-"@testing-library/preact@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/preact/-/preact-3.2.0.tgz#7a1af1bff460ed9d87c63579f82ccc9b17da9439"
-  integrity sha512-9jc1at4OAnORZ+gnTpbC2eScDIk9mljET2h+khwji7CQXAbCMOvxtVgTfg3NDoSVTKH4AzlLb5YsgrnFQVLo/Q==
+"@testing-library/preact@3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/preact/-/preact-3.2.1.tgz#bc901f85ce60ac7b3801e0939d892a01e9fa1ce9"
+  integrity sha512-tBYEONHe1D6ncxCKWMIDmVOD3hEeyQeC/jxsgqtYMDrzW7zP2OUpIVXTztNS5dQ5KK8y69c/OT9IPuKYYiWqYQ==
   dependencies:
     "@testing-library/dom" "^8.11.1"
 
