@@ -16,7 +16,7 @@
     "@sentry/browser": "7.1.0",
     "@sentry/integrations": "7.1.0",
     "@sentry/node": "7.1.0",
-    "@sentry/react": "7.1.0",
+    "@sentry/react": "7.1.1",
     "@sentry/tracing": "7.1.0",
     "@sentry/webpack-plugin": "1.18.9",
     "next": "12.1.5",
