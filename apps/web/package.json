@@ -13,7 +13,7 @@
   "dependencies": {
     "@app/ui": "^0.0.1",
     "@prefresh/next": "1.5.2",
-    "@sentry/browser": "7.1.0",
+    "@sentry/browser": "7.1.1",
     "@sentry/integrations": "7.1.0",
     "@sentry/node": "7.1.0",
     "@sentry/react": "7.1.0",
