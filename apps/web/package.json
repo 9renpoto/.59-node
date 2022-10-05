@@ -25,7 +25,7 @@
     "preact": "10.11.1",
     "preact-render-to-string": "5.2.4",
     "react": "npm:@preact/compat@17.1.2",
-    "react-dom": "npm:@preact/compat@17.1.1",
+    "react-dom": "npm:@preact/compat@17.1.2",
     "react-ssr-prepass": "npm:preact-ssr-prepass@1.2.0"
   },
   "devDependencies": {
