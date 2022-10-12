@@ -18,7 +18,7 @@
     "@sentry/node": "7.15.0",
     "@sentry/react": "7.15.0",
     "@sentry/tracing": "7.15.0",
-    "@sentry/webpack-plugin": "1.19.0",
+    "@sentry/webpack-plugin": "1.19.1",
     "next": "12.3.1",
     "next-plugin-preact": "3.0.7",
     "next-pwa": "5.5.5",
