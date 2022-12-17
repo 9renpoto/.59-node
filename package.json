@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "7.6.0",
-    "@9renpoto/tsconfig": "7.5.0",
+    "@9renpoto/tsconfig": "7.6.0",
     "@monorepo-utils/workspaces-to-typescript-project-references": "2.9.0",
     "@secretlint/secretlint-rule-preset-recommend": "5.3.0",
     "@types/rosie": "0.0.40",

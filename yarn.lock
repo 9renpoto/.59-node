@@ -18,10 +18,10 @@
     eslint-config-prettier "^8.1.0"
     eslint-plugin-prettier "^4.0.0"
 
-"@9renpoto/tsconfig@7.5.0":
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/tsconfig/-/tsconfig-7.5.0.tgz#54eed45fa6f03482f53fe959b897be46eea33362"
-  integrity sha512-oV3jg7FhPGjwsR8wDhNopxs/2yCJmAFtSTujYtpA8FxlTavT8UhkyqKQoacw6utsAtqrwJEC7mmJTG7p6tC41w==
+"@9renpoto/tsconfig@7.6.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/tsconfig/-/tsconfig-7.6.0.tgz#799eeb1e85bf8b90137ce6fac4a2e87b7ab45f5a"
+  integrity sha512-139TljtQ9Gpt6M4ihgeEKS8InDmv8cN9qkdyDw2qXxrva+W9BUKLPwLXAZTGc4VrSV4rqM76ESSH8uIOZtamkA==
 
 "@ampproject/remapping@^2.1.0":
   version "2.2.0"
