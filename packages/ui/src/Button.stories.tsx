@@ -1,4 +1,4 @@
-const Button = ({ children }: { children: JSX.Element | string }) => (
+const Button = ({ children }: { children: Element | string }) => (
   <button>{children}</button>
 );
 

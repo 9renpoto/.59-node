@@ -1,6 +1,5 @@
 import { RewriteFrames } from "@sentry/integrations";
 import * as Sentry from "@sentry/node";
-import { Integrations } from "@sentry/tracing";
 
 export const init = () => {
   if (process.env.NEXT_PUBLIC_SENTRY_DSN) {
@@ -24,8 +23,6 @@ export const init = () => {
           },
         }),
       );
-    } else {
-      integrations.push(new Integrations.BrowserTracing());
     }
 
     Sentry.init({
