@@ -1,7 +1,7 @@
 import initStoryshots, {
   multiSnapshotWithOptions,
 } from "@storybook/addon-storyshots";
-import { render } from "@testing-library/react";
+import { render } from "@testing-library/preact";
 import path from "path";
 
 const reactTestingLibrarySerializer: jest.SnapshotSerializerPlugin = {
@@ -11,7 +11,7 @@ const reactTestingLibrarySerializer: jest.SnapshotSerializerPlugin = {
 
 initStoryshots({
   configPath: path.join(process.cwd(), "./.storybook"),
-  framework: "react",
+  framework: "preact",
   snapshotSerializers: [reactTestingLibrarySerializer],
   test: multiSnapshotWithOptions({
     renderer: render,

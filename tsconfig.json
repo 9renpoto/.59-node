@@ -1,8 +1,11 @@
 {
   "extends": "@9renpoto/tsconfig",
   "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
     "composite": true,
     "incremental": true,
-    "moduleResolution": "node"
+    "moduleResolution": "nodenext",
+    "skipLibCheck": true
   }
 }
