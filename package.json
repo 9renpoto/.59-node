@@ -5,6 +5,7 @@
   "scripts": {
     "build": "turbo build",
     "storybook": "yarn workspace @app/ui storybook",
+    "build-storybook": "yarn workspace @app/ui build-storybook",
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
     "clean": "turbo run clean",
     "lint": "eslint . --ext=ts,tsx",
