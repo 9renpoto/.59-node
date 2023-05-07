@@ -24,7 +24,7 @@
     "husky": "8.0.3",
     "jest": "27.5.1",
     "lerna-changelog": "2.2.0",
-    "lint-staged": "13.2.0",
+    "lint-staged": "13.2.2",
     "rosie": "2.1.0",
     "secretlint": "6.2.3",
     "turbo": "^1.9.3",
