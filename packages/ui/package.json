@@ -18,7 +18,7 @@
     "@storybook/blocks": "^7.0.9",
     "@storybook/preact": "^7.0.9",
     "@storybook/preact-webpack5": "^7.0.9",
-    "@storybook/testing-library": "^0.1.0",
+    "@storybook/testing-library": "^0.2.0",
     "@testing-library/preact": "^3.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
