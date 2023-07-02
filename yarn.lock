@@ -2284,11 +2284,6 @@
     "@secretlint/types" "^6.2.4"
     istextorbinary "^6.0.0"
 
-"@secretlint/types@^6.2.3":
-  version "6.2.3"
-  resolved "https://registry.npmjs.org/@secretlint/types/-/types-6.2.3.tgz"
-  integrity sha512-KiVeTz0xWbfZinjqxxd0yUbt3L5tCiyXC/wt44BNyYGE5xV/Ui+4Xvweab0rmBPFam3RS9UuyL0MG2BGPf4dxA==
-
 "@secretlint/types@^6.2.4":
   version "6.2.4"
   resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-6.2.4.tgz#9b6d55df313a15319c9ffcbaf9265c58bed5aa2d"
@@ -2326,14 +2321,15 @@
     "@sentry/utils" "7.57.0"
     tslib "^2.4.1 || ^1.9.3"
 
-"@sentry/bundler-plugin-core@2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@sentry/bundler-plugin-core/-/bundler-plugin-core-2.3.0.tgz#4d3e6bb92cd0954846cffa8bac74a724fae8842c"
-  integrity sha512-PiX3yJ8UFKBIPRfhytweYjVdGfcruYJYdwSlbwFNe28fSMTKYPAF9/IqAOav9G8izlICnJm7ROyXlFlfMw0gRA==
+"@sentry/bundler-plugin-core@2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@sentry/bundler-plugin-core/-/bundler-plugin-core-2.4.0.tgz#78ff999ebd33f811e0601700453166fa631afce4"
+  integrity sha512-bcDNLSce34kncvrYHgl5+edzIF8Dru5f6+gpkK2Sm/RBg/4yitCrVkzftTVwIsxZqJf0pz/CqCeMAIadEtx8JQ==
   dependencies:
     "@sentry/cli" "^2.17.0"
     "@sentry/node" "7.53.1"
     "@sentry/utils" "7.53.1"
+    dotenv "^16.3.1"
     find-up "5.0.0"
     glob "9.3.2"
     magic-string "0.27.0"
@@ -2452,12 +2448,12 @@
     "@sentry/types" "7.57.0"
     tslib "^2.4.1 || ^1.9.3"
 
-"@sentry/webpack-plugin@2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@sentry/webpack-plugin/-/webpack-plugin-2.3.0.tgz#48b9d8c97ce632dc5f2674e4effef3d639fe2ab7"
-  integrity sha512-rdrL9LISNIYMlJhRWn5NNXXVvovwNMWSC81qXgwu9PHbNp1RFKJiZ6oCGDvZRJEyvNTxpiyPMJGQzUPGSFSTRg==
+"@sentry/webpack-plugin@2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@sentry/webpack-plugin/-/webpack-plugin-2.4.0.tgz#f2d10ff67d615cdd6d8b9340b189b3cb57eb5857"
+  integrity sha512-/l2dPX2ooTANWzQUQA4BtKi8VYzcC2EN1JFOSsBV9QBk4u+mfUwECIEsDKMZY+gAASyJgsABVst0tATGqiNW/g==
   dependencies:
-    "@sentry/bundler-plugin-core" "2.3.0"
+    "@sentry/bundler-plugin-core" "2.4.0"
     unplugin "1.0.1"
     uuid "^9.0.0"
 
@@ -11446,12 +11442,7 @@ tslib@^2.0.1, tslib@^2.0.3, tslib@^2.4.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.5.0.tgz"
   integrity sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==
 
-tslib@^2.1.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.0.tgz#b295854684dbda164e181d259a22cd779dcd7bc3"
-  integrity sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==
-
-"tslib@^2.4.1 || ^1.9.3":
+tslib@^2.1.0, "tslib@^2.4.1 || ^1.9.3":
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.0.tgz#b295854684dbda164e181d259a22cd779dcd7bc3"
   integrity sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==
