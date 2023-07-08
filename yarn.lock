@@ -2193,22 +2193,27 @@
   integrity sha512-cIUJFxD03iAMpw87iyaHUZVV1dZfTno3yfW/MdiHTartvO2cY3Y05TS8AOSKvKu/qlB+mMr4xzRXTConmt3MAw==
 
 "@secretlint/secretlint-rule-preset-recommend@^7.0.0":
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-7.0.2.tgz#47bd6e6d50c10ecf857b96635b157ce168deca30"
-  integrity sha512-R6+6z3DufPnZqPpq+afuukSc71/aV/a3Efoep3T0QioADRK5ByHMdOxu9klKDj0VYUldx5mpKKO+ggHjTLEFUA==
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-7.0.3.tgz#4db630de3ab780dcc8baa3e294f818657a2fa5d8"
+  integrity sha512-+Qg0HPoab1XEX+fdPDFLyG009KstqxiU1lN0+6/DbZxJYWEOG459k+lGJpiHfCUThXPlsSeKcIXtKtLehySfQg==
 
 "@secretlint/source-creator@^7.0.2":
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/source-creator/-/source-creator-7.0.2.tgz#42ea5b9bd5ec8eed8ca5752726ef6e66765415e4"
-  integrity sha512-aeEDYqz7HB23G0NqBRCUX8G9qld8bW1attAeEkTBEuXeoFTH006OTDqOwtYp6qToRDZkAI0+1Ac8GvdKCtwZiQ==
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@secretlint/source-creator/-/source-creator-7.0.3.tgz#ec7dd8d925e252a4c8852ba755b8707bdbaaf569"
+  integrity sha512-9JGOnnj1V/YlJrzzeX9jSpIM8M7Drz6/ApxcLEwJa2YBV6ZTBh+7iwEldNyyCV74ssjvWxBS2i67Zt0A9iD0Pw==
   dependencies:
-    "@secretlint/types" "^7.0.2"
+    "@secretlint/types" "^7.0.3"
     istextorbinary "^6.0.0"
 
 "@secretlint/types@^7.0.2":
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-7.0.2.tgz#d2e8d4ec09ac0711e6f6f9753bd7a033d4088b2f"
   integrity sha512-ZXrYx9b73S0LvVtt/+IADfWklkzF1z/zOUWAfgdZGTjwcb1h+3A4PRlEJMgqf5cJko5E8AFhJZb36ddutcgdGw==
+
+"@secretlint/types@^7.0.3":
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-7.0.3.tgz#1e87a3f47798303146962da6f9d1480270a72ec7"
+  integrity sha512-qA9UWCP+o030tym+zmNQuFVC31aG8hEDL6LW6J5qug2xcrjSx59HwabHMIMeGckF/4ggfQuGs2XDodPYTXeBdA==
 
 "@sentry-internal/tracing@7.53.1":
   version "7.53.1"
