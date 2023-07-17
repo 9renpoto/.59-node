@@ -19,9 +19,9 @@
     eslint-plugin-prettier "^4.0.0"
 
 "@9renpoto/tsconfig@^7.6.0":
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/tsconfig/-/tsconfig-7.6.0.tgz#799eeb1e85bf8b90137ce6fac4a2e87b7ab45f5a"
-  integrity sha512-139TljtQ9Gpt6M4ihgeEKS8InDmv8cN9qkdyDw2qXxrva+W9BUKLPwLXAZTGc4VrSV4rqM76ESSH8uIOZtamkA==
+  version "7.7.2"
+  resolved "https://registry.yarnpkg.com/@9renpoto/tsconfig/-/tsconfig-7.7.2.tgz#0d509455e59a81a52e2103445a245c31346c6f2a"
+  integrity sha512-3hB3H8fhfkF6ggpA8WvjaDRJ/RcRlkLpbnDZfys1IN947/LnXlhRpX8er7JoQ6VRl6w7akQYl2hv5xAIZ7rm8Q==
 
 "@aashutoshrathi/word-wrap@^1.2.3":
   version "1.2.6"
@@ -30,7 +30,7 @@
 
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"
-  resolved "https://registry.npmjs.org/@ampproject/remapping/-/remapping-2.2.1.tgz"
+  resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.2.1.tgz#99e8e11851128b8702cd57c33684f1d0f260b630"
   integrity sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==
   dependencies:
     "@jridgewell/gen-mapping" "^0.3.0"
