@@ -2,9 +2,6 @@ name: Node CI
 
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
   build:
@@ -20,8 +17,7 @@ jobs:
         uses: actions/setup-node@v3.7.0
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn install --frozen-lockfile
-      - run: yarn workspaces-to-typescript-project-references --check
+      - run: npm ci
       - run: npm run build
       - run: npm run lint
       - run: npm test

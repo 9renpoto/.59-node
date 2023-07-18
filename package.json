@@ -4,36 +4,24 @@
   "author": "github.com/9renpoto",
   "scripts": {
     "build": "turbo build",
-    "storybook": "yarn workspace @app/ui storybook",
-    "build-storybook": "yarn workspace @app/ui build-storybook",
-    "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
+    "storybook": "npm run storybook -w @app/ui",
+    "build-storybook": " npm run build-storybook -w @app/ui",
     "clean": "turbo run clean",
     "lint": "eslint . --ext=ts,tsx",
-    "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://npm.pkg.github.com/\"'",
     "test": "npm run test --workspaces"
   },
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "^7.6.0",
     "@9renpoto/tsconfig": "^7.6.0",
-    "@lerna-lite/cli": "^2.3.0",
-    "@monorepo-utils/workspaces-to-typescript-project-references": "^2.9.0",
-    "@secretlint/secretlint-rule-preset-recommend": "^7.0.0",
     "@types/rosie": "^0.0.42",
-    "can-npm-publish": "^1.3.6",
     "eslint": "^8.40.0",
     "husky": "^8.0.3",
     "jest": "^27.5.1",
-    "lerna-changelog": "^2.2.0",
     "lint-staged": "^13.2.2",
     "rosie": "^2.1.0",
-    "secretlint": "^7.0.0",
-    "turbo": "^1.9.3",
-    "typescript": "^5.0.4"
+    "turbo": "^1.9.3"
   },
   "lint-staged": {
-    "*": [
-      "secretlint"
-    ],
     "*.{ts,tsx}": [
       "deno fmt",
       "eslint --fix"

@@ -1,4 +1,4 @@
-/** @type { import('@storybook/preact-webpack5').StorybookConfig } */
+/** @type { import('@storybook/preact-vite').StorybookConfig } */
 const config = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
@@ -7,7 +7,7 @@ const config = {
     "@storybook/addon-interactions",
   ],
   framework: {
-    name: "@storybook/preact-webpack5",
+    name: "@storybook/preact-vite",
     options: {},
   },
   docs: {
