@@ -26,4 +26,5 @@ jobs:
         uses: bahmutov/npm-install@v1
       - uses: tauri-apps/tauri-action@v0
         env:
+          projectPath: apps/desktop
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
