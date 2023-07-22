@@ -39,13 +39,10 @@ jobs:
           key: ${{ runner.os }}-build-${{ env.cache-name }}
 
       - name: Build next.js app
-        # change this if your site requires a custom build command
-        run: yarn workspace @app/web build
+        run: npm run build --workspace @app/web
 
-      # Here's the first place where next-bundle-analysis' own script is used
-      # This step pulls the raw bundle stats for the current bundle
       - name: Analyze bundle
-        run: yarn workspace @app/web nextjs-bundle-analysis report
+        run: npm run nextjs-bundle-analysis report --workspace @app/web
 
       - name: Upload bundle
         uses: actions/upload-artifact@v3
@@ -76,7 +73,7 @@ jobs:
       # entry in your package.json file.
       - name: Compare with base branch bundle
         if: success() && github.event.number
-        run: ls -laR apps/web/.next/analyze/base && yarn workspace @app/web nextjs-bundle-analysis compare
+        run: ls -laR apps/web/.next/analyze/base && npm run nextjs-bundle-analysis compare --workspace @app/web
 
       - name: Get comment body
         id: get-comment-body
