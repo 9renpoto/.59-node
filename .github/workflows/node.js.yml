@@ -17,7 +17,9 @@ jobs:
         uses: actions/setup-node@v3.7.0
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
       - run: npm run build
       - run: npm run lint
       - run: npm test
@@ -39,6 +41,9 @@ jobs:
           base-path: packages/ui
           path-to-lcov: packages/ui/coverage/lcov.info
           parallel: true
+      - name: Codecov
+        uses: codecov/codecov-action@v3.1.4
+
   finish:
     needs: build
     runs-on: ubuntu-latest
