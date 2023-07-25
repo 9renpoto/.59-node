@@ -11,6 +11,7 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@app/ui": "^0.0.1",
     "preact": "^10.16.0",
     "@tauri-apps/api": "^1.4.0"
   },

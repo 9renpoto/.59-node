@@ -4,7 +4,7 @@
 
 ## Install
 
-    yarn install
+    npm install
 
 ## Usage
 
