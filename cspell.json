@@ -2,22 +2,9 @@
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
   "useGitignore": true,
-  "files": [
-    "*.css",
-    "*.md",
-    "*.rs",
-    "*.{tx,tsx}",
-    "*.{yml,yaml}"
-  ],
-  "ignorePaths": [
-    "node_modules",
-    "target",
-    "apps/desktop/public",
-    "apps/desktop/tauri-src/icons"
-  ],
+  "dictionaries": ["html", "typescript", "css", "node", "rust"],
   "words": [
     "9renpoto",
-    "autodocs",
     "gtag",
     "preact",
     "serde",
