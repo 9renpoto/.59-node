@@ -10,8 +10,11 @@
   "dictionaries": [],
   "words": [
     "9renpoto",
+    "autodocs",
+    "gtag",
     "preact",
     "serde",
+    "stylelint",
     "tauri"
   ],
   "ignoreWords": [],
