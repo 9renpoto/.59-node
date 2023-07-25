@@ -1,13 +1,20 @@
 {
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
+  "useGitignore": truea
+  "files": [
+    "*.css",
+    "*.md",
+    "*.rs",
+    "*.{tx,tsx}",
+    "*.{yml,yaml}"
+  ],
   "ignorePaths": [
     "node_modules",
     "target",
     "apps/desktop/public",
     "apps/desktop/tauri-src/icons"
   ],
-  "dictionaryDefinitions": [],
-  "dictionaries": [],
   "words": [
     "9renpoto",
     "autodocs",
@@ -16,7 +23,5 @@
     "serde",
     "stylelint",
     "tauri"
-  ],
-  "ignoreWords": [],
-  "import": []
+  ]
 }
