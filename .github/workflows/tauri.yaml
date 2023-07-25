@@ -33,6 +33,8 @@ jobs:
           projectPath: apps/desktop
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Check
+        if: matrix.platform == 'ubuntu-latest'
         run: cargo clippy --workspace --all-targets --all-features -- -D warnings
       - name: rustfmt
+        if: matrix.platform == 'ubuntu-latest'
         run: cargo fmt --all --check
