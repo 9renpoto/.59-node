@@ -1,0 +1,16 @@
+{
+  "version": "0.2",
+  "ignorePaths": [
+    "node_modules",
+    "target"
+  ],
+  "dictionaryDefinitions": [],
+  "dictionaries": [],
+  "words": [
+    "9renpoto",
+    "preact",
+    "tauri"
+  ],
+  "ignoreWords": [],
+  "import": []
+}
