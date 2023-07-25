@@ -9,6 +9,7 @@
   "words": [
     "9renpoto",
     "preact",
+    "serde",
     "tauri"
   ],
   "ignoreWords": [],
