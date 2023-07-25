@@ -5,7 +5,7 @@
     "jsxImportSource": "preact",
     "composite": true,
     "incremental": true,
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "nodenext",
     "skipLibCheck": true
   }
 }

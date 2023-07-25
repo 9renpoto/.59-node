@@ -1,6 +1,4 @@
-const Button = ({ children }: { children: Element | string }) => (
-  <button>{children}</button>
-);
+import { Button } from "./";
 
 export default {
   title: "Button",

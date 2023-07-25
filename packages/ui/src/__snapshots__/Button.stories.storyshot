@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Storyshots Button Basic 1`] = `
-<button>
-  hello
-</button>
-`;

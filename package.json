@@ -25,6 +25,7 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "deno fmt",
+      "deno lint",
       "eslint --fix"
     ],
     "*.css": [
