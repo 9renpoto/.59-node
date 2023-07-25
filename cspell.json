@@ -2,7 +2,9 @@
   "version": "0.2",
   "ignorePaths": [
     "node_modules",
-    "target"
+    "target",
+    "apps/desktop/public",
+    "apps/desktop/tauri-src/icons"
   ],
   "dictionaryDefinitions": [],
   "dictionaries": [],
