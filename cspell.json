@@ -2,13 +2,20 @@
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
   "useGitignore": true,
-  "dictionaries": ["html", "typescript", "css", "node", "rust"],
+  "dictionaries": [
+    "html",
+    "typescript",
+    "css",
+    "node",
+    "rust"
+  ],
   "words": [
-    "9renpoto",
+    "Autoprefix",
     "gtag",
     "preact",
     "serde",
     "stylelint",
-    "tauri"
+    "tauri",
+    "twind"
   ]
 }

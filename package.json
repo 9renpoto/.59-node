@@ -9,6 +9,7 @@
     "clean": "turbo run clean",
     "lint": "eslint . --ext=ts,tsx",
     "stylelint": "stylelint \"**/*.css\"",
+    "test-storybook": "npm run test-storybook -w @app/ui",
     "test": "npm run test --workspaces"
   },
   "devDependencies": {
@@ -20,11 +21,13 @@
     "jest": "^27.5.1",
     "lint-staged": "^13.2.2",
     "rosie": "^2.1.0",
-    "turbo": "^1.9.3"
+    "turbo": "^1.9.3",
+    "typescript": "^5.1.6"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
       "deno fmt",
+      "deno lint",
       "eslint --fix"
     ],
     "*.css": [
