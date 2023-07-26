@@ -9,6 +9,7 @@
     "clean": "turbo run clean",
     "lint": "eslint . --ext=ts,tsx",
     "stylelint": "stylelint \"**/*.css\"",
+    "test-storybook": "npm run test-storybook -w @app/ui",
     "test": "npm run test --workspaces"
   },
   "devDependencies": {
