@@ -34,7 +34,7 @@ jobs:
         run: |
           npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
             "npx http-server packages/ui/storybook-static --port 6006 --silent" \
-            "npx wait-on tcp:6006 && npm test -- --coverage"
+            "npx wait-on tcp:6006 && npm test"
       - run: sh -c "cd packages/ui && npx nyc report --reporter=lcov -t .nyc_output/ --report-dir coverage"
 
       - name: apps/web
@@ -148,7 +148,7 @@ jobs:
           body="${body//'%'/'%25'}"
           body="${body//$'\n'/'%0A'}"
           body="${body//$'\r'/'%0D'}"
-          echo "name=body::$body" >> "$GITHUB_OUTPUT"
+          echo "body=$body" >> "$GITHUB_OUTPUT"
 
       - name: Find Comment
         uses: peter-evans/find-comment@v2
