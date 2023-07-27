@@ -21,7 +21,6 @@ jobs:
 
       - run: npm run build
       - run: npm run lint
-      - run: npm test
 
       - run: npx playwright install --with-deps
       - name: Build Storybook
@@ -30,7 +29,7 @@ jobs:
         run: |
           npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
             "npx http-server storybook-static --port 6006 --silent" \
-            "npx wait-on tcp:6006 && npm run test --workspace @app/ui -- --coverage"
+            "npx wait-on tcp:6006 && npm test -- --coverage"
       - run: sh -c "cd packages/ui && npx nyc report --reporter=lcov -t .nyc_output/ --report-dir coverage"
 
       - name: apps/web
