@@ -4,10 +4,11 @@ on:
   pull_request:
   push:
     branches:
-      - main # change this if your default branch is named differently
+      - main
 
 jobs:
   build:
+    timeout-minutes: 5
     runs-on: ubuntu-latest
 
     strategy:
@@ -32,7 +33,7 @@ jobs:
       - name: Serve Storybook and run tests
         run: |
           npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
-            "npx http-server storybook-static --port 6006 --silent" \
+            "npx http-server packages/ui/storybook-static --port 6006 --silent" \
             "npx wait-on tcp:6006 && npm test -- --coverage"
       - run: sh -c "cd packages/ui && npx nyc report --reporter=lcov -t .nyc_output/ --report-dir coverage"
 
@@ -147,7 +148,7 @@ jobs:
           body="${body//'%'/'%25'}"
           body="${body//$'\n'/'%0A'}"
           body="${body//$'\r'/'%0D'}"
-          echo ::set-output name=body::$body
+          echo "name=body::$body" >> $GITHUB_OUTPUT
 
       - name: Find Comment
         uses: peter-evans/find-comment@v2

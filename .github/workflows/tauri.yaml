@@ -1,8 +1,13 @@
-name: 'tauri'
-on: [pull_request]
+name: Node and Rust
+on:
+  pull_request:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
+    timeout-minutes: 20
     strategy:
       fail-fast: false
       matrix:
