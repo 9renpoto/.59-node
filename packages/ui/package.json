@@ -8,7 +8,7 @@
     "test": "test-storybook --coverage",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "posttest": "cp coverage/storybook/coverage-storybook.json coverage/coverage-storybook.json && nyc report --reporter=html -t coverage --report-dir coverage"
+    "posttest": "cp coverage/storybook/coverage-storybook.json coverage/coverage-storybook.json && nyc report --reporter=lcov -t coverage --report-dir coverage"
   },
   "devDependencies": {
     "@storybook/addon-coverage": "^0.0.9",
