@@ -8,12 +8,12 @@ on:
 
 jobs:
   build:
-    timeout-minutes: 10
+    timeout-minutes: 5
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [lts/*, latest]
+        node-version: [latest]
 
     steps:
       - uses: actions/checkout@v3
