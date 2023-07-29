@@ -2,6 +2,9 @@ name: Deno
 
 on:
   pull_request:
+  push:
+    branches:
+      - main
 
 jobs:
   fmt:

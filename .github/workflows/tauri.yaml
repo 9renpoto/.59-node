@@ -1,8 +1,16 @@
-name: 'tauri'
-on: [pull_request]
+name: Node and Rust
+on:
+  pull_request:
+    paths:
+        - 'apps/desktop/**'
+        - 'Cargo.toml'
+  push:
+    branches:
+      - main
 
 jobs:
   build:
+    timeout-minutes: 20
     strategy:
       fail-fast: false
       matrix:
@@ -11,10 +19,7 @@ jobs:
     runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@v3
-      - name: setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
+      - uses: actions/setup-node@v3
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
         with:

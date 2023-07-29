@@ -1,18 +1,22 @@
 name: Node CI
 
 on:
+  pull_request:
   push:
+    branches:
+      - main
 
 jobs:
   build:
+    timeout-minutes: 5
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [lts/*, latest]
+        node-version: [latest]
 
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3.7.0
         with:
@@ -22,12 +26,19 @@ jobs:
 
       - run: npm run build
       - run: npm run lint
-      - run: npm test
+
+      - run: npx playwright install --with-deps
+      - name: Build Storybook
+        run: npm run build-storybook --quiet
+      - name: Serve Storybook and run tests
+        run: |
+          npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
+            "npx http-server packages/ui/storybook-static --port 6006 --silent" \
+            "npx wait-on tcp:6006 && npm test"
 
       - name: apps/web
         uses: coverallsapp/github-action@v2.2.1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           flag-name: web
           base-path: apps/web
           path-to-lcov: apps/web/coverage/lcov.info
@@ -36,14 +47,26 @@ jobs:
       - name: packages/ui
         uses: coverallsapp/github-action@v2.2.1
         with:
-          github-token: ${{ secrets.github_token }}
           flag-name: ui
           base-path: packages/ui
           path-to-lcov: packages/ui/coverage/lcov.info
-          allow-empty: true
           parallel: true
       - name: Codecov
         uses: codecov/codecov-action@v3.1.4
+
+  chromatic-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # 👈 Required to retrieve git history
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        with:
+          token: ${{ secrets.github_token }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
 
   finish:
     needs: build
@@ -52,5 +75,100 @@ jobs:
       - name: Coveralls Finished
         uses: coverallsapp/github-action@v2.2.1
         with:
-          github-token: ${{ secrets.github_token }}
           parallel-finished: true
+
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Restore next build
+        uses: actions/cache@v3
+        id: restore-build-cache
+        env:
+          cache-name: cache-next-build
+        with:
+          # if you use a custom build directory, replace all instances of `.next` in this file with your build directory
+          # ex: if your app builds to `dist`, replace `.next` with `dist`
+          path: .next/cache
+          # change this if you prefer a more strict cache
+          key: ${{ runner.os }}-build-${{ env.cache-name }}
+
+      - name: Build next.js app
+        run: npm run build --workspace @app/web
+
+      - name: Analyze bundle
+        run: npm run nextjs-bundle-analysis report --workspace @app/web
+
+      - name: Upload bundle
+        uses: actions/upload-artifact@v3
+        with:
+          name: bundle
+          path: apps/web/.next/analyze/__bundle_analysis.json
+
+      - name: Download base branch bundle stats
+        uses: dawidd6/action-download-artifact@v2
+        if: success() && github.event.number
+        with:
+          workflow: nextjs_bundle_analysis.yml
+          branch: ${{ github.event.pull_request.base.ref }}
+          path: apps/web/.next/analyze/base
+
+      # And here's the second place - this runs after we have both the current and
+      # base branch bundle stats, and will compare them to determine what changed.
+      # There are two configurable arguments that come from package.json:
+      #
+      # - budget: optional, set a budget (bytes) against which size changes are measured
+      #           it's set to 350kb here by default, as informed by the following piece:
+      #           https://infrequently.org/2021/03/the-performance-inequality-gap/
+      #
+      # - red-status-percentage: sets the percent size increase where you get a red
+      #                          status indicator, defaults to 20%
+      #
+      # Either of these arguments can be changed or removed by editing the `nextBundleAnalysis`
+      # entry in your package.json file.
+      - name: Compare with base branch bundle
+        if: success() && github.event.number
+        run: ls -laR apps/web/.next/analyze/base && npm run nextjs-bundle-analysis compare --workspace @app/web
+
+      - name: Get comment body
+        id: get-comment-body
+        if: success() && github.event.number
+        run: |
+          body=$(cat apps/web/.next/analyze/__bundle_analysis_comment.txt)
+          body="${body//'%'/'%25'}"
+          body="${body//$'\n'/'%0A'}"
+          body="${body//$'\r'/'%0D'}"
+          echo "body=$body" >> "$GITHUB_OUTPUT"
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        if: success() && github.event.number
+        id: fc
+        with:
+          issue-number: ${{ github.event.number }}
+          body-includes: '<!-- __NEXTJS_BUNDLE -->'
+
+      - name: Create Comment
+        uses: peter-evans/create-or-update-comment@v3.0.2
+        if: success() && github.event.number && steps.fc.outputs.comment-id == 0
+        with:
+          issue-number: ${{ github.event.number }}
+          body: ${{ steps.get-comment-body.outputs.body }}
+
+      - name: Update Comment
+        uses: peter-evans/create-or-update-comment@v3.0.2
+        if: success() && github.event.number && steps.fc.outputs.comment-id != 0
+        with:
+          issue-number: ${{ github.event.number }}
+          body: ${{ steps.get-comment-body.outputs.body }}
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          edit-mode: replace

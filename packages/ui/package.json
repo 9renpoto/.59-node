@@ -5,11 +5,13 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc --build .",
-    "test": "jest --passWithNoTests",
+    "test": "test-storybook --coverage",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "posttest": "cp coverage/storybook/coverage-storybook.json coverage/coverage-storybook.json && nyc report --reporter=lcov -t coverage --report-dir coverage"
   },
   "devDependencies": {
+    "@storybook/addon-coverage": "^0.0.9",
     "@storybook/addon-essentials": "^7.0.9",
     "@storybook/addon-interactions": "^7.0.9",
     "@storybook/addon-links": "^7.0.9",
