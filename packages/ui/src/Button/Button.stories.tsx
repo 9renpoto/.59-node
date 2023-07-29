@@ -1,10 +1,16 @@
+import type { Meta, StoryObj } from '@storybook/preact'
 import { Button } from "./";
 
-export default {
-  title: "Button",
+const meta: Meta<typeof Button> = {
   component: Button,
-};
+}
 
-const Template = () => <Button>hello</Button>;
+export default meta;
 
-export const Basic = Template.bind({});
+export const Basic: StoryObj<typeof Button> = {
+  render: () => (
+    <Button>
+      hello
+    </Button>
+  )
+}
