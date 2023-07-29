@@ -1,4 +1,4 @@
-# @app/variables
+# @app/ui
 
 ## Install
 
