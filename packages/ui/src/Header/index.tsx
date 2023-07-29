@@ -1,4 +1,4 @@
-import { Citrus} from "lucide-preact";
+import { Citrus } from "lucide-preact";
 
 type Props = {
   active: string;

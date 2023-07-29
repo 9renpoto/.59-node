@@ -1,8 +1,6 @@
-import { Github, Citrus } from 'lucide-preact'
+import { Citrus, Github } from "lucide-preact";
 
-type Props = {};
-
-export default function Footer({ }: Props) {
+export default function Footer() {
   const menus = [
     {
       title: "Documentation",
