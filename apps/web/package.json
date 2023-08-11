@@ -17,7 +17,7 @@
     "@sentry/integrations": "7.63.0",
     "@sentry/node": "7.63.0",
     "@sentry/react": "7.63.0",
-    "@sentry/webpack-plugin": "2.6.1",
+    "@sentry/webpack-plugin": "2.6.2",
     "next": "12.3.4",
     "next-plugin-preact": "3.0.7",
     "next-pwa": "5.5.5",
