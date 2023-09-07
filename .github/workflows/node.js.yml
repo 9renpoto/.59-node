@@ -37,7 +37,7 @@ jobs:
             "npx wait-on tcp:6006 && npm test"
 
       - name: apps/web
-        uses: coverallsapp/github-action@3b7078ee895f74fc267b7b267c88211df59fa816 # v2.2.2
+        uses: coverallsapp/github-action@3dfc5567390f6fa9267c0ee9c251e4c8c3f18949 # v2.2.3
         with:
           flag-name: web
           base-path: apps/web
@@ -45,7 +45,7 @@ jobs:
           parallel: true
 
       - name: packages/ui
-        uses: coverallsapp/github-action@3b7078ee895f74fc267b7b267c88211df59fa816 # v2.2.2
+        uses: coverallsapp/github-action@3dfc5567390f6fa9267c0ee9c251e4c8c3f18949 # v2.2.3
         with:
           flag-name: ui
           base-path: packages/ui
@@ -73,7 +73,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Coveralls Finished
-        uses: coverallsapp/github-action@3b7078ee895f74fc267b7b267c88211df59fa816 # v2.2.2
+        uses: coverallsapp/github-action@3dfc5567390f6fa9267c0ee9c251e4c8c3f18949 # v2.2.3
         with:
           parallel-finished: true
 
