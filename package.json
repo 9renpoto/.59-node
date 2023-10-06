@@ -12,9 +12,9 @@
     "test": "npm run test --workspaces"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config-typescript": "^7.6.0",
-    "@9renpoto/stylelint-config": "^7.7.2",
-    "@9renpoto/tsconfig": "^7.6.0",
+    "@9renpoto/eslint-config-typescript": "^7.0.0",
+    "@9renpoto/stylelint-config": "^7.0.0",
+    "@9renpoto/tsconfig": "^7.0.0",
     "@types/rosie": "^0.0.43",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.0",
