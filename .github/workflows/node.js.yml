@@ -51,6 +51,7 @@ jobs:
           base-path: packages/ui
           path-to-lcov: packages/ui/coverage/lcov.info
           parallel: true
+
       - name: Codecov
         uses: codecov/codecov-action@v3.1.4
 
