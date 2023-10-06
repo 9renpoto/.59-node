@@ -7,7 +7,6 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "nextjs-bundle-analysis": "npx -p nextjs-bundle-analysis",
     "test": "playwright test"
   },
   "dependencies": {
@@ -20,10 +19,5 @@
   },
   "devDependencies": {
     "@types/gtag.js": "^0.0.16"
-  },
-  "nextBundleAnalysis": {
-    "budget": 358400,
-    "budgetPercentIncreaseRed": 20,
-    "showDetails": true
   }
 }
