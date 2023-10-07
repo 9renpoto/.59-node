@@ -36,22 +36,6 @@ jobs:
             "npx http-server packages/ui/storybook-static --port 6006 --silent" \
             "npx wait-on tcp:6006 && npm test"
 
-      - name: apps/web
-        uses: coverallsapp/github-action@3dfc5567390f6fa9267c0ee9c251e4c8c3f18949 # v2.2.3
-        with:
-          flag-name: web
-          base-path: apps/web
-          path-to-lcov: apps/web/coverage/lcov.info
-          parallel: true
-
-      - name: packages/ui
-        uses: coverallsapp/github-action@3dfc5567390f6fa9267c0ee9c251e4c8c3f18949 # v2.2.3
-        with:
-          flag-name: ui
-          base-path: packages/ui
-          path-to-lcov: packages/ui/coverage/lcov.info
-          parallel: true
-
       - name: Codecov
         uses: codecov/codecov-action@v3.1.4
 
@@ -68,13 +52,3 @@ jobs:
         with:
           token: ${{ secrets.github_token }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-
-  finish:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Coveralls Finished
-        uses: coverallsapp/github-action@3dfc5567390f6fa9267c0ee9c251e4c8c3f18949 # v2.2.3
-        with:
-          parallel-finished: true
-
