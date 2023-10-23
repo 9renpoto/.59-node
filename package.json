@@ -8,12 +8,10 @@
     "build-storybook": " npm run build-storybook -w @app/ui",
     "clean": "turbo run clean",
     "lint": "eslint . --ext=ts,tsx",
-    "stylelint": "stylelint \"**/*.css\"",
     "test": "npm run test --workspaces"
   },
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "^7.0.0",
-    "@9renpoto/stylelint-config": "^7.0.0",
     "@9renpoto/tsconfig": "^7.0.0",
     "@types/rosie": "^0.0.44",
     "husky": "^8.0.3",
@@ -27,16 +25,8 @@
       "deno lint",
       "eslint --fix"
     ],
-    "*.css": [
-      "stylelint --fix"
-    ],
     "*.{md,json,js}": [
       "deno fmt"
-    ]
-  },
-  "stylelint": {
-    "extends": [
-      "@9renpoto/stylelint-config"
     ]
   },
   "workspaces": {
