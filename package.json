@@ -13,7 +13,7 @@
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "^7.0.0",
     "@9renpoto/tsconfig": "^7.0.0",
-    "@types/rosie": "^0.0.44",
+    "@types/rosie": "^0.0.45",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.0",
     "rosie": "^2.1.0",
