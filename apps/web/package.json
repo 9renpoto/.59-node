@@ -16,7 +16,7 @@
     "next-plugin-preact": "3.0.7",
     "react": "npm:@preact/compat@17.1.2",
     "react-dom": "npm:@preact/compat@17.1.2",
-    "react-ssr-prepass": "npm:preact-ssr-prepass@1.2.0"
+    "react-ssr-prepass": "npm:preact-ssr-prepass@1.2.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.38.1",
