@@ -1,8 +1,7 @@
 name: Node CI
 
 on:
-  pull_request:
-  push:
+  pull_request_target:
 
 jobs:
   build:
