@@ -48,15 +48,17 @@ jobs:
             );
             return notes.data.body;
 
-      - name: generate title
-        run: echo "## v${{ steps.get_version.outputs.NEW_VERSION }} ($(date '+%Y-%m-%d'))" > new
-      - run: echo "${{ steps.get_release_note.outputs.result }}" >> new
+      - run: |
+          cat << EOF >> new
+          ## v${{ steps.get_version.outputs.NEW_VERSION }} ($(date '+%Y-%m-%d'))
+          ${{ steps.get_release_note.outputs.result }}
+          EOF
       - run: cat new ./CHANGELOG.md > temp
       - run: mv temp ./CHANGELOG.md
       - run: rm new
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5.0.2
+        uses: peter-evans/create-pull-request@v5
         with:
           base: main
           branch: main-${{ steps.get_version.outputs.NEW_VERSION }}
