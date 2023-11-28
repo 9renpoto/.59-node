@@ -17,7 +17,7 @@
     "@storybook/addon-links": "^7.0.9",
     "@storybook/blocks": "^7.0.9",
     "@storybook/preact": "^7.0.9",
-    "@storybook/preact-vite": "^7.0.9",
+    "@storybook/preact-vite": "^7.6.0",
     "@storybook/test-runner": "^0.15.0",
     "@storybook/testing-library": "^0.2.0",
     "@testing-library/preact": "^3.2.3",
