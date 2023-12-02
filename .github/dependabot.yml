@@ -12,3 +12,21 @@ updates:
     interval: daily
     time: '03:00'
     timezone: 'Asia/Tokyo'
+  groups:
+     tauri-apps:
+        patterns:
+        - "@tauri-apps*"
+     preact:
+        patterns:
+        - "@preact*"
+        - "preact"
+     9renpoto:
+        patterns:
+        - "@9renpoto*"
+     storybook:
+        patterns:
+        - "@storybook*"
+        - "storybook"
+        update-types:
+        - "minor"
+        - "patch"
