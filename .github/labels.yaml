@@ -1,75 +1,60 @@
--
-  name: 'good first issue'
-  color: '5319e7'
-  description: 'Good for newcomers'
+- name: "good first issue"
+  color: "5319e7"
+  description: "Good for newcomers"
   aliases: []
--
-  name: 'help wanted'
-  color: '008672'
-  description: 'Extra attention is needed'
+- name: "help wanted"
+  color: "008672"
+  description: "Extra attention is needed"
   aliases: []
--
-  name: 'status: pending'
+- name: "status: pending"
   color: c5def5
-  description: 'More info is needed before deciding what to do'
+  description: "More info is needed before deciding what to do"
   aliases: []
--
-  name: 'status: pinned'
+- name: "status: pinned"
   color: 0052cc
-  description: 'Should not be labeled as stale'
+  description: "Should not be labeled as stale"
   aliases: []
--
-  name: 'status: stale'
+- name: "status: stale"
   color: fbca04
-  description: 'Inactive issues and PRs'
+  description: "Inactive issues and PRs"
   aliases: []
--
-  name: 'status: wontfix'
+- name: "status: wontfix"
   color: cfd3d7
-  description: 'This will not be worked on'
+  description: "This will not be worked on"
   aliases: []
--
-  name: 'type: bug'
+- name: "type: bug"
   color: d73a4a
-  description: 'Verified problems that need to be worked on'
+  description: "Verified problems that need to be worked on"
   aliases: []
--
-  name: 'type: chore'
+- name: "type: chore"
   color: C5DEF5
-  description: 'Code changes that neither fix bugs nor add features (refactoring, dependency changes, ...)'
+  description: "Code changes that neither fix bugs nor add features (refactoring, dependency changes, ...)"
   aliases: []
--
-  name: 'type: docs'
+- name: "type: docs"
   color: C5DEF5
-  description: 'Documentation changes'
+  description: "Documentation changes"
   aliases: []
--
-  name: 'type: duplicate'
+- name: "type: duplicate"
   color: cfd3d7
-  description: 'This issue or pull request already exists'
+  description: "This issue or pull request already exists"
   aliases: []
--
-  name: 'type: feature'
+- name: "type: feature"
   color: 0E8A16
-  description: 'New feature or feature request'
+  description: "New feature or feature request"
   aliases: []
--
-  name: 'type: fix'
+- name: "type: fix"
   color: 1D76DB
-  description: 'Updates to existing functionalities'
+  description: "Updates to existing functionalities"
   aliases: []
--
-  name: 'type: invalid'
+- name: "type: invalid"
   color: e4e669
-  description: 'This doesn''t seem right'
+  description: "This doesn't seem right"
   aliases: []
--
-  name: 'type: not a bug'
+- name: "type: not a bug"
   color: 0e8a16
-  description: 'Reports that happen not be our fault'
+  description: "Reports that happen not be our fault"
   aliases: []
--
-  name: 'type: question'
+- name: "type: question"
   color: d876e3
-  description: 'Further information is requested'
+  description: "Further information is requested"
   aliases: []

@@ -41,4 +41,3 @@ jobs:
           branch: create-pull-request/patch-export-label
           add-paths: |
             .github/labels.yaml
-

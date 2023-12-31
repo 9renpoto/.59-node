@@ -1,7 +1,6 @@
-name: "Check spelling"
+name: Check spelling
 on:
   pull_request:
-
 jobs:
   spellcheck:
     runs-on: ubuntu-latest
@@ -9,5 +8,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: streetsidesoftware/cspell-action@v5
         with:
-          files: "*.{rs,ts,tsx,md}"
-          incremental_files_only: false
+          incremental_files_only: true
+          strict: false

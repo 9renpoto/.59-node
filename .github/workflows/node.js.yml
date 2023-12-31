@@ -3,7 +3,12 @@ name: Node CI
 on:
   pull_request:
   push:
-    branches: [main]
+    branches:
+      - main
+    paths:
+      - "**.json"
+      - "**.ts"
+      - "**.tsx"
 
 jobs:
   build:
@@ -20,8 +25,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+          cache: "npm"
+      - run: npm ci
 
       - run: npm run build
       - run: npm run lint
@@ -35,8 +40,13 @@ jobs:
             "npx http-server packages/ui/storybook-static --port 6006 --silent" \
             "npx wait-on tcp:6006 && npm test"
 
-      - name: Codecov
-        uses: codecov/codecov-action@v3
+      - name: compressed-size-action
+        uses: preactjs/compressed-size-action@2.5.0
+        with:
+          pattern: "./packages/ui/lib/**/*.{js,css,html,json}"
+          exclude: "{**/*.map,**/node_modules/**}"
+
+      - uses: codecov/codecov-action@v3
 
   chromatic-deployment:
     runs-on: ubuntu-latest
@@ -49,5 +59,4 @@ jobs:
       - name: Publish to Chromatic
         uses: chromaui/action@v10
         with:
-          token: ${{ secrets.github_token }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
