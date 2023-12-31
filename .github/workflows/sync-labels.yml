@@ -5,7 +5,6 @@ on:
 
 permissions:
   issues: write
-  contents: read
 
 env:
   ACTIONS_RUNNER_DEBUG: true
@@ -19,5 +18,5 @@ jobs:
       - uses: EndBug/label-sync@v2
         with:
           config-file: |
-            labels.yml
+            https://raw.githubusercontent.com/azu/github-label-setup/master/labels.json
           delete-other-labels: true
