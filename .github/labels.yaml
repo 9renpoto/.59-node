@@ -1,60 +1,135 @@
-- name: "good first issue"
-  color: "5319e7"
-  description: "Good for newcomers"
+-
+  name: duplicate
+  color: ededed
+  description: 'This issue or Pull Request already exists'
   aliases: []
-- name: "help wanted"
-  color: "008672"
-  description: "Extra attention is needed"
+-
+  name: 'good first issue'
+  color: 7057ff
+  description: 'Good for newcomers'
   aliases: []
-- name: "status: pending"
-  color: c5def5
-  description: "More info is needed before deciding what to do"
+-
+  name: 'help wanted'
+  color: e99695
+  description: 'Extra attention is needed'
   aliases: []
-- name: "status: pinned"
-  color: 0052cc
-  description: "Should not be labeled as stale"
+-
+  name: 'Priority: Critical'
+  color: ee0701
+  description: null
   aliases: []
-- name: "status: stale"
-  color: fbca04
-  description: "Inactive issues and PRs"
+-
+  name: 'Priority: High'
+  color: d93f0b
+  description: null
   aliases: []
-- name: "status: wontfix"
-  color: cfd3d7
-  description: "This will not be worked on"
-  aliases: []
-- name: "type: bug"
-  color: d73a4a
-  description: "Verified problems that need to be worked on"
-  aliases: []
-- name: "type: chore"
-  color: C5DEF5
-  description: "Code changes that neither fix bugs nor add features (refactoring, dependency changes, ...)"
-  aliases: []
-- name: "type: docs"
-  color: C5DEF5
-  description: "Documentation changes"
-  aliases: []
-- name: "type: duplicate"
-  color: cfd3d7
-  description: "This issue or pull request already exists"
-  aliases: []
-- name: "type: feature"
-  color: 0E8A16
-  description: "New feature or feature request"
-  aliases: []
-- name: "type: fix"
-  color: 1D76DB
-  description: "Updates to existing functionalities"
-  aliases: []
-- name: "type: invalid"
-  color: e4e669
-  description: "This doesn't seem right"
-  aliases: []
-- name: "type: not a bug"
+-
+  name: 'Priority: Low'
   color: 0e8a16
-  description: "Reports that happen not be our fault"
+  description: null
   aliases: []
-- name: "type: question"
-  color: d876e3
-  description: "Further information is requested"
+-
+  name: 'Priority: Medium'
+  color: fbca04
+  description: null
+  aliases: []
+-
+  name: 'Status: Abandoned'
+  color: '000000'
+  description: 'The issue or Pull Request is wontfix'
+  aliases: []
+-
+  name: 'Status: Blocked'
+  color: ee0701
+  description: 'Progress on the issue is Blocked'
+  aliases: []
+-
+  name: 'Status: In Progress'
+  color: cccccc
+  description: 'Work in Progress'
+  aliases: []
+-
+  name: 'Status: Need More Info'
+  color: F9C90A
+  description: 'Lacks enough info to make progress'
+  aliases: []
+-
+  name: 'Status: PR Welcome'
+  color: '2E7733'
+  description: 'Welcome to Pull Request'
+  aliases: []
+-
+  name: 'Status: Proposal'
+  color: d4c5f9
+  description: 'Request for comments'
+  aliases: []
+-
+  name: 'Status: Review Needed'
+  color: fbca04
+  description: 'Request for review comments'
+  aliases: []
+-
+  name: 'Type: Breaking Change'
+  color: b60205
+  description: 'Includes breaking changes'
+  aliases: []
+-
+  name: 'Type: Bug'
+  color: ee0701
+  description: 'Bug or Bug fixes'
+  aliases: []
+-
+  name: 'Type: CI'
+  color: ffd412
+  description: 'Changes to CI configuration files and scripts'
+  aliases: []
+-
+  name: 'Type: Dependencies'
+  color: 0366d6
+  description: 'Dependency issues or Changes to dependency files'
+  aliases: []
+-
+  name: 'Type: Documentation'
+  color: 0e8a16
+  description: 'Documentation only changes'
+  aliases: []
+-
+  name: 'Type: Feature'
+  color: 1d76db
+  description: 'New Feature'
+  aliases: []
+-
+  name: 'Type: Maintenance'
+  color: abd406
+  description: 'Repository Maintenance'
+  aliases: []
+-
+  name: 'Type: Meta'
+  color: BFD4F2
+  description: 'Type: Meta - Related to repository itself'
+  aliases: []
+-
+  name: 'Type: Question'
+  color: cc317c
+  description: 'Further information is requested'
+  aliases: []
+-
+  name: 'Type: Refactoring'
+  color: fbca04
+  description: 'A code change that neither fixes a bug nor adds a feature'
+  aliases: []
+-
+  name: 'Type: Release'
+  color: '5319E7'
+  description: 'Related to release process'
+  aliases: []
+-
+  name: 'Type: Security'
+  color: ee0701
+  description: 'Vulnerability disclosure or Fixing security issue'
+  aliases: []
+-
+  name: 'Type: Testing'
+  color: '257759'
+  description: 'Adding missing tests or correcting existing tests'
   aliases: []
