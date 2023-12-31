@@ -1,7 +1,6 @@
-name: "Check spelling"
+name: Check spelling
 on:
-  pull_request:
-
+  pull_request
 jobs:
   spellcheck:
     runs-on: ubuntu-latest

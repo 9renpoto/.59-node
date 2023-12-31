@@ -15,15 +15,13 @@ on:
       - "**.tsx"
 
 jobs:
-  fmt:
+  format:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup repo
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Deno
-        uses: denoland/setup-deno@v1
+      - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
 
