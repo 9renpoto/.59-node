@@ -14,26 +14,6 @@
   description: 'Extra attention is needed'
   aliases: []
 -
-  name: 'Priority: Critical'
-  color: ee0701
-  description: null
-  aliases: []
--
-  name: 'Priority: High'
-  color: d93f0b
-  description: null
-  aliases: []
--
-  name: 'Priority: Low'
-  color: 0e8a16
-  description: null
-  aliases: []
--
-  name: 'Priority: Medium'
-  color: fbca04
-  description: null
-  aliases: []
--
   name: 'Status: Abandoned'
   color: '000000'
   description: 'The issue or Pull Request is wontfix'
