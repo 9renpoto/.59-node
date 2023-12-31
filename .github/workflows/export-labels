@@ -1,0 +1,44 @@
+name: Export label
+
+on:
+  label:
+    types: [created, edited, deleted]
+  workflow_dispatch:
+
+permissions:
+  issues: read
+  contents: write
+  pull-requests: write
+
+jobs:
+  export_labels:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: EndBug/export-label-config@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  create_pull_request:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    needs:
+      - export_labels
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: main
+      - uses: actions/download-artifact@v3
+        with:
+          name: Label config
+      - run: cp labels.yaml .github/labels.yaml
+      - uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: Update labels
+          delete-branch: true
+          title: Update labels
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          branch: create-pull-request/patch-export-label
+          add-paths: |
+            .github/labels.yaml
+
