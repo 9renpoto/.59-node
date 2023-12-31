@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - '.github/labels.yaml'
+      - ".github/labels.yaml"
   workflow_dispatch:
 
 permissions:
@@ -23,4 +23,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           config-file: .github/labels.yaml
           delete-other-labels: true
-
