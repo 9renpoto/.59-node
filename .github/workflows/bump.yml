@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       semver:
-        description: 'Which SemVer'
+        description: "Which SemVer"
         required: true
-        default: 'patch'
+        default: "patch"
         type: choice
         options:
           - major
@@ -80,10 +80,10 @@ jobs:
         with:
           base: main
           branch: main-${{ steps.get_version.outputs.NEW_VERSION }}
-          commit-message: 'bump: v${{ steps.get_version.outputs.NEW_VERSION }}'
+          commit-message: "bump: v${{ steps.get_version.outputs.NEW_VERSION }}"
           body: ${{ steps.get_release_note.outputs.result  }}
-          title: 'chore: bump v${{ steps.get_version.outputs.NEW_VERSION }}'
+          title: "chore: bump v${{ steps.get_version.outputs.NEW_VERSION }}"
           labels: |
             documentation
           draft: true
-          milestone: 'v${{ steps.get_version.outputs.NEW_VERSION }}'
+          milestone: "v${{ steps.get_version.outputs.NEW_VERSION }}"

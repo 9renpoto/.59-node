@@ -2,8 +2,8 @@ name: Node and Rust
 on:
   pull_request:
     paths:
-        - 'apps/desktop/**'
-        - 'Cargo.toml'
+      - "apps/desktop/**"
+      - "Cargo.toml"
   push:
     branches:
       - main

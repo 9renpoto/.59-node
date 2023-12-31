@@ -7,15 +7,24 @@ changelog:
     authors:
       - octocat
   categories:
-    - title: ':bug: Type: Bug'
+    - title: ":boom: Type: Breaking Change"
       labels:
-        - 'bug'
-    - title: ':memo: Documentation'
+        - "Type: Breaking Change"
+    - title: ":bug: Type: Bug"
       labels:
-        - 'documentation'
-    - title: ':rocket: Type: Feature'
+        - "Type: Bug"
+        - "bug"
+    - title: ":house: Refactoring"
       labels:
-        - 'enhancement'
+        - "Type: Refactoring"
+    - title: ":memo: Documentation"
+      labels:
+        - "Type: Documentation"
+        - "documentation"
+    - title: ":rocket: Type: Feature"
+      labels:
+        - "Type: Feature"
+        - "enhancement"
     - title: Other Changes
       labels:
-        - '*'
+        - "*"
