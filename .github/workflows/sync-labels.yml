@@ -18,5 +18,6 @@ jobs:
     steps:
       - uses: EndBug/label-sync@v2
         with:
-          config-file: ./labels.yaml
+          config-file: |
+            labels.yml
           delete-other-labels: true
