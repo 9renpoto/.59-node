@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: EndBug/label-sync@v2
         with:
-          config-file:
-            - https://raw.githubusercontent.com/EndBug/labels/main/labels.yml
+          config-file: |
+            https://raw.githubusercontent.com/EndBug/labels/main/labels.yml
           delete-other-labels: true
