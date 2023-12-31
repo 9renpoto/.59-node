@@ -46,7 +46,6 @@ jobs:
       - name: compressed-size-action
         uses: preactjs/compressed-size-action@2.5.0
         with:
-          repo-token: "${{ secrets.github_token }}"
           pattern: "./packages/ui/lib/**/*.{js,css,html,json}"
           exclude: "{**/*.map,**/node_modules/**}"
 
@@ -63,6 +62,5 @@ jobs:
       - name: Publish to Chromatic
         uses: chromaui/action@v10
         with:
-          token: ${{ secrets.github_token }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
 
