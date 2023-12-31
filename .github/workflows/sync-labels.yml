@@ -2,6 +2,7 @@ name: Sync labels
 on:
   workflow_dispatch:
 
+
 permissions:
   issues: write
 
@@ -12,5 +13,6 @@ jobs:
     steps:
       - uses: EndBug/label-sync@v2
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           config-file: https://raw.githubusercontent.com/azu/github-label-setup/master/labels.json
           delete-other-labels: true
