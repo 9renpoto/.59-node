@@ -5,10 +5,12 @@ on:
 
 permissions:
   issues: write
+  contents: read
 
 jobs:
   labels:
     runs-on: ubuntu-latest
+    timeout-minutes: 2
 
     steps:
       - uses: EndBug/label-sync@v2
