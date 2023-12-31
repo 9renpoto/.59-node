@@ -7,6 +7,9 @@ permissions:
   issues: write
   contents: read
 
+env:
+  ACTIONS_RUNNER_DEBUG: true
+
 jobs:
   labels:
     runs-on: ubuntu-latest
