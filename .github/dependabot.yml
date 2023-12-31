@@ -1,32 +1,38 @@
 version: 2
 updates:
-- package-ecosystem: github-actions
-  directory: '/'
-  schedule:
-    interval: daily
-    time: '03:00'
-    timezone: 'Asia/Tokyo'
-- package-ecosystem: npm
-  directory: '/'
-  schedule:
-    interval: daily
-    time: '03:00'
-    timezone: 'Asia/Tokyo'
-  groups:
-     tauri-apps:
+  - package-ecosystem: cargo
+    directory: /
+    labels:
+      - "Type: Maintenance"
+    schedule:
+      interval: daily
+  - package-ecosystem: github-actions
+    directory: "/"
+    labels:
+      - "Type: Maintenance"
+    schedule:
+      interval: daily
+  - package-ecosystem: npm
+    directory: "/"
+    labels:
+      - "Type: Maintenance"
+    schedule:
+      interval: daily
+    groups:
+      tauri-apps:
         patterns:
-        - "@tauri-apps*"
-     preact:
+          - "@tauri-apps*"
+      preact:
         patterns:
-        - "@preact*"
-        - "preact"
-     9renpoto:
+          - "@preact*"
+          - "preact"
+      9renpoto:
         patterns:
-        - "@9renpoto*"
-     storybook:
+          - "@9renpoto*"
+      storybook:
         patterns:
-        - "@storybook*"
-        - "storybook"
+          - "@storybook*"
+          - "storybook"
         update-types:
-        - "minor"
-        - "patch"
+          - "minor"
+          - "patch"
