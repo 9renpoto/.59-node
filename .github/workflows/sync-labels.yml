@@ -14,5 +14,5 @@ jobs:
       - uses: EndBug/label-sync@v2
         with:
           config-file: |
-            https://raw.githubusercontent.com/EndBug/labels/main/labels.yml
+            https://raw.githubusercontent.com/azu/github-label-setup/master/labels.json
           delete-other-labels: true
