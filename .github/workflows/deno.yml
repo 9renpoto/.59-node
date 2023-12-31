@@ -2,9 +2,17 @@ name: Deno
 
 on:
   pull_request:
+    paths:
+      - "**.json"
+      - "**.ts"
+      - "**.tsx"
   push:
     branches:
       - main
+    paths:
+      - "**.json"
+      - "**.ts"
+      - "**.tsx"
 
 jobs:
   fmt:

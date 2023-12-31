@@ -2,8 +2,16 @@ name: Node CI
 
 on:
   pull_request:
+    paths:
+      - "**.json"
+      - "**.ts"
+      - "**.tsx"
   push:
-    branches: [main]
+    branches:
+      - main
+    paths:
+      - "**.json"
+      - "**.tsx"
 
 jobs:
   build:
@@ -51,3 +59,14 @@ jobs:
         with:
           token: ${{ secrets.github_token }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+  compressed-size:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: compressed-size-action
+        uses: preactjs/compressed-size-action@2.5.0
+        with:
+          repo-token: "${{ secrets.github_token }}"
+          pattern: "./packages/ui/lib/**/*.{js,css,html,json}"
+          exclude: "{**/*.map,**/node_modules/**}"
