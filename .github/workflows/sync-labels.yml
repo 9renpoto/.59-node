@@ -1,6 +1,10 @@
 name: Sync labels
 on:
-  pull_request:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/labels.yaml'
   workflow_dispatch:
 
 permissions:
