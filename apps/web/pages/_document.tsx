@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
             type="image/png"
             sizes="32x32"
           />
-          <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+          <link rel="apple-touch-icon" href="/apple-icon.png" />
           <meta name="theme-color" content="#317EFB" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
@@ -37,6 +37,7 @@ export default class MyDocument extends Document {
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
           />
           <script
+            // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];

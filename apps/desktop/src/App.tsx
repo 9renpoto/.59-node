@@ -1,7 +1,7 @@
-import { useState } from "preact/hooks";
-import preactLogo from "./assets/preact.svg";
 import { invoke } from "@tauri-apps/api/tauri";
+import { useState } from "preact/hooks";
 import "./App.css";
+import preactLogo from "./assets/preact.svg";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -17,13 +17,13 @@ function App() {
       <h1>Welcome to Tauri!</h1>
 
       <div class="row">
-        <a href="https://vitejs.dev" target="_blank">
+        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" class="logo vite" alt="Vite logo" />
         </a>
-        <a href="https://tauri.app" target="_blank">
+        <a href="https://tauri.app" target="_blank" rel="noreferrer">
           <img src="/tauri.svg" class="logo tauri" alt="Tauri logo" />
         </a>
-        <a href="https://preactjs.com" target="_blank">
+        <a href="https://preactjs.com" target="_blank" rel="noreferrer">
           <img src={preactLogo} class="logo preact" alt="Preact logo" />
         </a>
       </div>
