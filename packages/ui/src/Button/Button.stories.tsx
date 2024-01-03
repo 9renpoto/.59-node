@@ -8,9 +8,5 @@ const meta: Meta<typeof Button> = {
 export default meta;
 
 export const Basic: StoryObj<typeof Button> = {
-  render: () => (
-    <Button>
-      hello
-    </Button>
-  ),
+  render: () => <Button>hello</Button>,
 };

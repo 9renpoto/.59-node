@@ -26,13 +26,9 @@ export default function Footer() {
       <div class="flex-1">
         <div class="flex items-center gap-1">
           <Citrus class="inline-block" aria-hidden="true" />
-          <div class="font-bold text-2xl">
-            Sample
-          </div>
+          <div class="font-bold text-2xl">Sample</div>
         </div>
-        <div class="text-gray-500">
-          Full Stack Framework
-        </div>
+        <div class="text-gray-500">Full Stack Framework</div>
       </div>
 
       {menus.map((item) => (
@@ -41,10 +37,7 @@ export default function Footer() {
           <ul class="mt-2">
             {item.children.map((child) => (
               <li class="mt-2" key={child.name}>
-                <a
-                  class="text-gray-500 hover:text-gray-700"
-                  href={child.href}
-                >
+                <a class="text-gray-500 hover:text-gray-700" href={child.href}>
                   {child.name}
                 </a>
               </li>
@@ -55,7 +48,8 @@ export default function Footer() {
 
       <div class="text-gray-500 space-y-2">
         <div class="text-xs">
-          Copyright © {new Date().getFullYear()} 9renpoto<br />
+          Copyright © {new Date().getFullYear()} 9renpoto
+          <br />
           All right reserved.
         </div>
 

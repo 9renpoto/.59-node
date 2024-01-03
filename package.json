@@ -7,12 +7,12 @@
     "storybook": "npm run storybook -w @app/ui",
     "build-storybook": " npm run build-storybook -w @app/ui",
     "clean": "turbo run clean",
-    "lint": "eslint . --ext=ts,tsx",
+    "lint": "biome check .",
     "test": "npm run test --workspaces"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config-typescript": "^7.0.0",
     "@9renpoto/tsconfig": "^7.0.0",
+    "@biomejs/biome": "^1.4.1",
     "@types/rosie": "^0.0.45",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
@@ -20,13 +20,8 @@
     "turbo": "^1.11.2"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "deno fmt",
-      "deno lint",
-      "eslint --fix"
-    ],
-    "*.{md,json,js}": [
-      "deno fmt"
+    "*.{ts,tsx,md,json,js}": [
+      "biome check --apply"
     ]
   },
   "workspaces": {

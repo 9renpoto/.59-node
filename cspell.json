@@ -3,20 +3,14 @@
   "version": "0.2",
   "useGitignore": true,
   "dictionaries": [
-    "html",
-    "typescript",
     "css",
+    "filetypes",
+    "fonts",
+    "html",
     "node",
-    "rust"
+    "npm",
+    "rust",
+    "typescript"
   ],
-  "words": [
-    "Autoprefix",
-    "gtag",
-    "lucide",
-    "preact",
-    "serde",
-    "stylelint",
-    "tauri",
-    "twind"
-  ]
+  "words": ["Autoprefix", "gtag", "lucide", "serde"]
 }
