@@ -84,6 +84,6 @@ jobs:
           body: ${{ steps.get_release_note.outputs.result  }}
           title: "chore: bump v${{ steps.get_version.outputs.NEW_VERSION }}"
           labels: |
-            "Type: Documentation"
+            Type: Documentation
           draft: true
           milestone: "v${{ steps.get_version.outputs.NEW_VERSION }}"
