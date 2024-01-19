@@ -15,7 +15,7 @@
     "@storybook/addon-essentials": "^7.6.9",
     "@storybook/addon-interactions": "^7.6.9",
     "@storybook/addon-links": "^7.6.9",
-    "@storybook/blocks": "^7.6.8",
+    "@storybook/blocks": "^7.6.10",
     "@storybook/preact": "^7.6.9",
     "@storybook/preact-vite": "^7.6.9",
     "@storybook/test-runner": "^0.16.0",
