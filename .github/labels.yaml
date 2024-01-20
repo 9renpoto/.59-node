@@ -1,115 +1,92 @@
--
-  name: duplicate
+- name: duplicate
   color: ededed
-  description: 'This issue or Pull Request already exists'
+  description: "This issue or Pull Request already exists"
   aliases: []
--
-  name: 'good first issue'
+- name: "good first issue"
   color: 7057ff
-  description: 'Good for newcomers'
+  description: "Good for newcomers"
   aliases: []
--
-  name: 'help wanted'
+- name: "help wanted"
   color: e99695
-  description: 'Extra attention is needed'
+  description: "Extra attention is needed"
   aliases: []
--
-  name: 'Status: Abandoned'
-  color: '000000'
-  description: 'The issue or Pull Request is wontfix'
+- name: "Status: Abandoned"
+  color: "000000"
+  description: "The issue or Pull Request is wontfix"
   aliases: []
--
-  name: 'Status: Blocked'
+- name: "Status: Blocked"
   color: ee0701
-  description: 'Progress on the issue is Blocked'
+  description: "Progress on the issue is Blocked"
   aliases: []
--
-  name: 'Status: In Progress'
+- name: "Status: In Progress"
   color: cccccc
-  description: 'Work in Progress'
+  description: "Work in Progress"
   aliases: []
--
-  name: 'Status: Need More Info'
+- name: "Status: Need More Info"
   color: F9C90A
-  description: 'Lacks enough info to make progress'
+  description: "Lacks enough info to make progress"
   aliases: []
--
-  name: 'Status: PR Welcome'
-  color: '2E7733'
-  description: 'Welcome to Pull Request'
+- name: "Status: PR Welcome"
+  color: "2E7733"
+  description: "Welcome to Pull Request"
   aliases: []
--
-  name: 'Status: Proposal'
+- name: "Status: Proposal"
   color: d4c5f9
-  description: 'Request for comments'
+  description: "Request for comments"
   aliases: []
--
-  name: 'Status: Review Needed'
+- name: "Status: Review Needed"
   color: fbca04
-  description: 'Request for review comments'
+  description: "Request for review comments"
   aliases: []
--
-  name: 'Type: Breaking Change'
+- name: "Type: Breaking Change"
   color: b60205
-  description: 'Includes breaking changes'
+  description: "Includes breaking changes"
   aliases: []
--
-  name: 'Type: Bug'
+- name: "Type: Bug"
   color: ee0701
-  description: 'Bug or Bug fixes'
+  description: "Bug or Bug fixes"
   aliases: []
--
-  name: 'Type: CI'
+- name: "Type: CI"
   color: ffd412
-  description: 'Changes to CI configuration files and scripts'
+  description: "Changes to CI configuration files and scripts"
   aliases: []
--
-  name: 'Type: Dependencies'
+- name: "Type: Dependencies"
   color: 0366d6
-  description: 'Dependency issues or Changes to dependency files'
+  description: "Dependency issues or Changes to dependency files"
   aliases: []
--
-  name: 'Type: Documentation'
+- name: "Type: Documentation"
   color: 0e8a16
-  description: 'Documentation only changes'
+  description: "Documentation only changes"
   aliases: []
--
-  name: 'Type: Feature'
+- name: "Type: Feature"
   color: 1d76db
-  description: 'New Feature'
+  description: "New Feature"
   aliases: []
--
-  name: 'Type: Maintenance'
+- name: "Type: Maintenance"
   color: abd406
-  description: 'Repository Maintenance'
+  description: "Repository Maintenance"
   aliases: []
--
-  name: 'Type: Meta'
+- name: "Type: Meta"
   color: BFD4F2
-  description: 'Type: Meta - Related to repository itself'
+  description: "Type: Meta - Related to repository itself"
   aliases: []
--
-  name: 'Type: Question'
+- name: "Type: Question"
   color: cc317c
-  description: 'Further information is requested'
+  description: "Further information is requested"
   aliases: []
--
-  name: 'Type: Refactoring'
+- name: "Type: Refactoring"
   color: fbca04
-  description: 'A code change that neither fixes a bug nor adds a feature'
+  description: "A code change that neither fixes a bug nor adds a feature"
   aliases: []
--
-  name: 'Type: Release'
-  color: '5319E7'
-  description: 'Related to release process'
+- name: "Type: Release"
+  color: "5319E7"
+  description: "Related to release process"
   aliases: []
--
-  name: 'Type: Security'
+- name: "Type: Security"
   color: ee0701
-  description: 'Vulnerability disclosure or Fixing security issue'
+  description: "Vulnerability disclosure or Fixing security issue"
   aliases: []
--
-  name: 'Type: Testing'
-  color: '257759'
-  description: 'Adding missing tests or correcting existing tests'
+- name: "Type: Testing"
+  color: "257759"
+  description: "Adding missing tests or correcting existing tests"
   aliases: []
