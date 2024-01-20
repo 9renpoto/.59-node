@@ -12,6 +12,7 @@
   "devDependencies": {
     "@9renpoto/tsconfig": "^7.8.0",
     "@types/rosie": "^0.0.45",
+    "prettier-plugin-astro": "^0.13.0",
     "rosie": "^2.1.0",
     "turbo": "^1.11.3"
   },
