@@ -45,7 +45,7 @@ jobs:
           pattern: "./packages/ui/lib/**/*.{js,css,html,json}"
           exclude: "{**/*.map,**/node_modules/**}"
 
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v4
 
   quality:
     runs-on: ubuntu-latest
