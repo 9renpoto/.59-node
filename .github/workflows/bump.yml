@@ -61,7 +61,8 @@ jobs:
               {
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                tag_name: process.env.NEW_VERSION,
+                tag_name: `v${process.env.NEW_VERSION}`,
+                previous_tag_name: '${{ steps.github_releases.outputs.result }}',
               }
             );
             return notes.data.body;
