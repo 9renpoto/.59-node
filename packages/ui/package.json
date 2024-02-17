@@ -12,18 +12,18 @@
   },
   "devDependencies": {
     "@storybook/addon-coverage": "^1.0.0",
-    "@storybook/addon-essentials": "^7.6.14",
-    "@storybook/addon-interactions": "^7.6.14",
-    "@storybook/addon-links": "^7.6.14",
+    "@storybook/addon-essentials": "^7.6.16",
+    "@storybook/addon-interactions": "^7.6.16",
+    "@storybook/addon-links": "^7.6.16",
     "@storybook/blocks": "^7.6.10",
-    "@storybook/preact": "^7.6.14",
-    "@storybook/preact-vite": "^7.6.14",
+    "@storybook/preact": "^7.6.16",
+    "@storybook/preact-vite": "^7.6.16",
     "@storybook/test-runner": "^0.16.0",
     "@storybook/testing-library": "^0.2.0",
     "@testing-library/preact": "^3.2.3",
     "@twind/preset-autoprefix": "^1.0.7",
     "@twind/preset-tailwind": "^1.1.4",
-    "storybook": "^7.6.14"
+    "storybook": "^7.6.16"
   },
   "typings": "lib/index.d.ts",
   "dependencies": {
