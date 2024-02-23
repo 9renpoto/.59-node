@@ -12,5 +12,13 @@
     "rust",
     "typescript"
   ],
-  "words": ["Autoprefix", "gtag", "lucide", "preact", "serde"]
+  "words": [
+    "autodocs",
+    "Autoprefix",
+    "gtag",
+    "lucide",
+    "preact",
+    "serde",
+    "turbosnap"
+  ]
 }
