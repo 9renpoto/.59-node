@@ -33,6 +33,3 @@ updates:
         patterns:
           - "@storybook*"
           - "storybook"
-        update-types:
-          - "minor"
-          - "patch"
