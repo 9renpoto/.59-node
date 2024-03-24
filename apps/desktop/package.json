@@ -12,11 +12,11 @@
   },
   "dependencies": {
     "@app/ui": "^0.0.1",
-    "preact": "^10.19.6",
+    "preact": "^10.20.1",
     "@tauri-apps/api": "^1.5.3"
   },
   "devDependencies": {
-    "@preact/preset-vite": "^2.8.1",
+    "@preact/preset-vite": "^2.8.2",
     "vite": "^5.1.6",
     "@tauri-apps/cli": "^1.5.11"
   }
