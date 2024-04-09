@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@app/ui": "^0.0.1",
-    "preact": "^10.20.1",
+    "preact": "^10.20.2",
     "@tauri-apps/api": "^1.5.3"
   },
   "devDependencies": {
