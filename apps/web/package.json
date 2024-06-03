@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.44.1",
-    "@types/gtag.js": "^0.0.19"
+    "@types/gtag.js": "^0.0.20"
   }
 }
