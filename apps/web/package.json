@@ -19,7 +19,7 @@
     "react-ssr-prepass": "npm:preact-ssr-prepass@1.2.1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.44.1",
+    "@playwright/test": "^1.46.1",
     "@types/gtag.js": "^0.0.20"
   }
 }
