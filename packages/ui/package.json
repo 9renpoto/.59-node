@@ -11,14 +11,14 @@
     "posttest": "cp coverage/storybook/coverage-storybook.json coverage/coverage-storybook.json && nyc report --reporter=lcov -t coverage --report-dir coverage"
   },
   "devDependencies": {
-    "@storybook/addon-coverage": "^1.0.4",
+    "@storybook/addon-coverage": "^1.0.5",
     "@storybook/addon-essentials": "^8.4.7",
     "@storybook/addon-interactions": "^8.4.7",
     "@storybook/addon-links": "^8.4.7",
     "@storybook/blocks": "^8.0.4",
     "@storybook/preact": "^8.4.7",
     "@storybook/preact-vite": "^8.4.7",
-    "@storybook/test-runner": "^0.20.1",
+    "@storybook/test-runner": "^0.21.0",
     "@storybook/testing-library": "^0.2.0",
     "@testing-library/preact": "^3.2.4",
     "@twind/preset-autoprefix": "^1.0.7",
