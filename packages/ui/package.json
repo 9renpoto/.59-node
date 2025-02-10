@@ -29,6 +29,6 @@
   "typings": "lib/index.d.ts",
   "dependencies": {
     "@twind/core": "^1.1.3",
-    "lucide-preact": "^0.473.0"
+    "lucide-preact": "^0.475.0"
   }
 }
