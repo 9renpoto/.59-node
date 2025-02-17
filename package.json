@@ -14,7 +14,7 @@
     "@biomejs/biome": "^1.9.4",
     "@types/rosie": "^0.0.45",
     "rosie": "^2.1.0",
-    "turbo": "^1.13.3"
+    "turbo": "^2.4.2"
   },
   "workspaces": {
     "packages": ["packages/*", "apps/*"]
