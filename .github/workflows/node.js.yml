@@ -40,7 +40,7 @@ jobs:
             "npx wait-on tcp:6006 && npm test"
 
       - name: compressed-size-action
-        uses: preactjs/compressed-size-action@2.7.0
+        uses: preactjs/compressed-size-action@2.8.0
         with:
           pattern: "./packages/ui/lib/**/*.{js,css,html,json}"
           exclude: "{**/*.map,**/node_modules/**}"
