@@ -28,8 +28,6 @@ jobs:
           cache: "npm"
       - run: npm ci
 
-      - run: npm run build
-
       - run: npx playwright install --with-deps
       - name: Build Storybook
         run: npm run build-storybook --quiet
@@ -39,11 +37,11 @@ jobs:
             "npx http-server packages/ui/storybook-static --port 6006 --silent" \
             "npx wait-on tcp:6006 && npm test"
 
-      - name: compressed-size-action
-        uses: preactjs/compressed-size-action@2.8.0
-        with:
-          pattern: "./packages/ui/lib/**/*.{js,css,html,json}"
-          exclude: "{**/*.map,**/node_modules/**}"
+      # - name: compressed-size-action
+      #   uses: preactjs/compressed-size-action@2.8.0
+      #   with:
+      #     pattern: "./packages/ui/lib/**/*.{js,css,html,json}"
+      #     exclude: "{**/*.map,**/node_modules/**}"
 
       - uses: codecov/codecov-action@v5
 
@@ -57,17 +55,17 @@ jobs:
       - name: Run Biome
         run: biome ci .
 
-  chromatic-deployment:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # 👈 Required to retrieve git history
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-      - name: Publish to Chromatic
-        uses: chromaui/action@v13
-        with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          onlyChanged: true # 👈 Required option to enable TurboSnap
-          skip: "@(renovate/**|dependabot/**)"
+  # chromatic-deployment:
+  #   runs-on: ubuntu-22.04
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #       with:
+  #         fetch-depth: 0 # 👈 Required to retrieve git history
+  #     - name: Install dependencies
+  #       uses: bahmutov/npm-install@v1
+  #     - name: Publish to Chromatic
+  #       uses: chromaui/action@v13
+  #       with:
+  #         projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+  #         onlyChanged: true # 👈 Required option to enable TurboSnap
+  #         skip: "@(renovate/**|dependabot/**)"

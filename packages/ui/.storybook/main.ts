@@ -1,19 +1,25 @@
+import { createRequire } from "node:module";
+import { dirname, join } from "node:path";
 import type { StorybookConfig } from "@storybook/preact-vite";
 import { mergeConfig } from "vite";
 import turbosnap from "vite-plugin-turbosnap";
 
+const require = createRequire(import.meta.url);
+
 const config: StorybookConfig = {
   stories: ["../src/**/*.stories.@(ts|tsx)"],
+
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
-    "@storybook/addon-coverage",
+    getAbsolutePath("@storybook/addon-links"),
+    getAbsolutePath("@storybook/addon-coverage"),
+    getAbsolutePath("@storybook/addon-docs"),
   ],
+
   framework: {
-    name: "@storybook/preact-vite",
+    name: getAbsolutePath("@storybook/preact-vite"),
     options: {},
   },
+
   async viteFinal(config, { configType }) {
     const isProduction = configType === "PRODUCTION";
 
@@ -23,9 +29,10 @@ const config: StorybookConfig = {
         : [],
     });
   },
-  docs: {
-    autodocs: "tag",
-  },
 };
 
 export default config;
+
+function getAbsolutePath(value: string): string {
+  return dirname(require.resolve(join(value, "package.json")));
+}

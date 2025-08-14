@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/preact";
+import type { Meta, StoryObj } from "@storybook/preact-vite";
 import Header from "./";
 
 const meta: Meta<typeof Header> = {

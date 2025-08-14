@@ -1,4 +1,4 @@
-import type { Preview } from "@storybook/preact";
+import type { Preview } from "@storybook/preact-vite";
 import { install } from "@twind/core";
 import config from "../twind.config";
 
