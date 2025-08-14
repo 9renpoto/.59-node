@@ -20,7 +20,7 @@ jobs:
         node-version: [latest]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Biome
         uses: biomejs/setup-biome@v2
       - name: Run Biome
@@ -58,7 +58,7 @@ jobs:
   # chromatic-deployment:
   #   runs-on: ubuntu-22.04
   #   steps:
-  #     - uses: actions/checkout@v4
+  #     - uses: actions/checkout@v5
   #       with:
   #         fetch-depth: 0 # 👈 Required to retrieve git history
   #     - name: Install dependencies
