@@ -1,0 +1,45 @@
+name: Static CI
+
+on:
+  pull_request:
+    paths:
+      - "services/static/**"
+      - "packages/ui/**"
+  push:
+    branches:
+      - main
+    paths:
+      - "services/static/**"
+      - "packages/ui/**"
+
+jobs:
+  test:
+    timeout-minutes: 10
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npx turbo run build --filter=@app/static
+
+      - name: Test
+        run: npx turbo run test:cov --filter=@app/static
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          files: services/static/coverage/lcov.info
+          flags: static
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}

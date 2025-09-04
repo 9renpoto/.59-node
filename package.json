@@ -10,11 +10,14 @@
   "workspaces": {
     "packages": [
       "packages/*",
-      "apps/*"
+      "services/*"
     ]
   },
   "dependencies": {
     "@astrojs/preact": "^4.1.0",
     "preact": "^10.27.1"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.5"
   }
 }

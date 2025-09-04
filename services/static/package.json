@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "test": "vitest run",
+    "test:cov": "vitest run --coverage"
   },
   "dependencies": {
     "@app/ui": "0.0.1",
@@ -14,5 +16,10 @@
     "astro": "^4.14.2",
     "preact": "^10.27.1",
     "twind": "^0.16.19"
+  },
+  "devDependencies": {
+    "@testing-library/preact": "^3.2.4",
+    "@vitest/coverage-v8": "^2.0.5",
+    "jsdom": "^24.1.1"
   }
 }
