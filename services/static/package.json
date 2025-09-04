@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@app/ui": "0.0.1",
-    "@astrojs/preact": "^3.5.1",
+    "@astrojs/preact": "^4.1.0",
     "astro": "^4.14.2",
     "preact": "^10.27.1",
     "twind": "^0.16.19"
