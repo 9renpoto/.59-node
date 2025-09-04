@@ -1,0 +1,18 @@
+{
+  "name": "@app/static",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@app/ui": "0.0.1",
+    "@astrojs/preact": "^3.5.1",
+    "astro": "^4.14.2",
+    "preact": "^10.27.1",
+    "twind": "^0.16.19"
+  }
+}
