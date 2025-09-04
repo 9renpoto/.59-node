@@ -1,11 +1,5 @@
 version: 2
 updates:
-  - package-ecosystem: cargo
-    directory: /
-    labels:
-      - "Type: Maintenance"
-    schedule:
-      interval: "weekly"
   - package-ecosystem: github-actions
     directory: "/"
     labels:
@@ -19,11 +13,6 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      tauri-apps:
-        patterns:
-          - "@tauri-apps*"
-          - tauri
-          - tauri-build
       preact:
         patterns:
           - "@preact*"
