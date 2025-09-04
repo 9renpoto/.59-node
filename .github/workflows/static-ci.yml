@@ -12,6 +12,9 @@ on:
       - "services/static/**"
       - "packages/ui/**"
 
+permissions:
+  contents: read
+
 jobs:
   test:
     timeout-minutes: 10
