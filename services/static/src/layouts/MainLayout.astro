@@ -1,0 +1,39 @@
+---
+import Header from "@app/ui/src/Header";
+import TwindSetup from "../components/TwindSetup.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <TwindSetup />
+  </head>
+  <body class="bg-gray-100">
+    <Header active="Home" />
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 lg:gap-8">
+        <aside class="lg:col-span-3 py-6">
+          <div class="space-y-4">
+            <h2 class="text-lg font-bold">Sidebar</h2>
+            <p>This is the sidebar content.</p>
+          </div>
+        </aside>
+        <main class="lg:col-span-9 py-6">
+          <slot />
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

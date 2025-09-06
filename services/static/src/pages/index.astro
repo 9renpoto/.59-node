@@ -1,21 +1,8 @@
 ---
-import Header from "@app/ui/src/Header";
-import TwindSetup from "../components/TwindSetup.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Home</title>
-    <TwindSetup />
-  </head>
-  <body class="bg-gray-100">
-    <Header active="Home" />
-    <main class="p-4">
-      <h1>Welcome to the Home Page!</h1>
-    </main>
-  </body>
-</html>
+<MainLayout title="Home">
+  <h1 class="text-2xl font-bold">Welcome to the Home Page!</h1>
+  <p class="mt-4">This is the main content area.</p>
+</MainLayout>
