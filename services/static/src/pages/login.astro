@@ -1,5 +1,5 @@
 ---
-import { Header } from "@app/ui/src/Header";
+import Header from "@app/ui/src/Header";
 import { LoginForm } from "@app/ui/src/LoginForm";
 import TwindSetup from "../components/TwindSetup.astro";
 ---
@@ -14,7 +14,7 @@ import TwindSetup from "../components/TwindSetup.astro";
     <TwindSetup />
   </head>
   <body class="bg-gray-100">
-    <Header />
+    <Header active="Login" />
     <div class="flex items-center justify-center min-h-screen">
       <LoginForm client:load />
     </div>
