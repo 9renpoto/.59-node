@@ -155,3 +155,4 @@ Cargo.lock
 *.pdb
 
 
+services/static/.astro

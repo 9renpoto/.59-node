@@ -1,8 +1,51 @@
 ---
+import Card from "@app/ui/src/Card";
+import type { CardProps } from "@app/ui/src/Card";
 import MainLayout from "../layouts/MainLayout.astro";
+
+const posts: CardProps[] = [
+  {
+    title: "Svelte Event Forwarding & Advanced Component Patterns",
+    authorName: "Ali Aslam",
+    authorImage:
+      "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/3423581/0d6a184d-4390-4d86-9e67-d0c49b4753b1.png",
+    date: "Sep 6",
+    tags: ["webdev", "javascript", "svelte", "webperf"],
+    coverImage:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/s6xnq2fo2yaltqez1pvx.png",
+    reactions: 42,
+    comments: 12,
+    readingTime: 7,
+  },
+  {
+    title: "Guess My Drawing: Can Gemini Read Your Mind in One Line?",
+    authorName: "Olga Braginskaya",
+    authorImage:
+      "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1050562/e109cfc9-05e8-418b-baf0-7300b94453d5.jpg",
+    date: "Sep 6",
+    tags: ["devchallenge", "googleaichallenge", "ai", "gemini"],
+    reactions: 6,
+    comments: 1,
+    readingTime: 3,
+  },
+  {
+    title: "Wear OS Accessibility Considerations",
+    authorName: "Eevis",
+    authorImage:
+      "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/201004/0196665f-a91d-4692-a6d6-12e6d68737e2.png",
+    date: "Sep 6",
+    tags: ["android", "wearos", "a11y", "programming"],
+    coverImage:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/s6xnq2fo2yaltqez1pvx.png",
+    reactions: 8,
+    comments: 1,
+    readingTime: 7,
+  },
+];
 ---
 
 <MainLayout title="Home">
-  <h1 class="text-2xl font-bold">Welcome to the Home Page!</h1>
-  <p class="mt-4">This is the main content area.</p>
+  <div class="space-y-4">
+    {posts.map((post) => <Card {...post} />)}
+  </div>
 </MainLayout>
