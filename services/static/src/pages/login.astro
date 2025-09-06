@@ -1,5 +1,6 @@
 ---
 import Header from "@app/ui/src/Header";
+import { LoginForm } from "@app/ui/src/LoginForm";
 import TwindSetup from "../components/TwindSetup.astro";
 ---
 
@@ -9,13 +10,13 @@ import TwindSetup from "../components/TwindSetup.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Home</title>
+    <title>Login</title>
     <TwindSetup />
   </head>
   <body class="bg-gray-100">
-    <Header active="Home" />
-    <main class="p-4">
-      <h1>Welcome to the Home Page!</h1>
-    </main>
+    <Header active="Login" />
+    <div class="flex items-center justify-center min-h-screen">
+      <LoginForm client:load />
+    </div>
   </body>
 </html>
