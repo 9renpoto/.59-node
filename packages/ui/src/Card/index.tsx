@@ -16,11 +16,11 @@ export default function Card(props: CardProps): JSX.Element {
   return (
     <div class="rounded-lg border border-gray-200 bg-white shadow-md overflow-hidden">
       {props.coverImage && (
-        <a href="#" class="block">
+        <a href="/" class="block">
           <img
             class="w-full h-48 object-cover"
             src={props.coverImage}
-            alt={`Cover image for ${props.title}`}
+            alt={`Cover for ${props.title}`}
           />
         </a>
       )}
@@ -29,11 +29,11 @@ export default function Card(props: CardProps): JSX.Element {
           <img
             class="w-8 h-8 rounded-full mr-3"
             src={props.authorImage}
-            alt={`Profile picture of ${props.authorName}`}
+            alt={`Profile of ${props.authorName}`}
           />
           <div>
             <p class="text-sm font-medium text-gray-900">
-              <a href="#">{props.authorName}</a>
+              <a href="/">{props.authorName}</a>
             </p>
             <p class="text-xs text-gray-500">
               <time>{props.date}</time>
@@ -41,12 +41,12 @@ export default function Card(props: CardProps): JSX.Element {
           </div>
         </div>
         <h3 class="text-xl sm:text-2xl font-bold text-gray-900 leading-tight mb-3">
-          <a href="#">{props.title}</a>
+          <a href="/">{props.title}</a>
         </h3>
         <div class="flex flex-wrap mb-4">
           {props.tags.map((tag) => (
             <a
-              href="#"
+              href="/"
               class="text-xs text-gray-600 hover:text-black mr-2 mb-2 px-2 py-1 border border-gray-200 rounded-md"
             >
               #{tag}
@@ -64,7 +64,10 @@ export default function Card(props: CardProps): JSX.Element {
           </div>
           <div class="ml-auto">
             <span class="text-xs">{props.readingTime} min read</span>
-            <button class="ml-2 px-2 py-1 text-xs bg-gray-200 hover:bg-gray-300 rounded">
+            <button
+              type="button"
+              class="ml-2 px-2 py-1 text-xs bg-gray-200 hover:bg-gray-300 rounded"
+            >
               Save
             </button>
           </div>
