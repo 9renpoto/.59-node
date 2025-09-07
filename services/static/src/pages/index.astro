@@ -1,8 +1,24 @@
 ---
+import Card from "@app/ui/src/Card";
+import type { CardProps } from "@app/ui/src/Card";
 import MainLayout from "../layouts/MainLayout.astro";
+import { faker } from "@faker-js/faker";
+
+const post: CardProps = {
+  title: "Example Post",
+  authorName: "Jules",
+  authorImage: faker.image.avatar(),
+  date: "Sep 6",
+  tags: ["example", "card"],
+  coverImage: faker.image.urlLoremFlickr({ category: 'nature' }),
+  reactions: 1,
+  comments: 0,
+  readingTime: 1,
+};
 ---
 
 <MainLayout title="Home">
-  <h1 class="text-2xl font-bold">Welcome to the Home Page!</h1>
-  <p class="mt-4">This is the main content area.</p>
+  <div class="space-y-4">
+    <Card {...post} />
+  </div>
 </MainLayout>
