@@ -12,8 +12,5 @@
       "packages/*",
       "services/*"
     ]
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.2.3"
   }
 }
