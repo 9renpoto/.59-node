@@ -3,3 +3,20 @@ repos:
     rev: v2.2.3 # Use the sha / tag you want to point at
     hooks:
       - id: biome-check
+
+  - repo: https://github.com/streetsidesoftware/cspell-cli
+    rev: v9.2.0
+    hooks:
+      - id: cspell
+
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.13.1
+    hooks:
+      - id: hadolint
+
+  - repo: local
+    hooks:
+      - id: secretlint
+        name: secretlint
+        language: docker_image
+        entry: secretlint/secretlint:latest secretlint
