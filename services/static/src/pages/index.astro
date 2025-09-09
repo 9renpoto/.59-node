@@ -1,4 +1,5 @@
 ---
+import { Breadcrumbs } from "@app/ui/src/Breadcrumbs";
 import Card from "@app/ui/src/Card";
 import type { CardProps } from "@app/ui/src/Card";
 import MainLayout from "../layouts/MainLayout.astro";
@@ -19,6 +20,13 @@ const post: CardProps = {
 
 <MainLayout title="Home">
   <div class="space-y-4">
+    <Breadcrumbs
+      breadcrumbs={[
+        { label: "Home", href: "#" },
+        { label: "Posts", href: "#" },
+        { label: "Example Post" },
+      ]}
+    />
     <Card {...post} />
   </div>
 </MainLayout>

@@ -4,5 +4,8 @@ import presetTailwind from "@twind/preset-tailwind";
 
 export default defineConfig({
   presets: [presetAutoprefix(), presetTailwind()],
-  /* config */
+  content: [
+    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+    "../../packages/ui/src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+  ],
 });
