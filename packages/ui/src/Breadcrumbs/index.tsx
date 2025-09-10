@@ -27,7 +27,9 @@ export const Breadcrumbs = ({ breadcrumbs }: Props) => {
                 {breadcrumb.label}
               </a>
             ) : (
-              <span className={tw(String.raw`text-gray-500`)}>{breadcrumb.label}</span>
+              <span className={tw(String.raw`text-gray-500`)}>
+                {breadcrumb.label}
+              </span>
             )}
           </li>
         ))}

@@ -5,7 +5,11 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.stories.@(ts|tsx)"],
-  addons: ["@storybook/addon-links", "@storybook/addon-coverage", "@storybook/addon-docs"],
+  addons: [
+    "@storybook/addon-links",
+    "@storybook/addon-coverage",
+    "@storybook/addon-docs",
+  ],
   framework: {
     name: "@storybook/preact-vite",
     options: {},
