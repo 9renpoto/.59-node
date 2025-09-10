@@ -10,5 +10,8 @@ export default defineConfig({
     resolve: {
       preserveSymlinks: true,
     },
+    ssr: {
+      external: ["@app/ui"],
+    },
   },
 });
