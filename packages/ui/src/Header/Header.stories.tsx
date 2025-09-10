@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/preact-vite";
-import Header from "./";
+import Header from "./index.js";
 
 const meta: Meta<typeof Header> = {
   component: Header,
@@ -7,4 +7,8 @@ const meta: Meta<typeof Header> = {
 
 export default meta;
 
-export const Basic: StoryObj<typeof Header> = {};
+export const Basic: StoryObj<typeof Header> = {
+  args: {
+    active: "Home",
+  },
+};

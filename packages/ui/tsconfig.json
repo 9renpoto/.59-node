@@ -2,9 +2,12 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": "./src",
-    "outDir": "./lib"
+    "outDir": "./lib",
+    "module": "NodeNext",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src"],
-  "exclude": ["**/*.test.ts", "*.stories.tsx"],
+  "include": ["src", "src/twind.d.ts"],
+  "exclude": ["**/*.test.ts", "*.stories.tsx", "lib"],
   "references": []
 }

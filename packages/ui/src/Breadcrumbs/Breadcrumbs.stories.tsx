@@ -1,14 +1,14 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Breadcrumbs } from "./index";
+import type { Meta, StoryObj } from "@storybook/preact";
+import { Breadcrumbs } from "./index.js";
 
-const meta = {
+const meta: Meta<typeof Breadcrumbs> = {
   title: "Breadcrumbs",
   component: Breadcrumbs,
-} satisfies Meta<typeof Breadcrumbs>;
+};
 
 export default meta;
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof Breadcrumbs>;
 
 export const Default: Story = {
   args: {

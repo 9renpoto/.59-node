@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/preact-vite";
-import Button from "./";
+import type { Meta, StoryObj } from "@storybook/preact";
+import Button from "./index.js";
 
 const meta: Meta<typeof Button> = {
   component: Button,

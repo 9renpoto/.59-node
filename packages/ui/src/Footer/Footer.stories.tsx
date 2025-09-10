@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/preact-vite";
-import Footer from "./";
+import type { Meta, StoryObj } from "@storybook/preact";
+import Footer from "./index.js";
 
 const meta: Meta<typeof Footer> = {
   component: Footer,

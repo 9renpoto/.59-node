@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/preact";
-import { LoginForm } from "./LoginForm";
+import { LoginForm } from "./LoginForm.js";
 
 const meta = {
   component: LoginForm,
