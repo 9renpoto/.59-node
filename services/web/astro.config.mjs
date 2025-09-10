@@ -10,8 +10,10 @@ export default defineConfig({
     resolve: {
       preserveSymlinks: true,
     },
+    // Bundle the local workspace package into SSR build instead of externalizing.
+    // This ensures Vercel doesn't try to resolve a private workspace package at runtime.
     ssr: {
-      external: ["@app/ui"],
+      noExternal: ["@app/ui"],
     },
   },
 });

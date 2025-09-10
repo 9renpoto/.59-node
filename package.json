@@ -2,11 +2,14 @@
   "name": "@app/app",
   "private": true,
   "author": "github.com/9renpoto",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "storybook": "npm run storybook -w @app/ui",
     "build-storybook": " npm run build-storybook -w @app/ui",
     "test": "npm run test --workspaces",
-    "build": "npm run build --workspaces"
+    "build": "npm run build -w @app/ui && npm run build -w @app/web"
   },
   "workspaces": {
     "packages": [
