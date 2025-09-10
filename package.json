@@ -5,7 +5,8 @@
   "scripts": {
     "storybook": "npm run storybook -w @app/ui",
     "build-storybook": " npm run build-storybook -w @app/ui",
-    "test": "npm run test --workspaces"
+    "test": "npm run test --workspaces",
+    "build": "npm run build --workspaces"
   },
   "workspaces": {
     "packages": [
