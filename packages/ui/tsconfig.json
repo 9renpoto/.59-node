@@ -7,7 +7,7 @@
     "declaration": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src", "src/twind.d.ts"],
+  "include": ["src"],
   "exclude": ["**/*.test.ts", "*.stories.tsx", "lib"],
   "references": []
 }

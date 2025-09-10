@@ -1,6 +1,6 @@
 import { tw } from "@twind/core";
 
-type Breadcrumb = {
+export type Breadcrumb = {
   label: string;
   href?: string;
 };

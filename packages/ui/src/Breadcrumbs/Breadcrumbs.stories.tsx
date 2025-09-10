@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/preact";
 import { Breadcrumbs } from "./index.js";
 
-const meta: Meta<typeof Breadcrumbs> = {
+const meta = {
   title: "Breadcrumbs",
   component: Breadcrumbs,
-};
+} satisfies Meta<typeof Breadcrumbs>;
 
 export default meta;
 
