@@ -43,16 +43,13 @@ jobs:
             "npx http-server packages/ui/storybook-static --port 6006 --silent" \
             "npx wait-on tcp:6006 && npm test"
 
-      - name: compressed-size-action
-        uses: preactjs/compressed-size-action@2.8.0
-        with:
-          pattern: "./packages/ui/lib/**/*.{js,css,html,json}"
-          exclude: "{**/*.map,**/node_modules/**}"
-
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
         with:
           files: ./services/web/coverage/lcov.info,./packages/ui/coverage/coverage-storybook.json
+          enable_bundle_analysis: true
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
   quality:
     runs-on: ubuntu-22.04
