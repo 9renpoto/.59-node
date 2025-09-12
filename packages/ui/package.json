@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsgo --build .",
+    "build": "tsc --build .",
     "prepack": "npm run build",
     "test": "test-storybook --coverage",
     "storybook": "storybook dev -p 6006",
