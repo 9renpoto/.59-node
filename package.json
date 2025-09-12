@@ -13,5 +13,8 @@
       "packages/*",
       "services/*"
     ]
+  },
+  "devDependencies": {
+    "@typescript/native-preview": "^7.0.0-dev.20250911.1"
   }
 }
