@@ -37,6 +37,11 @@ jobs:
       - name: Build Storybook
         run: npm run build-storybook --quiet
 
+      - name: Build web app and upload bundle analysis
+        run: npm run build --workspace=@app/web
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
       - name: Run tests and generate coverage
         run: |
           npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
@@ -47,7 +52,6 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           files: ./services/web/coverage/lcov.info,./packages/ui/coverage/coverage-storybook.json
-          enable_bundle_analysis: true
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
