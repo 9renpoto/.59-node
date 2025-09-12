@@ -37,22 +37,23 @@ jobs:
       - name: Build Storybook
         run: npm run build-storybook --quiet
 
+      - name: Build web app and upload bundle analysis
+        run: npm run build --workspace=@app/web
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
       - name: Run tests and generate coverage
         run: |
           npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
             "npx http-server packages/ui/storybook-static --port 6006 --silent" \
             "npx wait-on tcp:6006 && npm test"
 
-      - name: compressed-size-action
-        uses: preactjs/compressed-size-action@2.8.0
-        with:
-          pattern: "./packages/ui/lib/**/*.{js,css,html,json}"
-          exclude: "{**/*.map,**/node_modules/**}"
-
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
         with:
           files: ./services/web/coverage/lcov.info,./packages/ui/coverage/coverage-storybook.json
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
   quality:
     runs-on: ubuntu-22.04

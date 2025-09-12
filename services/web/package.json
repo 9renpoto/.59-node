@@ -22,6 +22,7 @@
     "preact": "^10.27.1"
   },
   "devDependencies": {
+    "@codecov/astro-plugin": "^1.9.1",
     "@testing-library/preact": "^3.2.4",
     "@testing-library/react": "^16.3.0",
     "@vitest/coverage-v8": "^3.2.4",
