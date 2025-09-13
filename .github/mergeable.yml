@@ -1,8 +1,0 @@
-version: 2
-mergeable:
-  - when: pull_request.*, pull_request_review.*
-    validate:
-      - do: label
-        must_include:
-          regex: ^Type|bug|documentation|enhancement
-          message: must include types
