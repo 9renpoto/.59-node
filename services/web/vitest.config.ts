@@ -6,6 +6,7 @@ export default defineConfig({
   root: path.resolve(__dirname, "../../"),
   plugins: [preact()],
   test: {
+    reporters: [["junit", { outputFile: "services/web/junit.xml" }]],
     environment: "happy-dom",
     globals: true,
     setupFiles: "services/web/src/tests/setup.ts",

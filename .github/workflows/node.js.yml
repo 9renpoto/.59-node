@@ -48,6 +48,14 @@ jobs:
             "npx http-server packages/ui/storybook-static --port 6006 --silent" \
             "npx wait-on tcp:6006 && npm test"
 
+      - name: Upload test results to Codecov
+        uses: codecov/test-results-action@v1
+        if: always()
+        with:
+          files: ./services/web/junit.xml,./packages/ui/junit.xml
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
         with:
