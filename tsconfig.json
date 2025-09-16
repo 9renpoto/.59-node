@@ -1,9 +1,9 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
+    "composite": true,
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
-    "composite": true,
-    "incremental": true,
     "moduleResolution": "nodenext",
     "skipLibCheck": true
   }
