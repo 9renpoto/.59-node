@@ -1,12 +1,13 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
-    "types": ["vitest/globals"],
     "paths": {
       "@app/ui/*": ["../../packages/ui/*"]
-    }
+    },
+    "types": ["vitest/globals"]
   },
   "include": ["src"]
 }
