@@ -2,7 +2,6 @@ import { createRequire } from "node:module";
 import { dirname, join } from "node:path";
 import type { StorybookConfig } from "@storybook/preact-vite";
 import { mergeConfig } from "vite";
-import turbosnap from "vite-plugin-turbosnap";
 
 const require = createRequire(import.meta.url);
 
@@ -20,13 +19,28 @@ const config: StorybookConfig = {
     options: {},
   },
 
-  async viteFinal(config, { configType }) {
-    const isProduction = configType === "PRODUCTION";
+  async viteFinal(config, _options) {
+    const dedupe = Array.from(
+      new Set([...(config.resolve?.dedupe ?? []), "preact", "preact/hooks"]),
+    );
+
+    const optimizeDepsInclude = Array.from(
+      new Set([
+        ...(config.optimizeDeps?.include ?? []),
+        "preact",
+        "preact/hooks",
+      ]),
+    );
 
     return mergeConfig(config, {
-      plugins: isProduction
-        ? [turbosnap({ rootDir: config.root ?? process.cwd() })]
-        : [],
+      resolve: {
+        ...config.resolve,
+        dedupe,
+      },
+      optimizeDeps: {
+        ...config.optimizeDeps,
+        include: optimizeDepsInclude,
+      },
     });
   },
 };

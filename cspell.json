@@ -12,14 +12,5 @@
     "rust",
     "typescript"
   ],
-  "words": [
-    "autodocs",
-    "Autoprefix",
-    "lucide",
-    "preact",
-    "renpoto",
-    "twind",
-    "preactjs",
-    "chromaui"
-  ]
+  "words": ["autodocs", "Autoprefix", "lucide", "preact", "twind", "chromaui"]
 }
