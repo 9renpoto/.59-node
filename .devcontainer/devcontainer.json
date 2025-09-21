@@ -1,0 +1,4 @@
+{
+  "name": "Node.js LTS",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-lts"
+}
