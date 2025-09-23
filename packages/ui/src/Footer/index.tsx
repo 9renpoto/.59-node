@@ -1,26 +1,20 @@
 import { Citrus, Github } from "lucide-preact";
 
-export default function Footer() {
-  const menus = [
-    {
-      title: "Documentation",
-      children: [
-        { name: "Getting Started", href: "#" },
-        { name: "Guide", href: "#" },
-        { name: "API", href: "#" },
-        { name: "Showcase", href: "#" },
-        { name: "Pricing", href: "#" },
-      ],
-    },
-    {
-      title: "Community",
-      children: [
-        { name: "Forum", href: "#" },
-        { name: "Discord", href: "#" },
-      ],
-    },
-  ];
+type MenuItem = {
+  name: string;
+  href: string;
+};
 
+type Menu = {
+  title: string;
+  children: MenuItem[];
+};
+
+export type FooterProps = {
+  menus: Menu[];
+};
+
+export default function Footer({ menus }: FooterProps) {
   return (
     <div class="bg-white flex flex-col md:flex-row w-full max-w-screen-lg gap-8 md:gap-16 px-8 py-8 text-sm">
       <div class="flex-1">
