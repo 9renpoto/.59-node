@@ -28,3 +28,9 @@ updates:
         patterns:
           - "astro"
           - "@astrojs/*"
+  - package-ecosystem: devcontainers
+    directory: "/"
+    labels:
+      - "Type: Maintenance"
+    schedule:
+      interval: "weekly"
