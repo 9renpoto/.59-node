@@ -1,4 +1,40 @@
 {
-  "name": "Node.js LTS",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-lts"
+  "name": "Node.js & TypeScript",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20-bullseye",
+
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true,
+      "upgradePackages": true
+    }
+  },
+
+  "forwardPorts": [
+    4321, // Astro dev server
+    6006 // Storybook
+  ],
+
+  "postCreateCommand": "npm install && npm install -g @google/gemini-cli",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "biomejs.biome"
+      },
+      "extensions": [
+        "astro-build.astro-vscode",
+        "biomejs.biome",
+        "storybookjs.storybook-vscode",
+        "bradlc.vscode-tailwindcss",
+        "streetsidesoftware.code-spell-checker",
+        "Google.gemini-cli-companion",
+        "GitHub.copilot"
+      ]
+    }
+  },
+
+  "remoteUser": "node"
 }

@@ -12,5 +12,14 @@
     "rust",
     "typescript"
   ],
-  "words": ["autodocs", "Autoprefix", "lucide", "preact", "twind", "chromaui"]
+  "words": [
+    "autodocs",
+    "Autoprefix",
+    "lucide",
+    "preact",
+    "twind",
+    "chromaui",
+    "storybookjs",
+    "bradlc"
+  ]
 }
