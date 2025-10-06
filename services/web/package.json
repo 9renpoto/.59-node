@@ -27,7 +27,7 @@
     "@testing-library/react": "^16.3.0",
     "@vitest/coverage-v8": "^3.2.4",
     "happy-dom": "^19.0.2",
-    "preact-render-to-string": "^6.6.1",
+    "preact-render-to-string": "^6.6.2",
     "vitest": "^3.2.4"
   }
 }
