@@ -3,6 +3,9 @@ import Footer from "./";
 
 const meta: Meta<typeof Footer> = {
   component: Footer,
+  argTypes: {
+    menus: { control: "object" },
+  },
 };
 
 export default meta;
