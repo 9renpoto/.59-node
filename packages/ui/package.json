@@ -13,9 +13,9 @@
   },
   "devDependencies": {
     "@storybook/addon-coverage": "^2.0.0",
-    "@storybook/addon-docs": "^9.1.10",
-    "@storybook/addon-links": "^9.1.10",
-    "@storybook/preact-vite": "^9.1.10",
+    "@storybook/addon-docs": "^9.1.13",
+    "@storybook/addon-links": "^9.1.13",
+    "@storybook/preact-vite": "^9.1.13",
     "@storybook/test-runner": "^0.23.0",
     "@storybook/testing-library": "^0.2.2",
     "@testing-library/preact": "^3.2.4",
