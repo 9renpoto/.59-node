@@ -6,13 +6,17 @@ export default defineConfig({
   root: path.resolve(__dirname, "../../"),
   plugins: [preact()],
   test: {
-    reporters: [["junit", { outputFile: "services/web/junit.xml" }]],
+    reporters: [
+      "default",
+      ["junit", { outputFile: "services/web/junit.xml" }],
+    ],
     environment: "happy-dom",
     globals: true,
-    setupFiles: "services/web/src/tests/setup.ts",
+    setupFiles: ["services/web/src/tests/setup.ts"],
     coverage: {
+      enabled: true,
       provider: "v8",
-      reporter: ["text", "json", "html", "lcov"],
+      reports: ["text", "json", "html", "lcov"],
       include: ["packages/ui/src/LoginForm/LoginForm.tsx"],
     },
     include: ["services/web/src/tests/**/*.test.tsx"],
