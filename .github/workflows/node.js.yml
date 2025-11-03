@@ -64,6 +64,8 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
   quality:
+    permissions:
+      contents: read
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
