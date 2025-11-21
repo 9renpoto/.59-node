@@ -3,19 +3,30 @@ import preact from "@preact/preset-vite";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
-  root: path.resolve(__dirname, "../../"),
+  root: __dirname,
   plugins: [preact()],
+  server: {
+    fs: {
+      allow: [__dirname, path.resolve(__dirname, "../../")],
+    },
+  },
   test: {
-    reporters: [["junit", { outputFile: "services/web/junit.xml" }]],
+    reporters: [
+      ["junit", { outputFile: path.resolve(__dirname, "junit.xml") }],
+    ],
     environment: "happy-dom",
     globals: true,
-    setupFiles: "services/web/src/tests/setup.ts",
+    setupFiles: path.resolve(__dirname, "src/tests/setup.ts"),
+    deps: {
+      inline: [/packages\/ui\//],
+    },
     coverage: {
       provider: "v8",
       reporter: ["text", "json", "html", "lcov"],
-      include: ["packages/ui/src/LoginForm/LoginForm.tsx"],
+      allowExternal: true,
+      exclude: ["**/*.stories.*"],
     },
-    include: ["services/web/src/tests/**/*.test.tsx"],
+    include: ["src/tests/**/*.test.tsx"],
   },
   resolve: {
     alias: [
