@@ -11,7 +11,9 @@ export default defineConfig({
     },
   },
   test: {
-    reporters: [["junit", { outputFile: path.resolve(__dirname, "junit.xml") }]],
+    reporters: [
+      ["junit", { outputFile: path.resolve(__dirname, "junit.xml") }],
+    ],
     environment: "happy-dom",
     globals: true,
     setupFiles: path.resolve(__dirname, "src/tests/setup.ts"),
