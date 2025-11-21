@@ -3,6 +3,8 @@ on:
   pull_request:
 jobs:
   spellcheck:
+    permissions:
+      contents: read
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v5
