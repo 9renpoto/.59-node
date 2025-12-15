@@ -24,7 +24,7 @@
   "devDependencies": {
     "@codecov/astro-plugin": "^1.9.1",
     "@testing-library/preact": "^3.2.4",
-    "@testing-library/react": "^16.3.0",
+    "@testing-library/react": "^16.3.1",
     "@vitest/coverage-v8": "^4.0.14",
     "happy-dom": "^20.0.11",
     "preact-render-to-string": "^6.6.3",
