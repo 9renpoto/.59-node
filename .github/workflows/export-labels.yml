@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: main
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           name: Label config
       - run: cp labels.yaml .github/labels.yaml
