@@ -25,7 +25,7 @@
     "@codecov/astro-plugin": "^1.9.1",
     "@testing-library/preact": "^3.2.4",
     "@testing-library/react": "^16.3.2",
-    "@vitest/coverage-v8": "^4.0.17",
+    "@vitest/coverage-v8": "^4.0.18",
     "happy-dom": "^20.3.9",
     "preact-render-to-string": "^6.6.5",
     "vitest": "^4.0.18"
