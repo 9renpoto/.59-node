@@ -28,6 +28,6 @@
     "@vitest/coverage-v8": "^4.0.17",
     "happy-dom": "^20.3.9",
     "preact-render-to-string": "^6.6.5",
-    "vitest": "^4.0.17"
+    "vitest": "^4.0.18"
   }
 }
