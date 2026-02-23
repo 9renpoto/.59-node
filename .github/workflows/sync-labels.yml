@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   label_sync:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-slim
     timeout-minutes: 2
     steps:
       - uses: actions/checkout@v6
