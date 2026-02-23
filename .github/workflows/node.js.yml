@@ -15,7 +15,7 @@ jobs:
     permissions:
       contents: read
     timeout-minutes: 10
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-slim
 
     strategy:
       matrix:
@@ -68,7 +68,7 @@ jobs:
   quality:
     permissions:
       contents: read
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-slim
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -79,7 +79,7 @@ jobs:
 
   chromatic:
     name: Chromatic
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     needs: [build, quality]
     permissions:
       contents: read
