@@ -56,6 +56,6 @@
   },
   "dependencies": {
     "@twind/core": "^1.1.3",
-    "lucide-preact": "^0.576.0"
+    "lucide-preact": "^1.0.1"
   }
 }
