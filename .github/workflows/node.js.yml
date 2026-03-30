@@ -51,7 +51,7 @@ jobs:
             "npx wait-on tcp:6006 && npm test"
 
       - name: Upload test results to Codecov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v6
         if: always()
         with:
           files: ./services/web/junit.xml,./packages/ui/junit.xml
@@ -60,7 +60,7 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v6
         with:
           files: ./services/web/coverage/lcov.info,./packages/ui/coverage/coverage-storybook.json
         env:
