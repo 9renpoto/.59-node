@@ -89,5 +89,7 @@ jobs:
           title: "chore: bump v${{ steps.get_version.outputs.NEW_VERSION }}"
           labels: |
             Type: Documentation
+          reviewers: 9renpoto
+          assignees: 9renpoto
           draft: true
           milestone: "v${{ steps.get_version.outputs.NEW_VERSION }}"

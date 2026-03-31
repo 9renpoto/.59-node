@@ -5,13 +5,17 @@ updates:
     labels:
       - "Type: Maintenance"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
+    reviewers:
+      - "9renpoto"
   - package-ecosystem: npm
     directory: "/"
     labels:
       - "Type: Maintenance"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
+    reviewers:
+      - "9renpoto"
     groups:
       preact:
         patterns:
@@ -33,4 +37,6 @@ updates:
     labels:
       - "Type: Maintenance"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
+    reviewers:
+      - "9renpoto"
