@@ -8,6 +8,8 @@ updates:
       interval: "monthly"
     reviewers:
       - "9renpoto"
+    cooldown:
+      default-days: 7
   - package-ecosystem: npm
     directory: "/"
     labels:
@@ -16,11 +18,14 @@ updates:
       interval: "monthly"
     reviewers:
       - "9renpoto"
+    cooldown:
+      default-days: 7
     groups:
       preact:
         patterns:
           - "@preact*"
           - "preact"
+          - "preact-render-to-string"
       9renpoto:
         patterns:
           - "@9renpoto*"
@@ -32,6 +37,16 @@ updates:
         patterns:
           - "astro"
           - "@astrojs/*"
+          - "@codecov/astro-plugin"
+      twind:
+        patterns:
+          - "@twind/*"
+      testing:
+        patterns:
+          - "@testing-library/*"
+          - "vitest"
+          - "@vitest/*"
+          - "happy-dom"
   - package-ecosystem: devcontainers
     directory: "/"
     labels:
@@ -40,3 +55,5 @@ updates:
       interval: "monthly"
     reviewers:
       - "9renpoto"
+    cooldown:
+      default-days: 7
