@@ -6,8 +6,6 @@ updates:
       - "Type: Maintenance"
     schedule:
       interval: "monthly"
-    reviewers:
-      - "9renpoto"
     cooldown:
       default-days: 7
   - package-ecosystem: npm
@@ -16,8 +14,6 @@ updates:
       - "Type: Maintenance"
     schedule:
       interval: "monthly"
-    reviewers:
-      - "9renpoto"
     cooldown:
       default-days: 7
     groups:
@@ -53,7 +49,5 @@ updates:
       - "Type: Maintenance"
     schedule:
       interval: "monthly"
-    reviewers:
-      - "9renpoto"
     cooldown:
       default-days: 7
