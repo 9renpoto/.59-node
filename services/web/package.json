@@ -19,7 +19,7 @@
     "@twind/preset-autoprefix": "^1.0.7",
     "@twind/preset-tailwind": "^1.1.4",
     "astro": "^5.18.1",
-    "preact": "^10.29.0"
+    "preact": "^10.29.2"
   },
   "devDependencies": {
     "@codecov/astro-plugin": "^1.9.1",
@@ -27,7 +27,7 @@
     "@testing-library/react": "^16.3.2",
     "@vitest/coverage-v8": "^4.1.2",
     "happy-dom": "^20.8.9",
-    "preact-render-to-string": "^6.6.7",
+    "preact-render-to-string": "^6.7.0",
     "vitest": "^4.0.18"
   }
 }
