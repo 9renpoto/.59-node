@@ -15,7 +15,9 @@ jobs:
     permissions:
       contents: read
     timeout-minutes: 10
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.59.1-noble
 
     strategy:
       matrix:
@@ -29,9 +31,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm ci
-
-      - name: Install Playwright
-        run: npx playwright install --with-deps
 
       - name: Build dependencies
         run: npm run build --workspace=@app/ui
