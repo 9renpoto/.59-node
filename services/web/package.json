@@ -6,9 +6,9 @@
   "scripts": {
     "test": "vitest run --coverage",
     "coverage": "vitest run --coverage",
-    "dev": "astro dev",
-    "build": "npm run build --workspace=@app/ui && astro build",
-    "preview": "astro preview",
+    "dev": "wrangler types && astro dev",
+    "build": "npm run build --workspace=@app/ui && wrangler types && astro build",
+    "preview": "wrangler types && astro preview",
     "check": "astro check"
   },
   "dependencies": {
@@ -22,12 +22,14 @@
     "preact": "^10.29.2"
   },
   "devDependencies": {
+    "@astrojs/cloudflare": "^12.6.13",
     "@codecov/astro-plugin": "^1.9.1",
     "@testing-library/preact": "^3.2.4",
     "@testing-library/react": "^16.3.2",
     "@vitest/coverage-v8": "^4.1.9",
     "happy-dom": "^20.10.6",
     "preact-render-to-string": "^6.7.0",
-    "vitest": "^4.0.18"
+    "vitest": "^4.0.18",
+    "wrangler": "^4.107.1"
   }
 }
