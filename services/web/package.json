@@ -22,7 +22,7 @@
     "preact": "^10.29.2"
   },
   "devDependencies": {
-    "@astrojs/cloudflare": "^12.6.13",
+    "@astrojs/cloudflare": "^13.1.10",
     "@codecov/astro-plugin": "^1.9.1",
     "@testing-library/preact": "^3.2.4",
     "@testing-library/react": "^16.3.2",
