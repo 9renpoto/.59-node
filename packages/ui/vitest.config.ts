@@ -19,7 +19,7 @@ export default defineConfig({
       {
         extends: true,
         optimizeDeps: {
-          include: ["preact/jsx-dev-runtime"],
+          include: ["@testing-library/dom", "preact/jsx-dev-runtime"],
         },
         plugins: [
           storybookTest({
