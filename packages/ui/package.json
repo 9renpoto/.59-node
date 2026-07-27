@@ -6,23 +6,22 @@
   "scripts": {
     "build": "tsc --build .",
     "prepack": "npm run build",
-    "test": "test-storybook --coverage --junit",
+    "test": "vitest run --project=storybook --coverage",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build --stats-json",
-    "posttest": "cp coverage/storybook/coverage-storybook.json coverage/coverage-storybook.json && nyc report --reporter=lcov -t coverage --report-dir coverage"
+    "build-storybook": "storybook build --stats-json"
   },
   "devDependencies": {
-    "@storybook/addon-coverage": "^3.0.1",
     "@storybook/addon-docs": "^10.4.6",
     "@storybook/addon-links": "^10.4.6",
+    "@storybook/addon-vitest": "^10.4.6",
     "@storybook/preact-vite": "^10.4.6",
-    "@storybook/test-runner": "^0.24.4",
-    "@storybook/testing-library": "^0.2.2",
-    "@testing-library/preact": "^3.2.4",
     "@twind/preset-autoprefix": "^1.0.7",
     "@twind/preset-tailwind": "^1.1.4",
+    "@vitest/browser-playwright": "4.1.9",
+    "@vitest/coverage-v8": "4.1.9",
     "storybook": "^10.2.10",
-    "vite-plugin-turbosnap": "^1.0.3"
+    "vite-plugin-turbosnap": "^1.0.3",
+    "vitest": "4.1.9"
   },
   "exports": {
     ".": {
