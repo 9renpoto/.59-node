@@ -37,19 +37,13 @@ jobs:
       - name: Build dependencies
         run: npm run build --workspace=@app/ui
 
-      - name: Build Storybook
-        run: npm run build-storybook --quiet
-
       - name: Build web app and upload bundle analysis
         run: npm run build --workspace=@app/web
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Run tests and generate coverage
-        run: |
-          npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
-            "npx http-server packages/ui/storybook-static --port 6006 --silent" \
-            "npx wait-on tcp:6006 && npm test"
+        run: npm test
 
       - name: Upload test results to Codecov
         uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7.0.0
@@ -63,7 +57,7 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7.0.0
         with:
-          files: ./services/web/coverage/lcov.info,./packages/ui/coverage/coverage-storybook.json
+          files: ./services/web/coverage/lcov.info,./packages/ui/coverage/lcov.info
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
