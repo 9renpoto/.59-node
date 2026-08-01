@@ -26,10 +26,10 @@
     "@codecov/astro-plugin": "^1.9.1",
     "@testing-library/preact": "^3.2.4",
     "@testing-library/react": "^16.3.2",
-    "@vitest/coverage-v8": "^4.1.9",
-    "happy-dom": "^20.10.6",
+    "@vitest/coverage-v8": "^4.1.10",
+    "happy-dom": "^20.11.1",
     "preact-render-to-string": "^6.7.0",
-    "vitest": "^4.0.18",
+    "vitest": "^4.1.10",
     "wrangler": "^4.107.1"
   }
 }
