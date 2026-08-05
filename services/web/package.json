@@ -30,6 +30,6 @@
     "happy-dom": "^20.11.1",
     "preact-render-to-string": "^6.7.0",
     "vitest": "^4.1.10",
-    "wrangler": "^4.107.1"
+    "wrangler": "^4.115.0"
   }
 }
