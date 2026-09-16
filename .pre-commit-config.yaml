@@ -14,9 +14,7 @@ repos:
     hooks:
       - id: hadolint
 
-  - repo: local
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
     hooks:
-      - id: secretlint
-        name: secretlint
-        language: docker_image
-        entry: secretlint/secretlint:latest secretlint
+      - id: gitleaks
