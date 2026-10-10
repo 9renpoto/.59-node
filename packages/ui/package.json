@@ -11,6 +11,7 @@
     "build-storybook": "storybook build --stats-json"
   },
   "devDependencies": {
+    "typescript": "^5.7.3",
     "@storybook/addon-docs": "^10.5.10",
     "@storybook/addon-links": "^10.5.10",
     "@storybook/addon-vitest": "^10.5.10",
