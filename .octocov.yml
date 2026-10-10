@@ -1,0 +1,8 @@
+coverage:
+  paths:
+    - packages/ui/coverage/lcov.info
+    - services/web/coverage/lcov.info
+comment:
+  if: is_pull_request
+summary:
+  if: true

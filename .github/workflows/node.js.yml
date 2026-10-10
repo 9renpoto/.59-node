@@ -43,6 +43,7 @@ jobs:
     needs: [gitleaks, quality]
     permissions:
       contents: read
+      pull-requests: write
     timeout-minutes: 10
     runs-on: ubuntu-latest
     container:
@@ -66,29 +67,14 @@ jobs:
       - name: Build dependencies
         run: npm run build --workspace=@app/ui
 
-      - name: Build web app and upload bundle analysis
+      - name: Build web app
         run: npm run build --workspace=@app/web
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Run tests and generate coverage
         run: npm test
 
-      - name: Upload test results to Codecov
-        uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7.0.0
-        if: always()
-        with:
-          files: ./services/web/junit.xml,./packages/ui/junit.xml
-          report_type: test_results
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7.0.0
-        with:
-          files: ./services/web/coverage/lcov.info,./packages/ui/coverage/lcov.info
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - name: Run octocov
+        uses: k1LoW/octocov-action@a167dc0dee441b7ffc45e1b862ab55ec0d87f278 # v1.5.2
 
   chromatic:
     name: Chromatic
